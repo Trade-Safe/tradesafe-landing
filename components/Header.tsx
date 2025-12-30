@@ -78,11 +78,17 @@ export default function Header() {
         )}
 
         {/* Mobile Menu Panel */}
-        <div className={`
-          fixed top-0 right-0 h-full w-[280px] bg-[#000000] z-[1000] border-l-4 border-red-500
-          transform transition-transform duration-300 ease-in-out md:hidden
-          ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
-        `}>
+        <div 
+          className={`
+            fixed top-0 right-0 h-full w-[280px]
+            transform transition-transform duration-300 ease-in-out md:hidden
+            ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
+          `}
+          style={{
+            backgroundColor: '#000000',
+            zIndex: 1000
+          }}
+        >
           <div className="flex flex-col h-full pt-20 px-6">
             {/* Mobile Navigation Links */}
             <nav className="flex flex-col gap-6 mb-8">
