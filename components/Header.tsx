@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="bg-[rgba(15,15,15,0.95)] backdrop-blur-[10px] border-b border-[#1a1a1a] sticky top-0 z-[1000]">
-      <nav className="w-full px-6 md:px-12 py-3 flex justify-between items-center">
+      <nav className="max-w-[1200px] mx-auto px-6 md:px-12 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 no-underline relative z-[1001]">
           <div className="w-[26px] h-[32px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
