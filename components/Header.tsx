@@ -72,7 +72,7 @@ export default function Header() {
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
           <div 
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[999] md:hidden"
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9998] md:hidden"
             onClick={closeMenu}
           />
         )}
@@ -86,7 +86,7 @@ export default function Header() {
           `}
           style={{
             backgroundColor: '#1a1a1a',
-            zIndex: 1000
+            zIndex: 9999
           }}
         >
           <div className="flex flex-col h-full pt-20 px-6">
