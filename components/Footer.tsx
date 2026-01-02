@@ -7,9 +7,9 @@ export default function Footer() {
         {/* Grid principal - 2 colonnes mobile, 4 colonnes desktop */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 mb-12">
           
-          {/* Brand - pleine largeur sur toutes les tailles */}
-          <div className="col-span-2">
-            <Link href="/" className="flex items-center gap-3 no-underline relative mb-4">
+          {/* Brand - centré sur mobile */}
+          <div className="col-span-2 text-center md:text-left">
+            <Link href="/" className="flex items-center gap-3 no-underline relative mb-4 justify-center md:justify-start">
               <div className="w-[26px] h-[32px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
                    style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
               <div className="text-xl font-normal tracking-[-0.5px] text-[#e0e0e0] relative">
@@ -22,8 +22,8 @@ export default function Footer() {
             </p>
           </div>
           
-          {/* Product - colonne 1 sur mobile, automatique sur desktop */}
-          <div className="col-span-1">
+          {/* Product - centré sur mobile */}
+          <div className="col-span-1 text-center md:text-left">
             <h4 className="text-[#e0e0e0] text-sm font-semibold mb-4">Product</h4>
             <ul className="list-none space-y-3">
               <li><Link href="#features" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">Features</Link></li>
@@ -32,8 +32,8 @@ export default function Footer() {
             </ul>
           </div>
           
-          {/* Company - colonne 2 sur mobile (à côté de Product) */}
-          <div className="col-span-1">
+          {/* Company - centré sur mobile */}
+          <div className="col-span-1 text-center md:text-left">
             <h4 className="text-[#e0e0e0] text-sm font-semibold mb-4">Company</h4>
             <ul className="list-none space-y-3">
               <li><Link href="#pricing" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">About</Link></li>
