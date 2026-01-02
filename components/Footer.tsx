@@ -4,8 +4,11 @@ export default function Footer() {
   return (
     <footer className="bg-[#0a0a0a] border-t border-[#1a1a1a] py-16 px-8">
       <div className="max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          <div className="md:col-span-2">
+        {/* Grid principal - 2 colonnes mobile, 4 colonnes desktop */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 mb-12">
+          
+          {/* Brand - pleine largeur sur toutes les tailles */}
+          <div className="col-span-2">
             <Link href="/" className="flex items-center gap-3 no-underline relative mb-4">
               <div className="w-[26px] h-[32px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
                    style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
@@ -19,7 +22,8 @@ export default function Footer() {
             </p>
           </div>
           
-          <div>
+          {/* Product - colonne 1 sur mobile, automatique sur desktop */}
+          <div className="col-span-1">
             <h4 className="text-[#e0e0e0] text-sm font-semibold mb-4">Product</h4>
             <ul className="list-none space-y-3">
               <li><Link href="#features" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">Features</Link></li>
@@ -28,7 +32,8 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div>
+          {/* Company - colonne 2 sur mobile (à côté de Product) */}
+          <div className="col-span-1">
             <h4 className="text-[#e0e0e0] text-sm font-semibold mb-4">Company</h4>
             <ul className="list-none space-y-3">
               <li><Link href="#pricing" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">About</Link></li>
@@ -37,6 +42,7 @@ export default function Footer() {
           </div>
         </div>
         
+        {/* Footer bottom */}
         <div className="pt-8 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between items-center gap-4 text-[#666] text-xs">
           <p>&copy; 2025 TradeSafe. All rights reserved.</p>
           <div className="flex gap-8">
