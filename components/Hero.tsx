@@ -12,7 +12,7 @@ export default function Hero() {
       </p>
       
       <h1 className="text-[2.6rem] font-semibold leading-tight mb-8 text-[#e0e0e0]">
-        The First AI Discipline System<br />for Retail Traders
+        The First AI Discipline System<br />for Traders
       </h1>
       
       <div className="flex flex-col items-center gap-6 mb-8">
