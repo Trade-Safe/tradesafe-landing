@@ -1,8 +1,19 @@
 'use client'
 
 import Link from 'next/link'
+import LanguageSwitcher from './LanguageSwitcher'
 
-export default function Header() {
+interface HeaderProps {
+  nav: {
+    features: string
+    howItWorks: string
+    pricing: string
+    login: string
+    startTrial: string
+  }
+}
+
+export default function Header({ nav }: HeaderProps) {
   return (
     <header className="bg-[rgba(15,15,15,0.95)] backdrop-blur-[10px] border-b border-[#1a1a1a] sticky top-0 z-[1000]">
       <nav className="w-full px-6 md:px-12 py-3 flex items-center justify-between">
@@ -18,34 +29,36 @@ export default function Header() {
 
         {/* Desktop Navigation - Caché sur mobile */}
         <ul className="hidden md:flex gap-8 list-none m-0 p-0 flex-1 justify-center ml-24">
-          <li><Link href="#features" className="text-[#888] no-underline text-sm transition-colors hover:text-primary">Features</Link></li>
-          <li><Link href="#product" className="text-[#888] no-underline text-sm transition-colors hover:text-primary">How It Works</Link></li>
-          <li><Link href="#pricing" className="text-[#888] no-underline text-sm transition-colors hover:text-primary">Pricing</Link></li>
+          <li><Link href="#features" className="text-[#888] no-underline text-sm transition-colors hover:text-primary">{nav.features}</Link></li>
+          <li><Link href="#how-it-works" className="text-[#888] no-underline text-sm transition-colors hover:text-primary">{nav.howItWorks}</Link></li>
+          <li><Link href="#pricing" className="text-[#888] no-underline text-sm transition-colors hover:text-primary">{nav.pricing}</Link></li>
         </ul>
 
-        {/* Desktop CTA Buttons - Cachés sur mobile */}
+        {/* Desktop CTA Buttons + Language Switcher - Cachés sur mobile */}
         <div className="hidden md:flex gap-4 items-center">
+          <LanguageSwitcher />
           <Link 
             href="#pricing" 
             className="px-4 py-2 bg-transparent text-primary border border-primary/30 rounded-md text-sm font-medium transition-all hover:bg-primary/10 hover:border-primary no-underline"
           >
-            Log In
+            {nav.login}
           </Link>
           <Link 
             href="#pricing" 
             className="px-4 py-2 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-sm font-medium transition-all hover:translate-y-[-1px] hover:shadow-lg hover:shadow-primary/35 no-underline"
           >
-            Start Free Trial
+            {nav.startTrial}
           </Link>
         </div>
 
-        {/* Mobile CTA Button - Visible uniquement sur mobile */}
-        <div className="md:hidden">
+        {/* Mobile CTA Button + Language Switcher - Visible uniquement sur mobile */}
+        <div className="md:hidden flex items-center gap-3">
+          <LanguageSwitcher />
           <Link 
             href="#pricing" 
             className="px-5 py-2.5 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/35 no-underline whitespace-nowrap"
           >
-            Start Free Trial
+            {nav.startTrial}
           </Link>
         </div>
       </nav>
