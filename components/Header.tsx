@@ -39,13 +39,13 @@ export default function Header({ nav }: HeaderProps) {
           <LanguageSwitcher />
           <Link 
             href="#pricing" 
-            className="px-4 py-2 bg-transparent text-primary border border-primary/30 rounded-md text-xs font-medium transition-all hover:bg-primary/10 hover:border-primary no-underline"
+            className="px-4 py-1.5 bg-transparent text-primary border border-primary/30 rounded-md text-xs font-medium transition-all hover:bg-primary/10 hover:border-primary no-underline"
           >
             {nav.login}
           </Link>
           <Link 
             href="#pricing" 
-            className="px-4 py-2 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-xs font-medium transition-all hover:translate-y-[-1px] hover:shadow-lg hover:shadow-primary/35 no-underline"
+            className="px-4 py-1.5 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-xs font-medium transition-all hover:translate-y-[-1px] hover:shadow-lg hover:shadow-primary/35 no-underline"
           >
             {nav.startTrial}
           </Link>
