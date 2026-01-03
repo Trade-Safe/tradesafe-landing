@@ -28,7 +28,7 @@ export default function Header({ nav }: HeaderProps) {
         </Link>
 
         {/* Desktop Navigation - Caché sur mobile */}
-        <ul className="hidden md:flex gap-8 list-none m-0 p-0 flex-1 justify-center ml-24">
+        <ul className="hidden md:flex gap-8 list-none m-0 p-0 flex-1 justify-center ml-32">
           <li><Link href="#features" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.features}</Link></li>
           <li><Link href="#how-it-works" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.howItWorks}</Link></li>
           <li><Link href="#pricing" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.pricing}</Link></li>
@@ -39,13 +39,13 @@ export default function Header({ nav }: HeaderProps) {
           <LanguageSwitcher />
           <Link 
             href="#pricing" 
-            className="px-4 py-1.5 bg-transparent text-primary border border-primary/30 rounded-md text-xs font-medium transition-all hover:bg-primary/10 hover:border-primary no-underline"
+            className="px-3 py-1.5 bg-transparent text-primary border border-primary/30 rounded-md text-xs font-medium transition-all hover:bg-primary/10 hover:border-primary no-underline"
           >
             {nav.login}
           </Link>
           <Link 
             href="#pricing" 
-            className="px-4 py-1.5 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-xs font-medium transition-all hover:translate-y-[-1px] hover:shadow-lg hover:shadow-primary/35 no-underline"
+            className="px-3 py-1.5 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-xs font-medium transition-all hover:translate-y-[-1px] hover:shadow-lg hover:shadow-primary/35 no-underline"
           >
             {nav.startTrial}
           </Link>
