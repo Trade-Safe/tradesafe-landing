@@ -1,11 +1,11 @@
 {
   "hero": {
     "badge": "Coming Soon",
+    "quote": "Don't focus on mastering technical analysis, focus on mastering yourself!",
     "title": "The First AI Discipline System<br />for Traders",
     "subtitle": "TradeSafe detects emotional trading patterns and acts as an intelligent shield system to protect your capital in real-time.",
-    "cta": "Start Free Trial",
     "priceMonth": "€19.90/month",
-    "priceYear": "or €149.90/year",
+    "priceYear": "or €144.90/year",
     "discount": "(save 40%)"
   },
   "nav": {
@@ -19,34 +19,47 @@
   "features": {
     "label": "Features",
     "title": "Built to Protect Your Capital",
-    "subtitle": "Real-time behavioral intervention powered by AI, designed specifically for traders who struggle with discipline.",
-    "card1": {
-      "title": "Innovative AI Shield System",
-      "description": "Configure your own risk settings and TradeSafe triggers alerts when behavioral patterns breach your limits."
-    },
-    "card2": {
-      "title": "Real-Time AI Assistant",
-      "description": "Chrome extension monitors every trade live. Instant intervention when you deviate from your trading plan."
-    },
-    "card3": {
-      "title": "Risky Behavior Detection",
-      "description": "AI identifies revenge trading, overtrading, and emotional decision-making before they cost you money."
-    },
-    "card4": {
-      "title": "Advanced Analytics",
-      "description": "Track discipline score, not just P&L. Understand your behavioral patterns with AI-powered insights."
-    },
-    "card5": {
-      "title": "Trading Journal",
-      "description": "Daily pre-market analysis by Claude AI and guided end-session reviews to build better habits."
-    }
+    "subtitle": "A complete AI-system designed specifically for retail traders who struggle with discipline.",
+    "features": [
+      {
+        "icon": "shield",
+        "title": "AI-Powered Shield System",
+        "description": "Set rules you can't break—even when emotions spike. Configure daily loss limits, max trades, and time restrictions with Strict Mode enforcement."
+      },
+      {
+        "icon": "zap",
+        "title": "Real-Time AI Assistant",
+        "description": "Chrome extension monitors every trade live. Instant intervention when you approach risk thresholds or exhibit dangerous patterns."
+      },
+      {
+        "icon": "clock",
+        "title": "Risky Behavior Detection",
+        "description": "TradeSafe predicts emotional mistakes before they happen. AI identifies revenge trading, FOMO, and over-leveraging patterns instantly."
+      },
+      {
+        "icon": "chart",
+        "title": "Advanced Analytics",
+        "description": "Track your Discipline Score, not just P&L. Your Discipline Score always tells the truth—understand behavioral patterns with AI insights."
+      },
+      {
+        "icon": "book",
+        "title": "AI-Guided Review",
+        "description": "Daily pre-market analysis by Claude AI and guided end-session reviews. Build better habits with structured journaling templates."
+      },
+      {
+        "icon": "brain",
+        "title": "Optimize Your Mindset",
+        "description": "Start your trading day with guided meditation or silent focus sessions. Prepare your mind before the market opens with neurological prep tools."
+      }
+    ]
   },
   "pricing": {
     "label": "Early Access",
     "title": "Join the Waitlist",
+    "subtitle": "Lock in our special launch price before it increases.",
     "badge": "🔥 Early Access",
-    "subtitle": "Everything you need to protect your capital",
-    "priceYear": "€149.90/year",
+    "description": "Everything you need to protect your capital",
+    "priceYear": "€144.90/year",
     "discount": "(save 40%)",
     "features": [
       "Real-time behavioral monitoring",
@@ -54,6 +67,7 @@
       "Advanced risk settings & Strict Mode",
       "Pattern detection for risky behaviors",
       "Daily pre-market analysis by Claude AI",
+      "Pre-market meditation & mindset prep",
       "Comprehensive analytics dashboard",
       "Guided journaling templates",
       "Tradovate API integration",
@@ -63,18 +77,23 @@
   "howItWorks": {
     "label": "How It Works",
     "title": "Protection in 3 Simple Steps",
-    "step1": {
-      "title": "Set Your Risk Rules",
-      "description": "Configure your daily loss limits, max trades per day, time restrictions, and blocked tickers. Enable Strict Mode for unbreakable enforcement."
-    },
-    "step2": {
-      "title": "Trade with Protection",
-      "description": "Our Chrome extension monitors your trading in real-time. Get instant alerts when you approach risk thresholds or exhibit dangerous patterns."
-    },
-    "step3": {
-      "title": "Improve with AI Insights",
-      "description": "Review AI-generated pre-market analysis, track your discipline score, and complete guided end-session reviews to build better habits."
-    }
+    "steps": [
+      {
+        "number": "1",
+        "title": "Set Your Risk Rules",
+        "description": "Configure your daily loss limits, max trades per day, time restrictions, and blocked tickers. Enable Strict Mode for unbreakable enforcement."
+      },
+      {
+        "number": "2",
+        "title": "Trade with Protection",
+        "description": "Our Chrome extension monitors your trading in real-time. Get instant alerts when you approach risk thresholds or exhibit dangerous patterns."
+      },
+      {
+        "number": "3",
+        "title": "Improve with AI Insights",
+        "description": "Review AI-generated pre-market analysis, track your discipline score, and complete guided end-session reviews to build better habits."
+      }
+    ]
   },
   "whatWeAreNot": {
     "title": "What TradeSafe is NOT",
@@ -84,7 +103,7 @@
     "closing": "TradeSafe is designed to prevent you from doing what you shouldn't do!"
   },
   "footer": {
-    "description": "AI-powered behavioral intervention technology helping traders protect their capital and develop sustainable discipline.",
+    "description": "AI-powered behavioral intervention technology helping retail traders protect their capital and develop sustainable discipline.",
     "product": "Product",
     "company": "Company",
     "features": "Features",
