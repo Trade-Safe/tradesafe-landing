@@ -20,10 +20,10 @@ export default function LanguageSwitcher() {
   }
   
   return (
-    <div className="flex items-center gap-2 border border-[#2a2a2a] rounded-md overflow-hidden">
+    <div className="flex items-center gap-0 border border-[#2a2a2a] rounded-sm overflow-hidden">
       <button
         onClick={() => switchLanguage('en')}
-        className={`px-3 py-1.5 text-xs font-medium transition-all ${
+        className={`px-2 py-0.5 text-[10px] font-medium transition-all ${
           currentLang === 'en'
             ? 'bg-primary text-white'
             : 'bg-transparent text-[#888] hover:text-[#e0e0e0]'
@@ -33,7 +33,7 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => switchLanguage('fr')}
-        className={`px-3 py-1.5 text-xs font-medium transition-all ${
+        className={`px-2 py-0.5 text-[10px] font-medium transition-all ${
           currentLang === 'fr'
             ? 'bg-primary text-white'
             : 'bg-transparent text-[#888] hover:text-[#e0e0e0]'
