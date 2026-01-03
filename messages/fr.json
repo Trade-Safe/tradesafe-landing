@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "badge": "Coming soon",
+    "title": "Le premier système de discipline comportementale IA conçu pour les traders particuliers",
+    "subtitle": "TradeSafe utilise l'intelligence artificielle pour détecter les comportements à risque et agit comme un bouclier intelligent pour protéger ton capital en temps réel.",
+    "cta": "Commencer à utiliser TradeSafe gratuitement",
+    "priceMonth": "19,90€/mois",
+    "priceYear": "ou 149,90€/an",
+    "discount": "(économise 40%)"
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "about": "À Propos",
+    "login": "Connexion",
+    "startTrial": "Essai Gratuit"
+  },
+  "features": {
+    "label": "Fonctionnalités",
+    "title": "Protège ton capital",
+    "subtitle": "Intervention comportementale en temps réel alimentée par l'IA pour améliorer ta discipline",
+    "card1": {
+      "title": "Bouclier comportemental intelligent",
+      "description": "Configure tes propres paramètres de risque pour que TradeSafe déclenche des alertes quand l'IA détecte des comportements à risque ou que tu dépasses tes limites."
+    },
+    "card2": {
+      "title": "Intervention en temps réel",
+      "description": "Une extension Chrome qui surveille chaque trade en direct. Intervention instantanée quand tu dévies de ton plan de trading."
+    },
+    "card3": {
+      "title": "Détection des signaux de perte de contrôle",
+      "description": "L'IA de TradeSafe identifie le revenge trading, l'overtrading et les décisions émotionnelles avant qu'ils ne te coûtent de l'argent."
+    },
+    "card4": {
+      "title": "Analytics Avancées",
+      "description": "Track des indicateurs de discipline, pas seulement ton P&L. Comprends tes patterns comportementaux avec des insights alimentés par l'IA."
+    },
+    "card5": {
+      "title": "Journal de Trading",
+      "description": "TradeSafe produit des analyses détaillées de marché pour préparer tes sessions de trading et t'aide à construire un journal de trading structuré pour construire de meilleures habitudes."
+    }
+  },
+  "pricing": {
+    "label": "Early access",
+    "title": "Rejoins la waitlist et reste informé des actualités de TradeSafe",
+    "badge": "🔥 Early Access",
+    "subtitle": "Tout ce dont tu as besoin pour protéger ton capital",
+    "priceYear": "149,90€/an",
+    "discount": "(économise 40% sur le tarif de base)",
+    "features": [
+      "Surveillance comportementale en temps réel",
+      "Système bouclier IA avec alertes personnalisées",
+      "Paramètres de risque avancés avec activation d'un mode strict",
+      "Détection de patterns pour comportements à risque",
+      "Analyse pré-marché quotidienne",
+      "Dashboard analytics complet",
+      "Templates de journaling guidés",
+      "Intégration API Tradovate",
+      "Support par email"
+    ]
+  },
+  "howItWorks": {
+    "label": "Comment ça marche",
+    "title": "Protection en 3 Étapes Simples",
+    "step1": {
+      "title": "Définis tes risk settings",
+      "description": "Configure tes limites de perte quotidienne, nombre maximum de trades par jour, restrictions horaires et tickers bloqués. Active le Mode Strict pour une protection maximale."
+    },
+    "step2": {
+      "title": "Trade avec l'IA",
+      "description": "Notre extension Chrome surveille ton trading en temps réel. Reçois des alertes instantanées quand tu approches des seuils de risque ou montres des patterns dangereux."
+    },
+    "step3": {
+      "title": "Progresse avec TradeSafe",
+      "description": "Consulte l'analyse pré-marché générée par l'IA, suit ton score de discipline et complète des revues de fin de session guidées pour construire de meilleures habitudes."
+    }
+  },
+  "whatWeAreNot": {
+    "title": "Ce que TradeSafe n'est pas",
+    "point1": "Un système de signaux ou de prédiction de marché",
+    "point2": "Une stratégie miracle",
+    "point3": "Un outil pour trader plus souvent",
+    "closing": "TradeSafe est conçu pour vous empêcher de faire ce que vous ne devez pas faire !"
+  },
+  "footer": {
+    "description": "Technologie d'intervention comportementale alimentée par l'IA, aidant les traders particuliers à protéger leur capital et développer une discipline durable.",
+    "product": "Produit",
+    "company": "Entreprise",
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "about": "À Propos",
+    "contact": "Contact",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  }
+}
