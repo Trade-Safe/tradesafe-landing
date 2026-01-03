@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "badge": "Coming Soon",
+    "title": "The First AI Discipline System<br />for Traders",
+    "subtitle": "TradeSafe detects emotional trading patterns and acts as an intelligent shield system to protect your capital in real-time.",
+    "cta": "Start Free Trial",
+    "priceMonth": "€19.90/month",
+    "priceYear": "or €149.90/year",
+    "discount": "(save 40%)"
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "about": "About",
+    "login": "Log In",
+    "startTrial": "Start Free Trial"
+  },
+  "features": {
+    "label": "Features",
+    "title": "Built to Protect Your Capital",
+    "subtitle": "Real-time behavioral intervention powered by AI, designed specifically for traders who struggle with discipline.",
+    "card1": {
+      "title": "Innovative AI Shield System",
+      "description": "Configure your own risk settings and TradeSafe triggers alerts when behavioral patterns breach your limits."
+    },
+    "card2": {
+      "title": "Real-Time AI Assistant",
+      "description": "Chrome extension monitors every trade live. Instant intervention when you deviate from your trading plan."
+    },
+    "card3": {
+      "title": "Risky Behavior Detection",
+      "description": "AI identifies revenge trading, overtrading, and emotional decision-making before they cost you money."
+    },
+    "card4": {
+      "title": "Advanced Analytics",
+      "description": "Track discipline score, not just P&L. Understand your behavioral patterns with AI-powered insights."
+    },
+    "card5": {
+      "title": "Trading Journal",
+      "description": "Daily pre-market analysis by Claude AI and guided end-session reviews to build better habits."
+    }
+  },
+  "pricing": {
+    "label": "Early Access",
+    "title": "Join the Waitlist",
+    "badge": "🔥 Early Access",
+    "subtitle": "Everything you need to protect your capital",
+    "priceYear": "€149.90/year",
+    "discount": "(save 40%)",
+    "features": [
+      "Real-time behavioral monitoring",
+      "AI-powered shield system with custom alerts",
+      "Advanced risk settings & Strict Mode",
+      "Pattern detection for risky behaviors",
+      "Daily pre-market analysis by Claude AI",
+      "Comprehensive analytics dashboard",
+      "Guided journaling templates",
+      "Tradovate API integration",
+      "Email support"
+    ]
+  },
+  "howItWorks": {
+    "label": "How It Works",
+    "title": "Protection in 3 Simple Steps",
+    "step1": {
+      "title": "Set Your Risk Rules",
+      "description": "Configure your daily loss limits, max trades per day, time restrictions, and blocked tickers. Enable Strict Mode for unbreakable enforcement."
+    },
+    "step2": {
+      "title": "Trade with Protection",
+      "description": "Our Chrome extension monitors your trading in real-time. Get instant alerts when you approach risk thresholds or exhibit dangerous patterns."
+    },
+    "step3": {
+      "title": "Improve with AI Insights",
+      "description": "Review AI-generated pre-market analysis, track your discipline score, and complete guided end-session reviews to build better habits."
+    }
+  },
+  "whatWeAreNot": {
+    "title": "What TradeSafe is NOT",
+    "point1": "A signals or market prediction system",
+    "point2": "A get-rich-quick strategy",
+    "point3": "A tool to trade more often",
+    "closing": "TradeSafe is designed to prevent you from doing what you shouldn't do!"
+  },
+  "footer": {
+    "description": "AI-powered behavioral intervention technology helping traders protect their capital and develop sustainable discipline.",
+    "product": "Product",
+    "company": "Company",
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
