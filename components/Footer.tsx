@@ -1,6 +1,22 @@
+'use client'
+
 import Link from 'next/link'
 
-export default function Footer() {
+interface FooterProps {
+  description: string
+  product: string
+  company: string
+  features: string
+  howItWorks: string
+  pricing: string
+  about: string
+  contact: string
+  rights: string
+  privacy: string
+  terms: string
+}
+
+export default function Footer({ description, product, company, features, howItWorks, pricing, about, contact, rights, privacy, terms }: FooterProps) {
   return (
     <footer className="bg-[#0a0a0a] border-t border-[#1a1a1a] py-16 px-8">
       <div className="max-w-[1200px] mx-auto">
@@ -18,36 +34,36 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-[#666] text-sm leading-relaxed">
-              AI-powered behavioral intervention technology helping retail traders protect their capital and develop sustainable discipline.
+              {description}
             </p>
           </div>
           
           {/* Product - centré sur mobile */}
           <div className="col-span-1 text-center md:text-left">
-            <h4 className="text-[#e0e0e0] text-sm font-semibold mb-4">Product</h4>
+            <h4 className="text-[#e0e0e0] text-sm font-semibold mb-4">{product}</h4>
             <ul className="list-none space-y-3">
-              <li><Link href="#features" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">Features</Link></li>
-              <li><Link href="#product" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">How It Works</Link></li>
-              <li><Link href="#pricing" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">Pricing</Link></li>
+              <li><Link href="#features" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">{features}</Link></li>
+              <li><Link href="#how-it-works" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">{howItWorks}</Link></li>
+              <li><Link href="#pricing" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">{pricing}</Link></li>
             </ul>
           </div>
           
           {/* Company - centré sur mobile */}
           <div className="col-span-1 text-center md:text-left">
-            <h4 className="text-[#e0e0e0] text-sm font-semibold mb-4">Company</h4>
+            <h4 className="text-[#e0e0e0] text-sm font-semibold mb-4">{company}</h4>
             <ul className="list-none space-y-3">
-              <li><Link href="#pricing" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">About</Link></li>
-              <li><Link href="#pricing" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">Contact</Link></li>
+              <li><Link href="#pricing" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">{about}</Link></li>
+              <li><Link href="#pricing" className="text-[#888] text-sm no-underline hover:text-[#e0e0e0] transition-colors">{contact}</Link></li>
             </ul>
           </div>
         </div>
         
         {/* Footer bottom */}
         <div className="pt-8 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between items-center gap-4 text-[#666] text-xs">
-          <p>&copy; 2025 TradeSafe. All rights reserved.</p>
+          <p>&copy; 2025 TradeSafe. {rights}</p>
           <div className="flex gap-8">
-            <Link href="#" className="text-[#666] text-xs no-underline hover:text-[#e0e0e0]">Privacy Policy</Link>
-            <Link href="#" className="text-[#666] text-xs no-underline hover:text-[#e0e0e0]">Terms of Service</Link>
+            <Link href="#" className="text-[#666] text-xs no-underline hover:text-[#e0e0e0]">{privacy}</Link>
+            <Link href="#" className="text-[#666] text-xs no-underline hover:text-[#e0e0e0]">{terms}</Link>
           </div>
         </div>
       </div>
