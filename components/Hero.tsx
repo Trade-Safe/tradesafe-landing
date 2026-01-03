@@ -19,8 +19,8 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
         {badge}
       </div>
       
-      <p className="text-base text-[#999] italic mb-8 font-normal">
-        "{quote}"
+      <p className="text-base text-[#999] mb-8 font-normal">
+        {quote}
       </p>
       
       <h1 
