@@ -4,7 +4,6 @@ import Features from '@/components/Features'
 import Pricing from '@/components/Pricing'
 import HowItWorks from '@/components/HowItWorks'
 import Footer from '@/components/Footer'
-import WhatWeAreNot from '@/components/WhatWeAreNot'
 import messages from '@/messages/fr.json'
 
 // Icônes pour Features
