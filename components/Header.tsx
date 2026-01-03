@@ -53,7 +53,7 @@ export default function Header({ nav }: HeaderProps) {
 
         {/* Mobile CTA Button + Language Switcher - Visible uniquement sur mobile */}
         <div className="md:hidden flex items-center gap-4">
-          <div className="flex-1 flex justify-center">
+          <div className="flex-1 flex justify-center -ml-16">
             <LanguageSwitcher />
           </div>
           <Link 
