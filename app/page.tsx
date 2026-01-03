@@ -67,7 +67,6 @@ export default function Home() {
         />
         <Pricing {...messages.pricing} />
         <HowItWorks {...messages.howItWorks} />
-        <WhatWeAreNot {...messages.whatWeAreNot} />
       </main>
       <Footer {...messages.footer} />
     </>
