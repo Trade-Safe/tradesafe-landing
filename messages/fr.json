@@ -95,13 +95,6 @@
       }
     ]
   },
-  "whatWeAreNot": {
-    "title": "Ce que TradeSafe n'est pas",
-    "point1": "Un système de signaux ou de prédiction de marché",
-    "point2": "Une stratégie miracle",
-    "point3": "Un outil pour trader plus souvent",
-    "closing": "TradeSafe est conçu pour vous empêcher de faire ce que vous ne devez pas faire !"
-  },
   "footer": {
     "description": "Technologie d'intervention comportementale alimentée par l'IA, aidant les traders particuliers à protéger leur capital et développer une discipline durable.",
     "product": "Produit",
