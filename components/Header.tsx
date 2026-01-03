@@ -16,7 +16,7 @@ interface HeaderProps {
 export default function Header({ nav }: HeaderProps) {
   return (
     <header className="bg-[rgba(15,15,15,0.95)] backdrop-blur-[10px] border-b border-[#1a1a1a] sticky top-0 z-[1000]">
-      <nav className="w-full px-6 md:px-12 py-3 flex items-center justify-between">
+      <nav className="w-full px-6 md:px-12 py-2 flex items-center justify-between">
         {/* Logo - Visible sur desktop ET mobile */}
         <Link href="/" className="flex items-center gap-3 no-underline relative">
           <div className="w-[26px] h-[32px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
@@ -29,9 +29,9 @@ export default function Header({ nav }: HeaderProps) {
 
         {/* Desktop Navigation - Caché sur mobile */}
         <ul className="hidden md:flex gap-8 list-none m-0 p-0 flex-1 justify-center ml-24">
-          <li><Link href="#features" className="text-[#888] no-underline text-sm transition-colors hover:text-primary">{nav.features}</Link></li>
-          <li><Link href="#how-it-works" className="text-[#888] no-underline text-sm transition-colors hover:text-primary">{nav.howItWorks}</Link></li>
-          <li><Link href="#pricing" className="text-[#888] no-underline text-sm transition-colors hover:text-primary">{nav.pricing}</Link></li>
+          <li><Link href="#features" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.features}</Link></li>
+          <li><Link href="#how-it-works" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.howItWorks}</Link></li>
+          <li><Link href="#pricing" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.pricing}</Link></li>
         </ul>
 
         {/* Desktop CTA Buttons + Language Switcher - Cachés sur mobile */}
@@ -39,13 +39,13 @@ export default function Header({ nav }: HeaderProps) {
           <LanguageSwitcher />
           <Link 
             href="#pricing" 
-            className="px-4 py-2 bg-transparent text-primary border border-primary/30 rounded-md text-sm font-medium transition-all hover:bg-primary/10 hover:border-primary no-underline"
+            className="px-4 py-2 bg-transparent text-primary border border-primary/30 rounded-md text-xs font-medium transition-all hover:bg-primary/10 hover:border-primary no-underline"
           >
             {nav.login}
           </Link>
           <Link 
             href="#pricing" 
-            className="px-4 py-2 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-sm font-medium transition-all hover:translate-y-[-1px] hover:shadow-lg hover:shadow-primary/35 no-underline"
+            className="px-4 py-2 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-xs font-medium transition-all hover:translate-y-[-1px] hover:shadow-lg hover:shadow-primary/35 no-underline"
           >
             {nav.startTrial}
           </Link>
