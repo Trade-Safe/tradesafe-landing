@@ -56,7 +56,7 @@ export default function Header({ nav }: HeaderProps) {
           <LanguageSwitcher />
           <Link 
             href="#pricing" 
-            className="px-5 py-2.5 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/35 no-underline whitespace-nowrap"
+            className="px-5 py-2 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/35 no-underline whitespace-nowrap"
           >
             {nav.startTrial}
           </Link>
