@@ -4,7 +4,6 @@ import Features from '@/components/Features'
 import Pricing from '@/components/Pricing'
 import HowItWorks from '@/components/HowItWorks'
 import Technology from '@/components/Technology'
-import ClosingQuote from '@/components/ClosingQuote'
 import Footer from '@/components/Footer'
 import messages from '@/messages/en.json'
 
@@ -70,7 +69,6 @@ export default function Home() {
         <Pricing {...messages.pricing} />
         <HowItWorks {...messages.howItWorks} />
         <Technology {...messages.technology} />
-        <ClosingQuote {...messages.closingQuote} />
       </main>
       <Footer {...messages.footer} />
     </>
