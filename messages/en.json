@@ -62,7 +62,21 @@
     "description": "Everything you need to protect your capital",
     "priceYear": "€144.90/year",
     "discount": "(save 40%)",
-    "features": [
+    "features": [...],
+    "roi": {
+      "title": "Expected ROI: Discipline Over Performance",
+      "intro": "TradeSafe is not designed to increase win rates or predict profitable trades.",
+      "subtitle": "Its value lies in reducing costly behavioral mistakes:",
+      "points": [
+        "Fewer impulsive revenge trades",
+        "Reduced overtrading and oversizing",
+        "Better adherence to pre-defined risk rules"
+    ],
+    "why": "Why this matters:",
+    "impact": "For many retail traders, a 10-15% reduction in avoidable losses has a larger long-term impact than chasing higher returns through new strategies.",
+    "conclusion": "TradeSafe aims to improve consistency by helping you protect yourself from your own worst decisions."
+  }
+}
       "Real-time behavioral monitoring",
       "AI-powered shield system with custom alerts",
       "Advanced risk settings & Strict Mode",
