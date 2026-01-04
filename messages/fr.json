@@ -126,8 +126,15 @@
   ],
   "disclaimer": "TradeSafe ne prédit pas les prix, ne génère pas de signaux et n'automatise pas les trades."
   },
-  "closingQuote": {
-    "text": "Protège ton capital à tout prix"
+  "legal": {
+    "label": "Légal",
+    "title": "Conformité Légale",
+    "paragraphs": [
+      "TradeSafe est un outil de discipline comportementale et d'aide à la décision.",
+      "Il ne fournit pas de conseils financiers, de signaux de trading ou de services de gestion de portefeuille.",
+      "TradeSafe se connecte à votre plateforme de trading via API uniquement pour surveiller votre activité — il n'exécute, ne modifie ou ne suggère aucun trade.",
+      "Vous restez entièrement responsable de toutes vos décisions de trading, de votre exposition au risque et du respect des réglementations locales."
+    ]
   },
   "footer": {
     "description": "Technologie d'intervention comportementale alimentée par l'IA, aidant les traders particuliers à protéger leur capital et développer une discipline durable.",
