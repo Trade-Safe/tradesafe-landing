@@ -1,6 +1,6 @@
 'use client'
 
-import EmailForm from './EmailFormPricing'
+import EmailFormPricing from './EmailFormPricing'
 
 interface PricingProps {
   label: string
