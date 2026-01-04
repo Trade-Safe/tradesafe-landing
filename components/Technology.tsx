@@ -1,6 +1,7 @@
 'use client'
 
 interface TechnologyProps {
+  label: string
   title: string
   intro: string
   currentTitle: string
@@ -10,10 +11,11 @@ interface TechnologyProps {
   disclaimer: string
 }
 
-export default function Technology({ title, intro, currentTitle, currentPoints, upcomingTitle, upcomingPoints, disclaimer }: TechnologyProps) {
+export default function Technology({ label, title, intro, currentTitle, currentPoints, upcomingTitle, upcomingPoints, disclaimer }: TechnologyProps) {
   return (
     <section id="technology" className="py-20 px-8">
       <div className="max-w-[900px] mx-auto">
+        <div className="text-primary-light text-xs font-semibold uppercase tracking-widest mb-4 text-center">{label}</div>
         <h2 className="text-4xl font-semibold text-[#e0e0e0] mb-6 text-center">{title}</h2>
         <p className="text-lg text-[#888] mb-12 text-center leading-relaxed">{intro}</p>
         
