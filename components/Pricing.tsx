@@ -64,7 +64,7 @@ export default function Pricing({ label, title, subtitle, badge, description, pr
 
         {/* ROI Section */}
         {roi && (
-          <div className="max-w-[700px] mx-auto mt-16 p-8 bg-[#0f0f0f] border border-[#2a2a2a] rounded-xl">
+          <div className="max-w-[700px] mx-auto mt-16 p-8 bg-[#0f0f0f] border-2 border-primary rounded-xl">
             <h3 className="text-2xl font-semibold text-[#e0e0e0] mb-4 text-center">{roi.title}</h3>
             <p className="text-[#888] text-center mb-6">{roi.intro}</p>
             
