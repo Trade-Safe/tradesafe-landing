@@ -109,6 +109,22 @@
       }
     ]
   },
+  "technology": {
+    "title": "Comment l'IA alimente TradeSafe",
+    "intro": "TradeSafe utilise l'IA pour analyser les patterns comportementaux — pas pour prédire les marchés.",
+    "currentTitle": "Capacités actuelles :",
+    "currentPoints": [
+      "Détection de patterns basée sur des règles (overtrading, dépassement de limites)",
+      "Analyse pré-marché quotidienne générée par Claude AI",
+      "Journaling guidé avec insights assistés par IA"
+    ],
+    "upcomingTitle": "Fonctionnalités à venir (roadmap) :",
+    "upcomingPoints": [
+      "Modèles ML avancés pour la détection personnalisée de patterns de risque",
+      "Alertes prédictives basées sur les données comportementales historiques"
+    ],
+    "disclaimer": "TradeSafe ne prédit pas les prix, ne génère pas de signaux et n'automatise pas les trades."
+  },
   "closingQuote": {
     "text": "Protège ton capital à tout prix"
   },
