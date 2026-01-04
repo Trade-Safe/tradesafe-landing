@@ -127,14 +127,14 @@
   "disclaimer": "TradeSafe does not forecast prices, generate signals, or automate trades."
  },
   "legal": {
-    "label": "Legal",
-    "title": "Legal Compliance",
-    "paragraphs": [
-      "TradeSafe is a behavioral discipline and decision-support tool.",
-      "It does not provide financial advice, trading signals, or portfolio management services.",
-      "TradeSafe connects to your trading platform via API solely to monitor your activity — it does not execute, modify, or suggest trades.",
-      "You remain fully responsible for all trading decisions, risk exposure, and compliance with local regulations."
-    ]
+  "label": "Legal & Compliance",
+  "title": "Disclaimer",
+  "paragraphs": [
+    "TradeSafe is a behavioral discipline and decision-support tool.",
+    "It does not provide financial advice, trading signals, or portfolio management services.",
+    "TradeSafe connects to your trading platform via API solely to monitor your activity — it does not execute, modify, or suggest trades.",
+    "You remain fully responsible for all trading decisions, risk exposure, and compliance with local regulations."
+  ]
   },
   "footer": {
     "description": "AI-powered behavioral intervention technology helping retail traders protect their capital and develop sustainable discipline.",
