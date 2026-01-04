@@ -11,9 +11,18 @@ interface PricingProps {
   priceYear: string
   discount: string
   features: string[]
+  roi?: {
+    title: string
+    intro: string
+    subtitle: string
+    points: string[]
+    why: string
+    impact: string
+    conclusion: string
+  }
 }
 
-export default function Pricing({ label, title, subtitle, badge, description, priceYear, discount, features }: PricingProps) {
+export default function Pricing({ label, title, subtitle, badge, description, priceYear, discount, features, roi }: PricingProps) {
   return (
     <section id="pricing" className="py-20">
       <div className="max-w-[1200px] mx-auto px-8">
@@ -52,6 +61,28 @@ export default function Pricing({ label, title, subtitle, badge, description, pr
             <EmailFormPricing />
           </div>
         </div>
+
+        {/* ROI Section */}
+        {roi && (
+          <div className="max-w-[700px] mx-auto mt-16 p-8 bg-[#0f0f0f] border border-[#2a2a2a] rounded-xl">
+            <h3 className="text-2xl font-semibold text-[#e0e0e0] mb-4 text-center">{roi.title}</h3>
+            <p className="text-[#888] text-center mb-6">{roi.intro}</p>
+            
+            <p className="text-[#e0e0e0] font-medium mb-3">{roi.subtitle}</p>
+            <ul className="list-none space-y-2 mb-6">
+              {roi.points.map((point, index) => (
+                <li key={index} className="flex items-start gap-3 text-[#888] text-sm">
+                  <span className="text-primary">•</span>
+                  {point}
+                </li>
+              ))}
+            </ul>
+            
+            <p className="text-[#e0e0e0] font-medium mb-2">{roi.why}</p>
+            <p className="text-[#888] mb-4">{roi.impact}</p>
+            <p className="text-[#888] italic">{roi.conclusion}</p>
+          </div>
+        )}
       </div>
     </section>
   )
