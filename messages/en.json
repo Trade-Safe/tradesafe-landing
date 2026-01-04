@@ -100,3 +100,29 @@
       {
         "number": "2",
         "title": "Trade with Protection",
+        "description": "Our Chrome extension monitors your trading in real-time. Get instant alerts when you approach risk thresholds or exhibit dangerous patterns."
+      },
+      {
+        "number": "3",
+        "title": "Improve with AI Insights",
+        "description": "Review AI-generated pre-market analysis, track your discipline score, and complete guided end-session reviews to build better habits."
+      }
+    ]
+  },
+  "closingQuote": {
+    "text": "Save Capital at All Cost"
+  },
+  "footer": {
+    "description": "AI-powered behavioral intervention technology helping retail traders protect their capital and develop sustainable discipline.",
+    "product": "Product",
+    "company": "Company",
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
