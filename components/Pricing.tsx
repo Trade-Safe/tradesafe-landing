@@ -1,6 +1,6 @@
 'use client'
 
-import EmailForm from './EmailForm'
+import EmailForm from './EmailFormPricing'
 
 interface PricingProps {
   label: string
@@ -49,7 +49,7 @@ export default function Pricing({ label, title, subtitle, badge, description, pr
           </ul>
           
           <div className="mt-8">
-            <EmailForm />
+            <EmailFormPricing />
           </div>
         </div>
       </div>
