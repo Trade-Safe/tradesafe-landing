@@ -12,7 +12,8 @@
     "features": "Fonctionnalités",
     "howItWorks": "Comment ça marche",
     "pricing": "Tarifs",
-    "about": "À Propos",
+    "technology": "Technologie",
+    "legal": "Légal",
     "login": "Connexion",
     "startTrial": "Essai Gratuit"
   },
@@ -72,7 +73,20 @@
       "Templates de journaling guidés",
       "Intégration API Tradovate",
       "Support par email"
-    ]
+    ],
+    "roi": {
+      "title": "ROI Attendu : Discipline Avant Performance",
+      "intro": "TradeSafe n'est pas conçu pour augmenter ton taux de réussite ou prédire les trades profitables.",
+      "subtitle": "Sa valeur réside dans la réduction des erreurs comportementales coûteuses :",
+      "points": [
+        "Moins de trades impulsifs de revenge trading",
+        "Réduction de l'overtrading et de l'oversizing",
+        "Meilleur respect des règles de risque pré-définies"
+      ],
+      "why": "Pourquoi c'est important :",
+      "impact": "Pour de nombreux traders particuliers, une réduction de 10-15% des pertes évitables a un impact à long terme plus important que de chercher des rendements plus élevés avec de nouvelles stratégies.",
+      "conclusion": "TradeSafe vise à améliorer ta constance en t'aidant à te protéger de tes propres pires décisions."
+    }
   },
   "howItWorks": {
     "label": "Comment ça marche",
@@ -94,6 +108,9 @@
         "description": "Consulte l'analyse pré-marché générée par l'IA, suit ton score de discipline et complète des revues de fin de session guidées pour construire de meilleures habitudes."
       }
     ]
+  },
+  "closingQuote": {
+    "text": "Protège ton capital à tout prix"
   },
   "footer": {
     "description": "Technologie d'intervention comportementale alimentée par l'IA, aidant les traders particuliers à protéger leur capital et développer une discipline durable.",
