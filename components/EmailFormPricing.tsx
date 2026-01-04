@@ -36,7 +36,7 @@ export default function EmailFormPricing() {
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Enter your email"
         required
-        className="w-full sm:flex-1 px-4 py-2.5 bg-[#1a1a1a] border border-[#2a2a2a] rounded-md text-[#e0e0e0] text-sm placeholder:text-[#666] focus:outline-none focus:border-primary transition-colors"
+        className="w-full sm:flex-1 px-4 py-2.5 bg-[#1a1a1a] border border-[#2a2a2a] rounded-md text-[#e0e0e0] text-center sm:text-left placeholder:text-[#666] focus:outline-none focus:border-primary transition-colors"
       />
       <button
         type="submit"
