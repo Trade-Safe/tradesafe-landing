@@ -16,7 +16,6 @@
     "legal": "Legal",
     "login": "Log In",
     "startTrial": "Start Free Trial"
-}
   },
   "features": {
     "label": "Features",
@@ -63,21 +62,7 @@
     "description": "Everything you need to protect your capital",
     "priceYear": "€144.90/year",
     "discount": "(save 40%)",
-    "features": [...],
-    "roi": {
-      "title": "Expected ROI: Discipline Over Performance",
-      "intro": "TradeSafe is not designed to increase win rates or predict profitable trades.",
-      "subtitle": "Its value lies in reducing costly behavioral mistakes:",
-      "points": [
-        "Fewer impulsive revenge trades",
-        "Reduced overtrading and oversizing",
-        "Better adherence to pre-defined risk rules"
-    ],
-    "why": "Why this matters:",
-    "impact": "For many retail traders, a 10-15% reduction in avoidable losses has a larger long-term impact than chasing higher returns through new strategies.",
-    "conclusion": "TradeSafe aims to improve consistency by helping you protect yourself from your own worst decisions."
-  }
-}
+    "features": [
       "Real-time behavioral monitoring",
       "AI-powered shield system with custom alerts",
       "Advanced risk settings & Strict Mode",
@@ -88,7 +73,20 @@
       "Guided journaling templates",
       "Tradovate API integration",
       "Email support"
-    ]
+    ],
+    "roi": {
+      "title": "Expected ROI: Discipline Over Performance",
+      "intro": "TradeSafe is not designed to increase win rates or predict profitable trades.",
+      "subtitle": "Its value lies in reducing costly behavioral mistakes:",
+      "points": [
+        "Fewer impulsive revenge trades",
+        "Reduced overtrading and oversizing",
+        "Better adherence to pre-defined risk rules"
+      ],
+      "why": "Why this matters:",
+      "impact": "For many retail traders, a 10-15% reduction in avoidable losses has a larger long-term impact than chasing higher returns through new strategies.",
+      "conclusion": "TradeSafe aims to improve consistency by helping you protect yourself from your own worst decisions."
+    }
   },
   "howItWorks": {
     "label": "How It Works",
@@ -102,26 +100,3 @@
       {
         "number": "2",
         "title": "Trade with Protection",
-        "description": "Our Chrome extension monitors your trading in real-time. Get instant alerts when you approach risk thresholds or exhibit dangerous patterns."
-      },
-      {
-        "number": "3",
-        "title": "Improve with AI Insights",
-        "description": "Review AI-generated pre-market analysis, track your discipline score, and complete guided end-session reviews to build better habits."
-      }
-    ]
-  },
-  "footer": {
-    "description": "AI-powered behavioral intervention technology helping retail traders protect their capital and develop sustainable discipline.",
-    "product": "Product",
-    "company": "Company",
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "pricing": "Pricing",
-    "about": "About",
-    "contact": "Contact",
-    "rights": "All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
-  }
-}
