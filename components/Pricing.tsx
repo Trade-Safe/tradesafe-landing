@@ -1,6 +1,8 @@
 'use client'
 
+import { useState } from 'react'
 import EmailFormPricing from './EmailFormPricing'
+import PricingToggle from './PricingToggle'
 
 interface PricingProps {
   label: string
@@ -8,7 +10,8 @@ interface PricingProps {
   subtitle: string
   badge: string
   description: string
-  priceYear: string
+  monthlyPrice: string
+  yearlyPrice: string
   discount: string
   features: string[]
   roi?: {
@@ -22,7 +25,9 @@ interface PricingProps {
   }
 }
 
-export default function Pricing({ label, title, subtitle, badge, description, priceYear, discount, features, roi }: PricingProps) {
+export default function Pricing({ label, title, subtitle, badge, description, monthlyPrice, yearlyPrice, discount, features, roi }: PricingProps) {
+  const [isYearly, setIsYearly] = useState(true)
+
   return (
     <section id="pricing" className="py-20">
       <div className="max-w-[1200px] mx-auto px-8">
@@ -33,6 +38,14 @@ export default function Pricing({ label, title, subtitle, badge, description, pr
             {subtitle}
           </p>
         </div>
+
+        {/* Pricing Toggle */}
+        <PricingToggle 
+          monthlyPrice={monthlyPrice}
+          yearlyPrice={yearlyPrice}
+          discount={discount}
+          onToggle={setIsYearly}
+        />
         
         <div className="max-w-[450px] mx-auto bg-[#151515] border-2 border-primary rounded-2xl p-10 text-center relative">
           <div className="absolute top-[-15px] left-1/2 transform -translate-x-1/2 bg-gradient-to-br from-primary to-primary-dark text-white px-5 py-2 rounded-full text-xs font-semibold">
@@ -43,9 +56,16 @@ export default function Pricing({ label, title, subtitle, badge, description, pr
             {description}
           </p>
           
-          <div className="mt-8 mb-8 p-3 bg-[#0f0f0f] rounded-lg">
-            <span className="text-[#e0e0e0] font-semibold">{priceYear}</span>{' '}
-            <span className="text-green-500 font-semibold text-sm">{discount}</span>
+          {/* Price Display */}
+          <div className="mt-8 mb-8 p-4 bg-[#0f0f0f] rounded-lg">
+            <div className="text-3xl font-bold text-[#e0e0e0]">
+              {isYearly ? yearlyPrice : monthlyPrice}
+            </div>
+            {isYearly && (
+              <div className="text-green-500 font-semibold text-sm mt-2">
+                {discount}
+              </div>
+            )}
           </div>
           
           <ul className="list-none my-8 text-left space-y-3">
