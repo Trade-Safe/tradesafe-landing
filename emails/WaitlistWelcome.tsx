@@ -22,101 +22,41 @@ export default function WaitlistWelcome({ email }: WaitlistWelcomeProps) {
               <table width="600" cellPadding="0" cellSpacing="0" style={{ backgroundColor: '#ffffff', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
                 
                 {/* Header avec logo */}
-<tr>
-  <td style={{ padding: '40px 40px 30px', textAlign: 'center', borderBottom: '1px solid #e5e5e5' }}>
-    <table width="100%" cellPadding="0" cellSpacing="0">
-      <tr>
-        <td align="center">
-          {/* Container logo + texte */}
-          <table cellPadding="0" cellSpacing="0" style={{ display: 'inline-block' }}>
-            <tr>
-              <td style={{ verticalAlign: 'middle', paddingRight: '12px' }}>
-                {/* Shield losange violet */}
-                <div style={{
-                  width: '0',
-                  height: '0',
-                  borderLeft: '14px solid transparent',
-                  borderRight: '14px solid transparent',
-                  borderBottom: '24px solid #667eea',
-                  position: 'relative',
-                  display: 'inline-block'
-                }}>
-                  <div style={{
-                    position: 'absolute',
-                    top: '24px',
-                    left: '-14px',
-                    width: '0',
-                    height: '0',
-                    borderLeft: '14px solid transparent',
-                    borderRight: '14px solid transparent',
-                    borderTop: '24px solid #764ba2'
-                  }} />
-                </div>
-              </td>
-              <td style={{ verticalAlign: 'middle' }}>
-                {/* Texte TradeSafe avec underline */}
-                <div style={{ position: 'relative', display: 'inline-block' }}>
-                  <span style={{
-                    fontSize: '24px',
-                    fontWeight: '600',
-                    color: '#1a1a1a',
-                    letterSpacing: '-0.5px',
-                    display: 'block',
-                    paddingBottom: '4px'
-                  }}>
-                    TradeSafe
-                  </span>
-                  <div style={{
-                    position: 'absolute',
-                    bottom: '0',
-                    left: '0',
-                    right: '0',
-                    height: '2px',
-                    background: 'linear-gradient(90deg, #667eea, #764ba2)',
-                    borderRadius: '1px'
-                  }} />
-                </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
+                <tr>
+                  <td style={{ padding: '40px 40px 24px', textAlign: 'center', borderBottom: '1px solid #e5e5e5' }}>
+                    <img 
+                      src="https://www.trade-safe.ai/logo-tradesafe.png" 
+                      alt="TradeSafe" 
+                      width="180" 
+                      height="auto"
+                      style={{ display: 'block', margin: '0 auto', maxWidth: '180px' }}
+                    />
+                  </td>
+                </tr>
 
                 {/* Body content */}
                 <tr>
                   <td style={{ padding: '40px' }}>
                     
-                    {/* Titre principal */}
+                    {/* Titre principal - OPTIMISÉ */}
                     <h2 style={{ 
-                      fontSize: '28px', 
+                      fontSize: '20px',
                       fontWeight: '600', 
                       color: '#1a1a1a', 
-                      margin: '0 0 20px 0',
-                      lineHeight: '1.3'
+                      margin: '0 0 24px 0',
+                      lineHeight: '1.4'
                     }}>
-                      Welcome to TradeSafe! 🚀
+                      You're in. Welcome to TradeSafe.
                     </h2>
 
-                    {/* Intro */}
+                    {/* Intro - OPTIMISÉE */}
                     <p style={{ 
                       fontSize: '16px', 
                       lineHeight: '1.6', 
                       color: '#4a4a4a', 
-                      margin: '0 0 16px 0' 
+                      margin: '0 0 24px 0' 
                     }}>
-                      Hi there,
-                    </p>
-
-                    <p style={{ 
-                      fontSize: '16px', 
-                      lineHeight: '1.6', 
-                      color: '#4a4a4a', 
-                      margin: '0 0 32px 0' 
-                    }}>
-                      Thank you for joining our waitlist! You're now part of an exclusive group of traders who are serious about protecting their capital and building sustainable discipline.
+                      Thank you for joining our waitlist. You're now part of an exclusive group of traders who are serious about protecting their capital and building sustainable discipline.
                     </p>
 
                     {/* Section: What You'll Get */}
