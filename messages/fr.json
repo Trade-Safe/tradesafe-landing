@@ -113,19 +113,25 @@
   "label": "Technologie",
   "title": "Comment l'IA alimente TradeSafe",
   "intro": "TradeSafe utilise l'IA pour analyser les patterns comportementaux — pas pour prédire les marchés.",
-  "currentTitle": "Capacités actuelles :",
-  "currentPoints": [
-    "Détection de patterns basée sur des règles (overtrading, dépassement de limites)",
-    "Analyse pré-marché quotidienne générée par Claude AI",
-    "Journaling guidé avec insights assistés par IA"
+  "developmentTitle": "En Développement Actif (Q1 2026)",
+  "developmentSubtitle": "Fonctionnalités en cours de déploiement (2-3 mois) :",
+  "developmentPoints": [
+    "Système d'alertes comportementales et d'intervention en temps réel",
+    "Détection avancée de patterns (overtrading, revenge trading)",
+    "Monitoring des dépassements de règles de risque",
+    "Journaling assisté par IA avec insights guidés",
+    "Extension Chrome avec protection de trading en direct"
   ],
-  "upcomingTitle": "Fonctionnalités à venir (roadmap) :",
-  "upcomingPoints": [
-    "Modèles ML avancés pour la détection personnalisée de patterns de risque",
-    "Alertes prédictives basées sur les données comportementales historiques"
+  "roadmapTitle": "Roadmap Prévue (2026)",
+  "roadmapSubtitle": "Vision pour l'année complète :",
+  "roadmapPoints": [
+    "Modèles ML personnalisés pour la prédiction de patterns de risque",
+    "Agrégation multi-comptes sur toutes les plateformes",
+    "Application mobile (iOS/Android) avec notifications",
+    "Fonctionnalités communautaires et système d'accountability"
   ],
   "disclaimer": "TradeSafe ne prédit pas les prix, ne génère pas de signaux et n'automatise pas les trades."
-  },
+},
   "legal": {
   "label": "Conformité Légale",
   "title": "Disclaimer",
