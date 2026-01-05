@@ -11,12 +11,13 @@ interface FooterProps {
   pricing: string
   about: string
   contact: string
+  legal: string
   rights: string
   privacy: string
   terms: string
 }
 
-export default function Footer({ description, product, company, features, howItWorks, pricing, about, contact, rights, privacy, terms }: FooterProps) {
+export default function Footer({ description, product, company, features, howItWorks, pricing, about, contact, legal, rights, privacy, terms }: FooterProps) {
   return (
     <footer className="bg-[#0a0a0a] border-t border-[#1a1a1a] py-12 px-8">
       <div className="max-w-[1200px] mx-auto">
@@ -54,6 +55,7 @@ export default function Footer({ description, product, company, features, howItW
             <ul className="list-none space-y-2">
               <li><Link href="/about" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{about}</Link></li>
               <li><Link href="/contact" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{contact}</Link></li>
+              <li><Link href="/legal" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{contact}</Link></li>
             </ul>
           </div>
         </div>
