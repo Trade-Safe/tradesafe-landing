@@ -8,243 +8,320 @@ export default function WaitlistWelcome({ email }: WaitlistWelcomeProps) {
   return (
     <html>
       <head>
-        <style>{`
-          body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #0a0a0a;
-            color: #e0e0e0;
-            margin: 0;
-            padding: 0;
-          }
-          .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 40px 20px;
-          }
-          .header {
-            text-align: center;
-            margin-bottom: 40px;
-          }
-          .logo {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-          }
-          .shield {
-            width: 28px;
-            height: 34px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-          }
-          .logo-text {
-            font-size: 24px;
-            font-weight: 600;
-            color: #e0e0e0;
-          }
-          .content {
-            background: #151515;
-            border: 2px solid #667eea;
-            border-radius: 16px;
-            padding: 40px;
-          }
-          h1 {
-            font-size: 28px;
-            font-weight: 600;
-            color: #e0e0e0;
-            margin: 0 0 16px 0;
-          }
-          p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #888;
-            margin: 0 0 20px 0;
-          }
-          .benefits {
-            background: #0f0f0f;
-            border-radius: 8px;
-            padding: 24px;
-            margin: 24px 0;
-          }
-          .benefits h2 {
-            font-size: 18px;
-            color: #e0e0e0;
-            margin: 0 0 16px 0;
-          }
-          .benefit-item {
-            display: flex;
-            align-items: start;
-            gap: 12px;
-            margin-bottom: 12px;
-          }
-          .check {
-            color: #667eea;
-            font-size: 20px;
-            font-weight: bold;
-            flex-shrink: 0;
-          }
-          .timeline {
-            background: #0f0f0f;
-            border-radius: 8px;
-            padding: 24px;
-            margin: 24px 0;
-          }
-          .timeline h2 {
-            font-size: 18px;
-            color: #e0e0e0;
-            margin: 0 0 16px 0;
-          }
-          .timeline-item {
-            margin-bottom: 12px;
-            padding-left: 20px;
-            border-left: 2px solid #667eea;
-          }
-          .timeline-date {
-            color: #667eea;
-            font-weight: 600;
-            font-size: 14px;
-          }
-          .cta {
-            text-align: center;
-            margin: 32px 0;
-          }
-          .button {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #ffffff;
-            text-decoration: none;
-            padding: 14px 32px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 16px;
-          }
-          .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 24px;
-            border-top: 1px solid #2a2a2a;
-            font-size: 14px;
-            color: #666;
-          }
-          .footer a {
-            color: #667eea;
-            text-decoration: none;
-          }
-          .newsletter-text {
-            font-size: 14px;
-            color: #666;
-            text-align: center;
-          }
-        `}</style>
+        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body>
-        <div className="container">
-          <div className="header">
-            <a href="https://www.trade-safe.ai" className="logo">
-              <div className="shield"></div>
-              <div className="logo-text">TradeSafe</div>
-            </a>
-          </div>
-
-          <div className="content">
-            <h1>Welcome to TradeSafe! 🚀</h1>
-            
-            <p>Hi there,</p>
-            
-            <p>
-              Thank you for joining our waitlist! You're now part of an exclusive group 
-              of traders who are serious about protecting their capital and building 
-              sustainable discipline.
-            </p>
-
-            <div className="benefits">
-              <h2>What You'll Get with TradeSafe:</h2>
+      <body style={{ margin: '0', padding: '0', backgroundColor: '#f5f5f5', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
+        
+        {/* Container principal */}
+        <table width="100%" cellPadding="0" cellSpacing="0" style={{ backgroundColor: '#f5f5f5', padding: '40px 0' }}>
+          <tr>
+            <td align="center">
               
-              <div className="benefit-item">
-                <span className="check">✓</span>
-                <span>
-                  <strong>Real-time behavioral alerts</strong> that stop emotional 
-                  trading before it costs you money
-                </span>
-              </div>
-              
-              <div className="benefit-item">
-                <span className="check">✓</span>
-                <span>
-                  <strong>AI-powered shield system</strong> with custom risk rules 
-                  you can't break—even when emotions spike
-                </span>
-              </div>
-              
-              <div className="benefit-item">
-                <span className="check">✓</span>
-                <span>
-                  <strong>Pattern detection</strong> that identifies overtrading, 
-                  revenge trading, and other costly behaviors
-                </span>
-              </div>
-              
-              <div className="benefit-item">
-                <span className="check">✓</span>
-                <span>
-                  <strong>Daily pre-market analysis</strong> powered by Claude AI 
-                  to start every day with a clear trading plan
-                </span>
-              </div>
-            </div>
+              {/* Email card */}
+              <table width="600" cellPadding="0" cellSpacing="0" style={{ backgroundColor: '#ffffff', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+                
+                {/* Header avec logo */}
+                <tr>
+                  <td style={{ padding: '40px 40px 30px', textAlign: 'center', borderBottom: '1px solid #e5e5e5' }}>
+                    <table width="100%" cellPadding="0" cellSpacing="0">
+                      <tr>
+                        <td align="center">
+                          {/* Logo shield */}
+                          <div style={{ 
+                            width: '32px', 
+                            height: '38px', 
+                            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                            clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+                            margin: '0 auto 12px',
+                            display: 'inline-block'
+                          }} />
+                          <h1 style={{ 
+                            margin: '0', 
+                            fontSize: '24px', 
+                            fontWeight: '600', 
+                            color: '#1a1a1a',
+                            letterSpacing: '-0.5px'
+                          }}>
+                            TradeSafe
+                          </h1>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
 
-            <div className="timeline">
-              <h2>What Happens Next:</h2>
+                {/* Body content */}
+                <tr>
+                  <td style={{ padding: '40px' }}>
+                    
+                    {/* Titre principal */}
+                    <h2 style={{ 
+                      fontSize: '28px', 
+                      fontWeight: '600', 
+                      color: '#1a1a1a', 
+                      margin: '0 0 20px 0',
+                      lineHeight: '1.3'
+                    }}>
+                      Welcome to TradeSafe! 🚀
+                    </h2>
+
+                    {/* Intro */}
+                    <p style={{ 
+                      fontSize: '16px', 
+                      lineHeight: '1.6', 
+                      color: '#4a4a4a', 
+                      margin: '0 0 16px 0' 
+                    }}>
+                      Hi there,
+                    </p>
+
+                    <p style={{ 
+                      fontSize: '16px', 
+                      lineHeight: '1.6', 
+                      color: '#4a4a4a', 
+                      margin: '0 0 32px 0' 
+                    }}>
+                      Thank you for joining our waitlist! You're now part of an exclusive group of traders who are serious about protecting their capital and building sustainable discipline.
+                    </p>
+
+                    {/* Section: What You'll Get */}
+                    <table width="100%" cellPadding="0" cellSpacing="0" style={{ 
+                      backgroundColor: '#f9fafb', 
+                      borderRadius: '8px', 
+                      padding: '24px',
+                      marginBottom: '32px'
+                    }}>
+                      <tr>
+                        <td>
+                          <h3 style={{ 
+                            fontSize: '18px', 
+                            fontWeight: '600', 
+                            color: '#1a1a1a', 
+                            margin: '0 0 16px 0' 
+                          }}>
+                            What You'll Get with TradeSafe:
+                          </h3>
+                          
+                          {/* Benefit 1 */}
+                          <table width="100%" cellPadding="0" cellSpacing="0" style={{ marginBottom: '12px' }}>
+                            <tr>
+                              <td width="24" valign="top">
+                                <span style={{ color: '#667eea', fontSize: '20px', fontWeight: 'bold' }}>✓</span>
+                              </td>
+                              <td style={{ fontSize: '15px', lineHeight: '1.5', color: '#4a4a4a' }}>
+                                <strong>Real-time behavioral alerts</strong> that stop emotional trading before it costs you money
+                              </td>
+                            </tr>
+                          </table>
+
+                          {/* Benefit 2 */}
+                          <table width="100%" cellPadding="0" cellSpacing="0" style={{ marginBottom: '12px' }}>
+                            <tr>
+                              <td width="24" valign="top">
+                                <span style={{ color: '#667eea', fontSize: '20px', fontWeight: 'bold' }}>✓</span>
+                              </td>
+                              <td style={{ fontSize: '15px', lineHeight: '1.5', color: '#4a4a4a' }}>
+                                <strong>AI-powered shield system</strong> with custom risk rules you can't break—even when emotions spike
+                              </td>
+                            </tr>
+                          </table>
+
+                          {/* Benefit 3 */}
+                          <table width="100%" cellPadding="0" cellSpacing="0" style={{ marginBottom: '12px' }}>
+                            <tr>
+                              <td width="24" valign="top">
+                                <span style={{ color: '#667eea', fontSize: '20px', fontWeight: 'bold' }}>✓</span>
+                              </td>
+                              <td style={{ fontSize: '15px', lineHeight: '1.5', color: '#4a4a4a' }}>
+                                <strong>Pattern detection</strong> that identifies overtrading, revenge trading, and other costly behaviors
+                              </td>
+                            </tr>
+                          </table>
+
+                          {/* Benefit 4 */}
+                          <table width="100%" cellPadding="0" cellSpacing="0">
+                            <tr>
+                              <td width="24" valign="top">
+                                <span style={{ color: '#667eea', fontSize: '20px', fontWeight: 'bold' }}>✓</span>
+                              </td>
+                              <td style={{ fontSize: '15px', lineHeight: '1.5', color: '#4a4a4a' }}>
+                                <strong>Daily pre-market analysis</strong> powered by Claude AI to start every day with a clear trading plan
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    {/* Section: What Happens Next */}
+                    <table width="100%" cellPadding="0" cellSpacing="0" style={{ 
+                      backgroundColor: '#f9fafb', 
+                      borderRadius: '8px', 
+                      padding: '24px',
+                      marginBottom: '32px'
+                    }}>
+                      <tr>
+                        <td>
+                          <h3 style={{ 
+                            fontSize: '18px', 
+                            fontWeight: '600', 
+                            color: '#1a1a1a', 
+                            margin: '0 0 16px 0' 
+                          }}>
+                            What Happens Next:
+                          </h3>
+
+                          {/* Timeline item 1 */}
+                          <div style={{ 
+                            borderLeft: '2px solid #667eea', 
+                            paddingLeft: '16px', 
+                            marginBottom: '12px' 
+                          }}>
+                            <div style={{ 
+                              color: '#667eea', 
+                              fontSize: '14px', 
+                              fontWeight: '600', 
+                              marginBottom: '4px' 
+                            }}>
+                              Q1 2026 (8-12 weeks)
+                            </div>
+                            <div style={{ fontSize: '15px', color: '#4a4a4a' }}>
+                              Private beta launch with core features
+                            </div>
+                          </div>
+
+                          {/* Timeline item 2 */}
+                          <div style={{ 
+                            borderLeft: '2px solid #667eea', 
+                            paddingLeft: '16px', 
+                            marginBottom: '12px' 
+                          }}>
+                            <div style={{ 
+                              color: '#667eea', 
+                              fontSize: '14px', 
+                              fontWeight: '600', 
+                              marginBottom: '4px' 
+                            }}>
+                              Before launch
+                            </div>
+                            <div style={{ fontSize: '15px', color: '#4a4a4a' }}>
+                              We'll email you exclusive updates and early access details
+                            </div>
+                          </div>
+
+                          {/* Timeline item 3 */}
+                          <div style={{ 
+                            borderLeft: '2px solid #667eea', 
+                            paddingLeft: '16px' 
+                          }}>
+                            <div style={{ 
+                              color: '#667eea', 
+                              fontSize: '14px', 
+                              fontWeight: '600', 
+                              marginBottom: '4px' 
+                            }}>
+                              Priority access
+                            </div>
+                            <div style={{ fontSize: '15px', color: '#4a4a4a' }}>
+                              As a waitlist member, you'll be among the first to try TradeSafe
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    {/* Texte final */}
+                    <p style={{ 
+                      fontSize: '16px', 
+                      lineHeight: '1.6', 
+                      color: '#4a4a4a', 
+                      margin: '0 0 16px 0' 
+                    }}>
+                      We're building TradeSafe because we've been there—blowing accounts, fighting emotional patterns, knowing what to do but struggling to actually do it.
+                    </p>
+
+                    <p style={{ 
+                      fontSize: '16px', 
+                      lineHeight: '1.6', 
+                      color: '#4a4a4a', 
+                      margin: '0 0 32px 0' 
+                    }}>
+                      This isn't just another trading tool. It's a behavioral intervention system designed to protect you from your own worst decisions.
+                    </p>
+
+                    {/* CTA Button */}
+                    <table width="100%" cellPadding="0" cellSpacing="0">
+                      <tr>
+                        <td align="center" style={{ paddingBottom: '24px' }}>
+                          <a href="https://tradesafe.beehiiv.com/subscribe" style={{
+                            display: 'inline-block',
+                            padding: '14px 32px',
+                            backgroundColor: '#667eea',
+                            color: '#ffffff',
+                            textDecoration: 'none',
+                            borderRadius: '8px',
+                            fontSize: '16px',
+                            fontWeight: '600',
+                            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+                          }}>
+                            Join Our Newsletter
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <p style={{ 
+                      fontSize: '14px', 
+                      textAlign: 'center', 
+                      color: '#888888', 
+                      margin: '0' 
+                    }}>
+                      Get trading psychology insights, discipline tips, and product updates delivered monthly.
+                    </p>
+
+                  </td>
+                </tr>
+
+                {/* Footer */}
+                <tr>
+                  <td style={{ 
+                    padding: '24px 40px', 
+                    backgroundColor: '#f9fafb', 
+                    borderTop: '1px solid #e5e5e5',
+                    textAlign: 'center'
+                  }}>
+                    <p style={{ 
+                      fontSize: '13px', 
+                      color: '#888888', 
+                      margin: '0 0 8px 0',
+                      lineHeight: '1.5'
+                    }}>
+                      You're receiving this because you joined the TradeSafe waitlist at{' '}
+                      <a href="https://www.trade-safe.ai" style={{ color: '#667eea', textDecoration: 'none' }}>
+                        trade-safe.ai
+                      </a>
+                    </p>
+                    <p style={{ 
+                      fontSize: '13px', 
+                      color: '#888888', 
+                      margin: '0',
+                      lineHeight: '1.5'
+                    }}>
+                      Questions? Reply to this email or contact us at{' '}
+                      <a href="mailto:hello@trade-safe.ai" style={{ color: '#667eea', textDecoration: 'none' }}>
+                        hello@trade-safe.ai
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+
+              </table>
               
-              <div className="timeline-item">
-                <div className="timeline-date">Q1 2026 (8-12 weeks)</div>
-                <div>Private beta launch with core features</div>
-              </div>
-              
-              <div className="timeline-item">
-                <div className="timeline-date">Before launch</div>
-                <div>We'll email you exclusive updates and early access details</div>
-              </div>
-              
-              <div className="timeline-item">
-                <div className="timeline-date">Priority access</div>
-                <div>As a waitlist member, you'll be among the first to try TradeSafe</div>
-              </div>
-            </div>
+            </td>
+          </tr>
+        </table>
 
-            <p>
-              We're building TradeSafe because we've been there—blowing accounts, 
-              fighting emotional patterns, knowing what to do but struggling to actually do it.
-            </p>
-
-            <p>
-              This isn't just another trading tool. It's a behavioral intervention system 
-              designed to protect you from your own worst decisions.
-            </p>
-
-            <div className="cta">
-              <a href="https://tradesafe.beehiiv.com/subscribe" className="button">
-                Join Our Newsletter
-              </a>
-            </div>
-
-            <p className="newsletter-text">
-              Get trading psychology insights, discipline tips, and product updates 
-              delivered monthly.
-            </p>
-          </div>
-
-          <div className="footer">
-            <p>
-              You're receiving this because you joined the TradeSafe waitlist at{' '}
-              <a href="https://www.trade-safe.ai">trade-safe.ai</a>
-            </p>
-            <p>
-              Questions? Reply to this email or contact us at{' '}
-              <a href="mailto:hello@trade-safe.ai">hello@trade-safe.ai</a>
-            </p>
-          </div>
-        </div>
       </body>
     </html>
   )
