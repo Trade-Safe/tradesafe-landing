@@ -130,6 +130,11 @@ export default function WaitlistWelcome({ email }: WaitlistWelcomeProps) {
             color: #667eea;
             text-decoration: none;
           }
+          .newsletter-text {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+          }
         `}</style>
       </head>
       <body>
@@ -223,7 +228,7 @@ export default function WaitlistWelcome({ email }: WaitlistWelcomeProps) {
               </a>
             </div>
 
-            <p style="font-size: 14px; color: #666; text-align: center;">
+            <p className="newsletter-text">
               Get trading psychology insights, discipline tips, and product updates 
               delivered monthly.
             </p>
