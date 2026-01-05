@@ -1,6 +1,7 @@
 'use client'
 
 import EmailForm from './EmailForm'
+import TrustBadges from './TrustBadges'
 
 interface HeroProps {
   badge: string
@@ -37,6 +38,8 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
             {priceYear} <span className="text-green-500 font-semibold">{discount}</span>
           </div>
         </div>
+
+        <TrustBadges />
       </div>
       
       <p className="text-[1.05rem] text-[#888] max-w-[680px] mx-auto mt-8 leading-relaxed">
