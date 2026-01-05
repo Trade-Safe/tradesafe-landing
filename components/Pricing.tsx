@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import EmailFormPricing from './EmailFormPricing'
+import EmailForm from './EmailForm'
 import PricingToggle from './PricingToggle'
 
 interface PricingProps {
