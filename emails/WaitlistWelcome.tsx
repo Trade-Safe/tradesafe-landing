@@ -22,34 +22,68 @@ export default function WaitlistWelcome({ email }: WaitlistWelcomeProps) {
               <table width="600" cellPadding="0" cellSpacing="0" style={{ backgroundColor: '#ffffff', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
                 
                 {/* Header avec logo */}
-                <tr>
-                  <td style={{ padding: '40px 40px 30px', textAlign: 'center', borderBottom: '1px solid #e5e5e5' }}>
-                    <table width="100%" cellPadding="0" cellSpacing="0">
-                      <tr>
-                        <td align="center">
-                          {/* Logo shield */}
-                          <div style={{ 
-                            width: '32px', 
-                            height: '38px', 
-                            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                            clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
-                            margin: '0 auto 12px',
-                            display: 'inline-block'
-                          }} />
-                          <h1 style={{ 
-                            margin: '0', 
-                            fontSize: '24px', 
-                            fontWeight: '600', 
-                            color: '#1a1a1a',
-                            letterSpacing: '-0.5px'
-                          }}>
-                            TradeSafe
-                          </h1>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
+<tr>
+  <td style={{ padding: '40px 40px 30px', textAlign: 'center', borderBottom: '1px solid #e5e5e5' }}>
+    <table width="100%" cellPadding="0" cellSpacing="0">
+      <tr>
+        <td align="center">
+          {/* Container logo + texte */}
+          <table cellPadding="0" cellSpacing="0" style={{ display: 'inline-block' }}>
+            <tr>
+              <td style={{ verticalAlign: 'middle', paddingRight: '12px' }}>
+                {/* Shield losange violet */}
+                <div style={{
+                  width: '0',
+                  height: '0',
+                  borderLeft: '14px solid transparent',
+                  borderRight: '14px solid transparent',
+                  borderBottom: '24px solid #667eea',
+                  position: 'relative',
+                  display: 'inline-block'
+                }}>
+                  <div style={{
+                    position: 'absolute',
+                    top: '24px',
+                    left: '-14px',
+                    width: '0',
+                    height: '0',
+                    borderLeft: '14px solid transparent',
+                    borderRight: '14px solid transparent',
+                    borderTop: '24px solid #764ba2'
+                  }} />
+                </div>
+              </td>
+              <td style={{ verticalAlign: 'middle' }}>
+                {/* Texte TradeSafe avec underline */}
+                <div style={{ position: 'relative', display: 'inline-block' }}>
+                  <span style={{
+                    fontSize: '24px',
+                    fontWeight: '600',
+                    color: '#1a1a1a',
+                    letterSpacing: '-0.5px',
+                    display: 'block',
+                    paddingBottom: '4px'
+                  }}>
+                    TradeSafe
+                  </span>
+                  <div style={{
+                    position: 'absolute',
+                    bottom: '0',
+                    left: '0',
+                    right: '0',
+                    height: '2px',
+                    background: 'linear-gradient(90deg, #667eea, #764ba2)',
+                    borderRadius: '1px'
+                  }} />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
 
                 {/* Body content */}
                 <tr>
