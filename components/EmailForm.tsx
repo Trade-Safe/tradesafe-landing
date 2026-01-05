@@ -37,7 +37,7 @@ export default function EmailForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4 w-full max-w-md">
-      <div className="flex gap-4 w-full">
+      <div className="flex flex-col sm:flex-row gap-4 w-full">
         <input
           type="email"
           value={email}
@@ -50,7 +50,7 @@ export default function EmailForm() {
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="px-6 py-3 bg-gradient-to-br from-primary to-primary-dark text-white font-semibold rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+          className="px-6 py-3 bg-gradient-to-br from-primary to-primary-dark text-white font-semibold rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
         >
           {status === 'loading' ? 'Joining...' : 'Join Waitlist'}
         </button>
