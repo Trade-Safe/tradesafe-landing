@@ -34,7 +34,6 @@ export default function Header({ nav }: HeaderProps) {
           <li><Link href="#how-it-works" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.howItWorks}</Link></li>
           <li><Link href="#pricing" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.pricing}</Link></li>
           <li><Link href="#technology" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.technology}</Link></li>
-          <li><Link href="#legal" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.legal}</Link></li>
         </ul>
 
         {/* Desktop CTA Buttons + Language Switcher - Cachés sur mobile */}
