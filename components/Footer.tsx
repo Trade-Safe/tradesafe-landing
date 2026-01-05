@@ -55,7 +55,7 @@ export default function Footer({ description, product, company, features, howItW
             <ul className="list-none space-y-2">
               <li><Link href="/about" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{about}</Link></li>
               <li><Link href="/contact" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{contact}</Link></li>
-              <li><Link href="/legal" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{contact}</Link></li>
+              <li><Link href="/legal" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{legal}</Link></li>
             </ul>
           </div>
         </div>
