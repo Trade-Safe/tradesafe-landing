@@ -25,7 +25,7 @@ export default function WaitlistWelcome({ email }: WaitlistWelcomeProps) {
                 <tr>
                   <td style={{ padding: '40px 40px 24px', textAlign: 'center', borderBottom: '1px solid #e5e5e5' }}>
                     <img 
-                      src="https://www.trade-safe.ai/logo-tradesafe.png" 
+                      src="https://www.trade-safe.ai/logo-tradesafe-transparent.png?v=2"
                       alt="TradeSafe" 
                       width="180" 
                       height="auto"
