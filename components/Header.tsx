@@ -9,7 +9,6 @@ interface HeaderProps {
     howItWorks: string
     pricing: string
     technology: string
-    legal: string
     login: string
     startTrial: string
   }
