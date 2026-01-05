@@ -2,8 +2,6 @@ import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 import WaitlistWelcome from '@/emails/WaitlistWelcome'
 
-const resend = new Resend(process.env.RESEND_API_KEY || '')
-
 export async function POST(request: Request) {
   try {
     // Vérifier que la clé API est bien présente
@@ -49,7 +47,10 @@ export async function POST(request: Request) {
       throw new Error('Failed to save to database')
     }
 
-    // 2. Envoyer email via Resend
+    // 2. Instancier Resend SEULEMENT ICI (lazy loading)
+    const resend = new Resend(process.env.RESEND_API_KEY)
+
+    // 3. Envoyer email via Resend
     const { data, error } = await resend.emails.send({
       from: 'TradeSafe <hello@trade-safe.ai>',
       to: [email],
