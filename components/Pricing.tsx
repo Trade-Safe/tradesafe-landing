@@ -30,27 +30,29 @@ export default function Pricing({ label, title, subtitle, badge, description, mo
 
   return (
     <section id="pricing" className="py-20">
-      <div className="max-w-[1200px] mx-auto px-8">
-        <div className="text-center mb-16">
-          <div className="text-primary-light text-xs font-semibold uppercase tracking-widest mb-4">{label}</div>
-          <h2 className="text-4xl font-semibold text-[#e0e0e0] mb-4">{title}</h2>
-          <p className="text-base text-[#888] max-w-[600px] mx-auto leading-relaxed">
-            {subtitle}
-          </p>
-        </div>
+  <div className="max-w-[1200px] mx-auto px-8">
+    <div className="text-center mb-8">
+      <div className="text-primary-light text-xs font-semibold uppercase tracking-widest mb-4">{label}</div>
+      <h2 className="text-4xl font-semibold text-[#e0e0e0] mb-4">{title}</h2>
+      <p className="text-base text-[#888] max-w-[600px] mx-auto leading-relaxed">
+        {subtitle}
+      </p>
+    </div>
 
-        {/* Pricing Toggle */}
-        <PricingToggle 
-          monthlyPrice={monthlyPrice}
-          yearlyPrice={yearlyPrice}
-          discount={discount}
-          onToggle={setIsYearly}
-        />
-        
-        <div className="max-w-[450px] mx-auto bg-[#151515] border-2 border-primary rounded-2xl p-10 text-center relative">
-          <div className="absolute top-[-15px] left-1/2 transform -translate-x-1/2 bg-gradient-to-br from-primary to-primary-dark text-white px-5 py-2 rounded-full text-xs font-semibold">
-            {badge}
-          </div>
+    {/* Pricing Toggle */}
+    <div className="-mt-4">
+      <PricingToggle 
+        monthlyPrice={monthlyPrice}
+        yearlyPrice={yearlyPrice}
+        discount={discount}
+        onToggle={setIsYearly}
+      />
+    </div>
+    
+    <div className="max-w-[450px] mx-auto bg-[#151515] border-2 border-primary rounded-2xl p-10 text-center relative">
+      <div className="absolute top-[-15px] left-1/2 transform -translate-x-1/2 bg-gradient-to-br from-primary to-primary-dark text-white px-5 py-2 rounded-full text-xs font-semibold">
+        {badge}
+      </div>
           
           <p className="text-[#888] text-sm mt-6 mb-6">
             {description}
