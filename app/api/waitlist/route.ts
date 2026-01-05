@@ -2,10 +2,19 @@ import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 import WaitlistWelcome from '@/emails/WaitlistWelcome'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = new Resend(process.env.RESEND_API_KEY || '')
 
 export async function POST(request: Request) {
   try {
+    // Vérifier que la clé API est bien présente
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY is missing!')
+      return NextResponse.json(
+        { error: 'Email service not configured' },
+        { status: 500 }
+      )
+    }
+
     const { email } = await request.json()
 
     // Validation email
