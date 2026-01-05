@@ -80,7 +80,7 @@ export default function Pricing({ label, title, subtitle, badge, description, mo
           </ul>
           
           <div className="mt-8">
-            <EmailFormPricing />
+            <EmailForm />
           </div>
         </div>
 
