@@ -113,8 +113,8 @@
   "label": "Technology",
   "title": "How AI powers TradeSafe",
   "intro": "TradeSafe uses AI to analyze behavioral patterns — not to predict markets.",
-  "developmentTitle": "In Active Development (Q1 2026)",
-  "developmentSubtitle": "Features launching in the next 2-3 months:",
+  "developmentTitle": "Lauching Soon (Q1 2026)",
+  "developmentSubtitle": "Features launching in the next 8-12 weeks:",
   "developmentPoints": [
     "Real-time behavioral alerts and intervention system",
     "Advanced pattern detection (overtrading, revenge trading)",
@@ -122,8 +122,8 @@
     "AI-assisted journaling with guided insights",
     "Chrome extension with live trading protection"
   ],
-  "roadmapTitle": "Planned Roadmap (2026)",
-  "roadmapSubtitle": "Vision for the full year:",
+  "roadmapTitle": "Upcoming Features",
+  "roadmapSubtitle": "TradeSafe Roadmap for 2026:",
   "roadmapPoints": [
     "Personalized ML models for risk pattern prediction",
     "Multi-account aggregation across platforms",
