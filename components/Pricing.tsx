@@ -29,7 +29,7 @@ export default function Pricing({ label, title, subtitle, badge, description, mo
   const [isYearly, setIsYearly] = useState(true)
 
   return (
-    <section id="pricing" className="py-20">
+    <section id="pricing" className="py-20 border-t border-[#1a1a1a]">
   <div className="max-w-[1200px] mx-auto px-8">
     <div className="text-center mb-8">
       <div className="text-primary-light text-xs font-semibold uppercase tracking-widest mb-4">{label}</div>
