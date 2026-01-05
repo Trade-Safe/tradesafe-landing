@@ -67,9 +67,9 @@ export default function Home() {
           subtitle={messages.features.subtitle}
           features={featuresWithIcons}
         />
-        <Pricing {...messages.pricing} />
         <HowItWorks {...messages.howItWorks} />
         <Technology {...messages.technology} />
+        <Pricing {...messages.pricing} />
         <Legal {...messages.legal} />
       </main>
       <Footer {...messages.footer} />
