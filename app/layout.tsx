@@ -4,6 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "TradeSafe - The First AI Discipline System for Retail Traders",
   description: "TradeSafe detects emotional trading patterns and acts as an intelligent shield system to protect your capital in real-time.",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   keywords: ["trading", "discipline", "AI", "risk management", "retail traders", "trading psychology"],
   authors: [{ name: "TradeSafe" }],
   openGraph: {
