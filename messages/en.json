@@ -20,38 +20,37 @@
     "label": "Features",
     "title": "Built to Protect Your Capital",
     "subtitle": "A complete AI-system designed specifically for retail traders who struggle with discipline.",
-    "features": [
-      {
-        "icon": "shield",
-        "title": "AI-Powered Shield System",
-        "description": "Set rules you can't break—even when emotions spike. Configure daily loss limits, max trades, and time restrictions with Strict Mode enforcement."
-      },
-      {
-        "icon": "zap",
-        "title": "Real-Time AI Assistant",
-        "description": "Chrome extension monitors every trade live. Instant intervention when you approach risk thresholds or exhibit dangerous patterns."
-      },
-      {
-        "icon": "clock",
-        "title": "Risky Behavior Detection",
-        "description": "TradeSafe predicts emotional mistakes before they happen. AI identifies revenge trading, FOMO, and over-leveraging patterns instantly."
-      },
-      {
-        "icon": "chart",
-        "title": "Advanced Analytics",
-        "description": "Track your Discipline Score, not just P&L. Your Discipline Score always tells the truth—understand behavioral patterns with AI insights."
-      },
-      {
-        "icon": "book",
-        "title": "AI-Guided Review",
-        "description": "Daily pre-market analysis by Claude AI and guided end-session reviews. Build better habits with structured journaling templates."
-      },
-      {
-        "icon": "brain",
-        "title": "Optimize Your Mindset",
-        "description": "Start your trading day with guided meditation or silent focus sessions. Prepare your mind before the market opens with neurological prep tools."
-      }
-    ]
+    "features": {
+  "label": "Features",
+  "title": "Built to Protect Your Capital",
+  "subtitle": "Real-time behavioral intervention powered by AI, designed specifically for retail traders who struggle with discipline.",
+  "features": [
+    {
+      "icon": "shield",
+      "title": "Set Trading Rules You Can't Break",
+      "description": "Define your own trading rules, setup your risk settings and stick to them: daily loss limits, max trades, time windows, blocked tickers. Enable Strict Mode to enforce the rules you set, even when emotions take over."
+    },
+    {
+      "icon": "zap",
+      "title": "Stop Emotional Trades Before They Happen",
+      "description": "Chrome extension monitors your trading activity in real time. Get instant alerts before you place a revenge trade or break your plan. Act before it's too late."
+    },
+    {
+      "icon": "clock",
+      "title": "See Exactly Where You Lose Control",
+      "description": "AI detects overtrading patterns, revenge sequences, and repeated rule violations. Identify your triggers early—before they compound losses and spiral out of control."
+    },
+    {
+      "icon": "chart",
+      "title": "Track Discipline, Not Just P&L",
+      "description": "Analytics dashboard that tracks rule adherence, discipline score, and behavioral patterns. Focus on what truly matters: your process, not just profits."
+    },
+    {
+      "icon": "book",
+      "title": "Start Every Session with Clarity, Not Emotion",
+      "description": "Daily pre-market analysis powered by Claude AI. Review yesterday's performance, set today's risk limits, and commit to your plan before the bell rings. Consistency beats conviction."
+    }
+  ]
   },
   "pricing": {
     "label": "Early Access",
