@@ -34,7 +34,7 @@ export default function Features({ label, title, subtitle, features }: FeaturesP
               <div className="w-12 h-12 mx-auto mb-6 bg-primary/10 rounded-lg flex items-center justify-center text-primary-light">
                 {feature.icon}
               </div>
-              <h3 className="text-lg text-[#e0e0e0] mb-3 font-semibold">{feature.title}</h3>
+              <h3 className="text-base text-[#e0e0e0] mb-3 font-semibold leading-tight">{feature.title}</h3>
               <p className="text-[#888] leading-relaxed text-sm">{feature.description}</p>
             </div>
           ))}
