@@ -19,38 +19,34 @@
   "features": {
     "label": "Features",
     "title": "Built to Protect Your Capital",
-    "subtitle": "A complete AI-system designed specifically for retail traders who struggle with discipline.",
-    "features": {
-  "label": "Features",
-  "title": "Built to Protect Your Capital",
-  "subtitle": "Real-time behavioral intervention powered by AI, designed specifically for retail traders who struggle with discipline.",
-  "features": [
-    {
-      "icon": "shield",
-      "title": "Set Trading Rules You Can't Break",
-      "description": "Define your own trading rules, setup your risk settings and stick to them: daily loss limits, max trades, time windows, blocked tickers. Enable Strict Mode to enforce the rules you set, even when emotions take over."
-    },
-    {
-      "icon": "zap",
-      "title": "Stop Emotional Trades Before They Happen",
-      "description": "Chrome extension monitors your trading activity in real time. Get instant alerts before you place a revenge trade or break your plan. Act before it's too late."
-    },
-    {
-      "icon": "clock",
-      "title": "See Exactly Where You Lose Control",
-      "description": "AI detects overtrading patterns, revenge sequences, and repeated rule violations. Identify your triggers early—before they compound losses and spiral out of control."
-    },
-    {
-      "icon": "chart",
-      "title": "Track Discipline, Not Just P&L",
-      "description": "Analytics dashboard that tracks rule adherence, discipline score, and behavioral patterns. Focus on what truly matters: your process, not just profits."
-    },
-    {
-      "icon": "book",
-      "title": "Start Every Session with Clarity, Not Emotion",
-      "description": "Daily pre-market analysis powered by Claude AI. Review yesterday's performance, set today's risk limits, and commit to your plan before the bell rings. Consistency beats conviction."
-    }
-  ]
+    "subtitle": "Real-time behavioral intervention powered by AI, designed specifically for retail traders who struggle with discipline.",
+    "features": [
+      {
+        "icon": "shield",
+        "title": "Set Trading Rules You Can't Break",
+        "description": "Define your own trading rules, setup your risk settings and stick to them: daily loss limits, max trades, time windows, blocked tickers. Enable Strict Mode to enforce the rules you set, even when emotions take over."
+      },
+      {
+        "icon": "zap",
+        "title": "Stop Emotional Trades Before They Happen",
+        "description": "Chrome extension monitors your trading activity in real time. Get instant alerts before you place a revenge trade or break your plan. Act before it's too late."
+      },
+      {
+        "icon": "clock",
+        "title": "See Exactly Where You Lose Control",
+        "description": "AI detects overtrading patterns, revenge sequences, and repeated rule violations. Identify your triggers early—before they compound losses and spiral out of control."
+      },
+      {
+        "icon": "chart",
+        "title": "Track Discipline, Not Just P&L",
+        "description": "Analytics dashboard that tracks rule adherence, discipline score, and behavioral patterns. Focus on what truly matters: your process, not just profits."
+      },
+      {
+        "icon": "book",
+        "title": "Start Every Session with Clarity, Not Emotion",
+        "description": "Daily pre-market analysis powered by Claude AI. Review yesterday's performance, set today's risk limits, and commit to your plan before the bell rings. Consistency beats conviction."
+      }
+    ]
   },
   "pricing": {
     "label": "Early Access",
@@ -108,38 +104,38 @@
       }
     ]
   },
-"technology": {
-  "label": "Technology",
-  "title": "How AI powers TradeSafe",
-  "intro": "TradeSafe uses AI to analyze behavioral patterns — not to predict markets.",
-  "developmentTitle": "Launching Soon (Q1 2026)",
-  "developmentSubtitle": "Features launching in the next 8-12 weeks:",
-  "developmentPoints": [
-    "Real-time behavioral alerts and intervention system",
-    "Advanced pattern detection (overtrading, revenge trading)",
-    "Rule-based risk breach monitoring",
-    "AI-assisted journaling with guided insights",
-    "Chrome extension with live trading protection"
-  ],
-  "roadmapTitle": "Upcoming Features",
-  "roadmapSubtitle": "TradeSafe Roadmap for 2026:",
-  "roadmapPoints": [
-    "Personalized ML models for risk pattern prediction",
-    "Multi-account aggregation across platforms",
-    "Mobile app (iOS/Android) with notifications",
-    "Community features and trader accountability system"
-  ],
-  "disclaimer": "TradeSafe does not forecast prices, generate signals, or automate trades."
-},
+  "technology": {
+    "label": "Technology",
+    "title": "How AI powers TradeSafe",
+    "intro": "TradeSafe uses AI to analyze behavioral patterns — not to predict markets.",
+    "developmentTitle": "Launching Soon (Q1 2026)",
+    "developmentSubtitle": "Features launching in the next 8-12 weeks:",
+    "developmentPoints": [
+      "Real-time behavioral alerts and intervention system",
+      "Advanced pattern detection (overtrading, revenge trading)",
+      "Rule-based risk breach monitoring",
+      "AI-assisted journaling with guided insights",
+      "Chrome extension with live trading protection"
+    ],
+    "roadmapTitle": "Upcoming Features",
+    "roadmapSubtitle": "TradeSafe Roadmap for 2026:",
+    "roadmapPoints": [
+      "Personalized ML models for risk pattern prediction",
+      "Multi-account aggregation across platforms",
+      "Mobile app (iOS/Android) with notifications",
+      "Community features and trader accountability system"
+    ],
+    "disclaimer": "TradeSafe does not forecast prices, generate signals, or automate trades."
+  },
   "legal": {
-  "label": "Legal & Compliance",
-  "title": "Disclaimer",
-  "paragraphs": [
-    "TradeSafe is a behavioral discipline and decision-support tool.",
-    "It does not provide financial advice, trading signals, or portfolio management services.",
-    "TradeSafe connects to your trading platform via API solely to monitor your activity — it does not execute, modify, or suggest trades.",
-    "You remain fully responsible for all trading decisions, risk exposure, and compliance with local regulations."
-  ]
+    "label": "Legal & Compliance",
+    "title": "Disclaimer",
+    "paragraphs": [
+      "TradeSafe is a behavioral discipline and decision-support tool.",
+      "It does not provide financial advice, trading signals, or portfolio management services.",
+      "TradeSafe connects to your trading platform via API solely to monitor your activity — it does not execute, modify, or suggest trades.",
+      "You remain fully responsible for all trading decisions, risk exposure, and compliance with local regulations."
+    ]
   },
   "footer": {
     "description": "AI-powered behavioral intervention technology helping retail traders protect their capital and develop sustainable discipline.",
@@ -154,5 +150,5 @@
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
-  },
+  }
 }
