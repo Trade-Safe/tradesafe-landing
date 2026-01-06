@@ -45,7 +45,7 @@ export default function EmailForm() {
           placeholder="Enter your email"
           required
           disabled={status === 'loading'}
-          className="flex-1 px-4 py-3 bg-[#151515] border border-[#2a2a2a] rounded-lg text-[#e0e0e0] placeholder-[#666] focus:outline-none focus:border-primary transition-colors"
+          className="flex-1 px-4 py-3 bg-[#151515] border border-[#2a2a2a] rounded-lg text-[#e0e0e0] placeholder-[#666] focus:outline-none focus:border-primary transition-colors text-center sm:text-left"
         />
         <button
           type="submit"
