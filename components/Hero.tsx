@@ -52,17 +52,20 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
           </div>
         </div>
 
-        {/* Social Proof - NOUVEAU ! */}
-        <div className="flex items-center gap-3 text-sm text-[#888] mt-4">
-          <div className="flex -space-x-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primary-dark border-2 border-[#0a0a0a]" />
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary-dark to-primary border-2 border-[#0a0a0a]" />
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primary-dark border-2 border-[#0a0a0a]" />
-          </div>
-          <span>
-            <strong className="text-[#e0e0e0]">155+ traders</strong> already on the waitlist
-          </span>
-        </div>
+        {/* Social Proof avec Users Icon - Violet */}
+<div className="flex items-center gap-3 text-sm text-[#888] mt-4">
+  <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg border border-primary/30">
+    <svg className="w-6 h-6 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+      <circle cx="9" cy="7" r="4" />
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+    </svg>
+  </div>
+  <span>
+    <strong className="text-[#e0e0e0]">155+ traders</strong> already on the waitlist
+  </span>
+</div>
       </div>
     </section>
   )
