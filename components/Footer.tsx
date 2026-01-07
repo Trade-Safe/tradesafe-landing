@@ -5,11 +5,13 @@ import Link from 'next/link'
 interface FooterProps {
   description: string
   product: string
+  resources: string      // ← AJOUTÉ
   company: string
   features: string
   howItWorks: string
   pricing: string
-  technology: string       // ← AJOUTÉ
+  technology: string
+  newsletter: string     // ← AJOUTÉ
   about: string
   contact: string
   legal: string
@@ -21,11 +23,13 @@ interface FooterProps {
 export default function Footer({ 
   description, 
   product, 
+  resources,           // ← AJOUTÉ
   company, 
   features, 
   howItWorks, 
   pricing, 
-  technology,              // ← AJOUTÉ
+  technology,
+  newsletter,          // ← AJOUTÉ
   about, 
   contact, 
   legal, 
@@ -36,11 +40,11 @@ export default function Footer({
   return (
     <footer className="bg-[#0a0a0a] border-t border-[#1a1a1a] py-12 px-8">
       <div className="max-w-[1200px] mx-auto">
-        {/* Grid principal - 2 colonnes mobile, 4 colonnes desktop */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
+        {/* Grid principal - 3 colonnes sur desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           
-          {/* Brand - centré sur mobile */}
-          <div className="col-span-2 text-center md:text-left">
+          {/* Brand - Prend 1 colonne */}
+          <div className="text-center md:text-left">
             <Link href="/" className="flex items-center gap-3 no-underline relative mb-4 justify-center md:justify-start">
               <div className="w-[26px] h-[32px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
                    style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
@@ -54,8 +58,8 @@ export default function Footer({
             </p>
           </div>
           
-          {/* Product - centré sur mobile */}
-          <div className="col-span-1 text-center md:text-left">
+          {/* Product */}
+          <div className="text-center md:text-left">
             <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{product}</h4>
             <ul className="list-none space-y-2">
               <li><Link href="#features" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{features}</Link></li>
@@ -65,8 +69,25 @@ export default function Footer({
             </ul>
           </div>
           
-          {/* Company - centré sur mobile */}
-          <div className="col-span-1 text-center md:text-left">
+          {/* Resources - NOUVELLE COLONNE */}
+          <div className="text-center md:text-left">
+            <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{resources}</h4>
+            <ul className="list-none space-y-2">
+              <li>
+                <a 
+                  href="https://tradesafe.beehiiv.com/subscribe" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors"
+                >
+                  {newsletter}
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          {/* Company */}
+          <div className="text-center md:text-left">
             <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{company}</h4>
             <ul className="list-none space-y-2">
               <li><Link href="/about" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{about}</Link></li>
