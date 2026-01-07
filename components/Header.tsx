@@ -9,7 +9,6 @@ interface HeaderProps {
     howItWorks: string
     pricing: string
     technology: string
-    faq: string
     login: string
     startTrial: string
   }
@@ -35,7 +34,6 @@ export default function Header({ nav }: HeaderProps) {
           <li><Link href="#how-it-works" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.howItWorks}</Link></li>
           <li><Link href="#pricing" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.pricing}</Link></li>
           <li><Link href="#technology" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.technology}</Link></li>
-          <li><a href="#faq" className="...">{nav.faq}</a></li>
         </ul>
 
         {/* Desktop CTA Buttons + Language Switcher - Cachés sur mobile */}
