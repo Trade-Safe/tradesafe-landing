@@ -128,32 +128,6 @@
     ],
     "disclaimer": "TradeSafe does not forecast prices, generate signals, or automate trades."
   },
-  "faq": {
-  "label": "FAQ",
-  "title": "Frequently Asked Questions",
-  "items": [
-    {
-      "question": "Which brokers are supported?",
-      "answer": "Currently: Tradovate (Futures). Coming soon: Interactive Brokers, BloFin (Crypto). Check our roadmap for updates."
-    },
-    {
-      "question": "Can TradeSafe access my funds or execute trades?",
-      "answer": "No. We use read-only API connections. TradeSafe monitors your activity but cannot move money or place orders."
-    },
-    {
-      "question": "How long before I see results?",
-      "answer": "Most traders notice reduced overtrading within the first week. Long-term discipline improvements typically show after 30 days of consistent usage."
-    },
-    {
-      "question": "Can I cancel anytime?",
-      "answer": "Yes. Annual subscriptions are non-refundable but you can cancel renewal at any time from your settings."
-    },
-    {
-      "question": "Is my trading data secure?",
-      "answer": "Yes. All data is encrypted (AES-256) and stored on Supabase (SOC 2 compliant). We never share or sell your data."
-    }
-  ]
-},
   "legal": {
     "label": "Legal & Compliance",
     "title": "Disclaimer",
