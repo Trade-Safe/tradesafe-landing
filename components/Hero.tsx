@@ -10,14 +10,14 @@ interface HeroProps {
 
 export default function Hero({ badge, quote, title, subtitle, priceMonth, priceYear, discount }: HeroProps) {
   return (
-    <section className="max-w-[1200px] mx-auto px-8 pt-16 pb-24 text-center">
+    <section className="max-w-[1200px] mx-auto px-8 pt-8 pb-24 text-center">
       {/* Badge */}
       <div className="inline-block bg-primary/10 border border-primary/30 text-primary-light px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-8">
         {badge}
       </div>
 
       {/* Quote tagline */}
-      <p className="text-[#888] text-sm font-medium mb-6 tracking-wide">
+      <p className="text-[#888] text-base font-medium mb-6 tracking-wide">
         {quote}
       </p>
 
