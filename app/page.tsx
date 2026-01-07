@@ -4,6 +4,7 @@ import Features from '@/components/Features'
 import Pricing from '@/components/Pricing'
 import HowItWorks from '@/components/HowItWorks'
 import Technology from '@/components/Technology'
+import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 import messages from '@/messages/en.json'
 
@@ -68,6 +69,11 @@ export default function Home() {
         />
         <HowItWorks {...messages.howItWorks} />
         <Technology {...messages.technology} />
+        <FAQ
+  label={messages.faq.label}
+  title={messages.faq.title}
+  items={messages.faq.items}
+/>
         <Pricing {...messages.pricing} />
       </main>
       <Footer {...messages.footer} />
