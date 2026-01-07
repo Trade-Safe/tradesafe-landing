@@ -81,7 +81,7 @@ export default function FAQ({ label, title, items }: FAQProps) {
               </div>
             </div>
           ))}
-        </div>
+       </div>
 
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
