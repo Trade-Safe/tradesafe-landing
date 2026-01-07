@@ -17,7 +17,7 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
       </div>
 
       {/* Quote tagline */}
-      <p className="text-primary-light text-sm font-medium mb-6 tracking-wide">
+      <p className="text-[#888] text-sm font-medium mb-6 tracking-wide">
         {quote}
       </p>
 
