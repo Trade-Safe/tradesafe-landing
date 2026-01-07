@@ -49,51 +49,51 @@ export default function Pricing({ label, title, subtitle, badge, description, mo
           />
         </div>
         
-        <div className="max-w-[450px] mx-auto bg-[#151515] border-2 border-primary rounded-2xl p-10 text-center relative">
-          {/* Badge Early Access (existant) */}
-          <div className="absolute top-[-15px] left-1/2 transform -translate-x-1/2 bg-gradient-to-br from-primary to-primary-dark text-white px-5 py-2 rounded-full text-xs font-semibold">
-            {badge}
-          </div>
+        <div className="max-w-[450px] mx-auto bg-[#151515] border-2 border-primary rounded-2xl p-10 text-center relative overflow-visible">
+  {/* Badge Early Access */}
+  <div className="absolute top-[-15px] left-1/2 transform -translate-x-1/2 bg-gradient-to-br from-primary to-primary-dark text-white px-5 py-2 rounded-full text-xs font-semibold z-10">
+    {badge}
+  </div>
 
-          {/* Badge MOST POPULAR - NOUVEAU ! (seulement si yearly) */}
-          {isYearly && (
-            <div className="absolute top-[-15px] right-8 flex items-center gap-1.5 bg-primary/10 border border-primary/30 text-primary-light px-3 py-1.5 rounded-full text-xs font-semibold">
-              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-              </svg>
-              MOST POPULAR
-            </div>
-          )}
-          
-          <p className="text-[#888] text-sm mt-6 mb-6">
-            {description}
-          </p>
-          
-          {/* Price Display */}
-          <div className="mt-8 mb-8 p-4 bg-[#0f0f0f] rounded-lg">
-            <div className="text-3xl font-bold text-[#e0e0e0]">
-              {isYearly ? yearlyPrice : monthlyPrice}
-            </div>
-            {isYearly && (
-              <div className="text-green-500 font-semibold text-sm mt-2">
-                {discount}
-              </div>
-            )}
-          </div>
-          
-          <ul className="list-none my-8 text-left space-y-3">
-            {features.map((feature, index) => (
-              <li key={index} className="flex items-center gap-3 text-[#888] text-sm">
-                <span className="text-primary font-bold text-lg">✓</span>
-                {feature}
-              </li>
-            ))}
-          </ul>
-          
-          <div className="mt-8">
-            <EmailForm />
-          </div>
-        </div>
+  {/* Badge MOST POPULAR - Ribbon à droite */}
+  {isYearly && (
+    <div className="absolute top-8 -right-3 flex items-center gap-1.5 bg-gradient-to-br from-primary to-primary-dark text-white px-4 py-2 rounded-l-lg shadow-lg z-20">
+      <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+      <span className="text-xs font-semibold whitespace-nowrap">MOST POPULAR</span>
+    </div>
+  )}
+  
+  <p className="text-[#888] text-sm mt-6 mb-6">
+    {description}
+  </p>
+  
+  {/* Price Display */}
+  <div className="mt-8 mb-8 p-4 bg-[#0f0f0f] rounded-lg">
+    <div className="text-3xl font-bold text-[#e0e0e0]">
+      {isYearly ? yearlyPrice : monthlyPrice}
+    </div>
+    {isYearly && (
+      <div className="text-green-500 font-semibold text-sm mt-2">
+        {discount}
+      </div>
+    )}
+  </div>
+  
+  <ul className="list-none my-8 text-left space-y-3">
+    {features.map((feature, index) => (
+      <li key={index} className="flex items-center gap-3 text-[#888] text-sm">
+        <span className="text-primary font-bold text-lg">✓</span>
+        {feature}
+      </li>
+    ))}
+  </ul>
+  
+  <div className="mt-8">
+    <EmailForm />
+  </div>
+</div>
 
         {/* ROI Section */}
         {roi && (
