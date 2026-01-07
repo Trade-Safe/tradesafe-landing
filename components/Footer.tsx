@@ -75,7 +75,7 @@ export default function Footer({
             <ul className="list-none space-y-2">
               <li>
                 <a 
-                  href="https://tradesafe.beehiiv.com/subscribe" 
+                  href="https://trade-safe-ai.beehiiv.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors"
