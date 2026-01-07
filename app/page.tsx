@@ -70,10 +70,10 @@ export default function Home() {
         <HowItWorks {...messages.howItWorks} />
         <Technology {...messages.technology} />
         <FAQ
-  label={messages.faq.label}
-  title={messages.faq.title}
-  items={messages.faq.items}
-/>
+          label={messages.faq.label}
+          title={messages.faq.title}
+          items={messages.faq.items}
+        />
         <Pricing {...messages.pricing} />
       </main>
       <Footer {...messages.footer} />
