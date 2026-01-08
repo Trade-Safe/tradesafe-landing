@@ -63,6 +63,7 @@ export default function Home() {
       <Header nav={messages.nav} />
       <main>
         <Hero {...messages.hero} />
+        <Disclaimer />
         <Features 
           label={messages.features.label}
           title={messages.features.title}
