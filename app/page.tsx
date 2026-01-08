@@ -1,6 +1,5 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import Disclaimer from '@/components/Disclaimer'
 import Features from '@/components/Features'
 import HowItWorks from '@/components/HowItWorks'
 import Technology from '@/components/Technology'
@@ -63,7 +62,6 @@ export default function Home() {
     <Header nav={messages.nav} />
     <main>
       <Hero {...messages.hero} />
-      <Disclaimer />
       <Features 
         label={messages.features.label}
         title={messages.features.title}
