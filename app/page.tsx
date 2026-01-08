@@ -1,9 +1,12 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import Disclaimer from '@/components/Disclaimer'
 import Features from '@/components/Features'
-import Pricing from '@/components/Pricing'
 import HowItWorks from '@/components/HowItWorks'
 import Technology from '@/components/Technology'
+import WhoIsThisFor from '@/components/WhoIsThisFor'
+import Pricing from '@/components/Pricing'
+import LegalDisclaimer from '@/components/LegalDisclaimer'
 import Footer from '@/components/Footer'
 import messages from '@/messages/en.json'
 
