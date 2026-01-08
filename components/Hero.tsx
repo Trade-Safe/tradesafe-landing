@@ -53,7 +53,7 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
         </div>
 
         {/* Social Proof avec Users Icon - Violet */}
-<div className="flex items-center gap-3 text-sm text-[#888] mt-2">
+<div className="flex items-center gap-3 text-sm text-[#888] mt-2 mb-0">
   <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg border border-primary/30">
     <svg className="w-6 h-6 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
