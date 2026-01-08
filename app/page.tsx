@@ -59,22 +59,24 @@ export default function Home() {
   }))
 
   return (
-    <>
-      <Header nav={messages.nav} />
-      <main>
-        <Hero {...messages.hero} />
-        <Disclaimer />
-        <Features 
-          label={messages.features.label}
-          title={messages.features.title}
-          subtitle={messages.features.subtitle}
-          features={featuresWithIcons}
-        />
-        <HowItWorks {...messages.howItWorks} />
-        <Technology {...messages.technology} />
-        <Pricing {...messages.pricing} />
-      </main>
-      <Footer {...messages.footer} />
-    </>
+  <>
+    <Header nav={messages.nav} />
+    <main>
+      <Hero {...messages.hero} />
+      <Disclaimer />
+      <Features 
+        label={messages.features.label}
+        title={messages.features.title}
+        subtitle={messages.features.subtitle}
+        features={featuresWithIcons}
+      />
+      <HowItWorks {...messages.howItWorks} />
+      <Technology {...messages.technology} />
+      <WhoIsThisFor />
+      <Pricing {...messages.pricing} />
+    </main>
+    <LegalDisclaimer />
+    <Footer {...messages.footer} />
+  </>
   )
 }
