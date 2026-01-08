@@ -2,9 +2,15 @@ export default function WhoIsThisFor() {
   return (
     <section className="py-20 bg-[#0f0f0f] border-t border-[#1a1a1a]">
       <div className="max-w-[1000px] mx-auto px-8">
-        <h2 className="text-3xl font-semibold text-[#e0e0e0] text-center mb-12">
-          Is TradeSafe Right for You?
-        </h2>
+        {/* Header avec label + titre - AJOUTÉ */}
+        <div className="text-center mb-12">
+          <div className="text-primary-light text-xs font-semibold uppercase tracking-widest mb-4">
+            Who's TradeSafe For?
+          </div>
+          <h2 className="text-4xl font-semibold text-[#e0e0e0] leading-tight">
+            Is TradeSafe Right for You?
+          </h2>
+        </div>
         
         <div className="grid md:grid-cols-2 gap-8">
           {/* Who It's For */}
