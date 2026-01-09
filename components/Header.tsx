@@ -7,6 +7,7 @@ interface HeaderProps {
   nav: {
     features: string
     howItWorks: string
+    whosItFor: string
     pricing: string
     technology: string
     login: string
@@ -32,6 +33,7 @@ export default function Header({ nav }: HeaderProps) {
         <ul className="hidden md:flex gap-8 list-none m-0 p-0 flex-1 justify-center ml-32">
           <li><Link href="#features" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.features}</Link></li>
           <li><Link href="#how-it-works" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.howItWorks}</Link></li>
+          <li><Link href="#whos-it-for" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.whosItFor}</Link></li>
           <li><Link href="#pricing" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.pricing}</Link></li>
           <li><Link href="#technology" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.technology}</Link></li>
         </ul>
