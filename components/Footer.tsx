@@ -1,4 +1,4 @@
-'use client'
+  'use client'
 
 import Link from 'next/link'
 
@@ -40,62 +40,62 @@ export default function Footer({
   return (
     <footer className="bg-[#0a0a0a] border-t border-[#1a1a1a] py-12 px-8">
       <div className="max-w-[1200px] mx-auto">
-        {/* Grid principal - Brand large + 3 colonnes serrées */}
-        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-8 md:gap-4 mb-8">
-          
-          {/* Brand - Prend 2fr (double espace) */}
-          <div className="text-center md:text-left md:pr-12">
-            <Link href="/" className="flex items-center gap-3 no-underline relative mb-4 justify-center md:justify-start">
-              <div className="w-[26px] h-[32px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
-                   style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
-              <div className="text-xl font-normal tracking-[-0.5px] text-[#e0e0e0] relative">
-                TradeSafe
-                <div className="absolute bottom-[-3px] left-0 right-0 h-[2px] bg-gradient-to-r from-primary to-primary-dark rounded-[1px]" />
-              </div>
-            </Link>
-            <p className="text-[#666] text-xs leading-relaxed">
-              {description}
-            </p>
-          </div>
-          
-          {/* Product */}
-          <div className="text-center md:text-left">
-            <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{product}</h4>
-            <ul className="list-none space-y-2">
-              <li><Link href="#features" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{features}</Link></li>
-              <li><Link href="#how-it-works" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{howItWorks}</Link></li>
-              <li><Link href="#pricing" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{pricing}</Link></li>
-              <li><Link href="#technology" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{technology}</Link></li>
-            </ul>
-          </div>
-          
-          {/* Resources */}
-          <div className="text-center md:text-left">
-            <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{resources}</h4>
-            <ul className="list-none space-y-2">
-              <li>
-                <a 
-                  href="https://trade-safe-ai.beehiiv.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors"
-                >
-                  {newsletter}
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          {/* Company */}
-          <div className="text-center md:text-left">
-            <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{company}</h4>
-            <ul className="list-none space-y-2">
-              <li><Link href="/about" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{about}</Link></li>
-              <li><Link href="/contact" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{contact}</Link></li>
-              <li><Link href="/legal" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{legal}</Link></li>
-            </ul>
-          </div>
-        </div>
+        {/* Grid principal - 4 colonnes sur desktop, Brand full + 3 cols sur mobile */}
+<div className="grid grid-cols-3 md:grid-cols-[2fr_1fr_1fr_1fr] gap-4 mb-8">
+  
+  {/* Brand - Full width mobile, 2 cols desktop */}
+  <div className="col-span-3 md:col-span-1 md:col-start-1 md:col-end-2 text-center md:text-left md:pr-12 mb-6 md:mb-0">
+    <Link href="/" className="flex items-center gap-3 no-underline relative mb-4 justify-center md:justify-start">
+      <div className="w-[26px] h-[32px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
+           style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
+      <div className="text-xl font-normal tracking-[-0.5px] text-[#e0e0e0] relative">
+        TradeSafe
+        <div className="absolute bottom-[-3px] left-0 right-0 h-[2px] bg-gradient-to-r from-primary to-primary-dark rounded-[1px]" />
+      </div>
+    </Link>
+    <p className="text-[#666] text-xs leading-relaxed">
+      {description}
+    </p>
+  </div>
+  
+  {/* Product - 1 colonne mobile et desktop */}
+  <div className="text-left">
+    <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{product}</h4>
+    <ul className="list-none space-y-2">
+      <li><Link href="#features" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{features}</Link></li>
+      <li><Link href="#how-it-works" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{howItWorks}</Link></li>
+      <li><Link href="#pricing" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{pricing}</Link></li>
+      <li><Link href="#technology" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{technology}</Link></li>
+    </ul>
+  </div>
+  
+  {/* Resources - 1 colonne mobile et desktop */}
+  <div className="text-left">
+    <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{resources}</h4>
+    <ul className="list-none space-y-2">
+      <li>
+        <a 
+          href="https://trade-safe-ai.beehiiv.com/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors"
+        >
+          {newsletter}
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  {/* Company - 1 colonne mobile et desktop */}
+  <div className="text-left">
+    <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{company}</h4>
+    <ul className="list-none space-y-2">
+      <li><Link href="/about" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{about}</Link></li>
+      <li><Link href="/contact" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{contact}</Link></li>
+      <li><Link href="/legal" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">{legal}</Link></li>
+    </ul>
+  </div>
+</div>
         
         {/* Footer bottom */}
         <div className="pt-6 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between items-center gap-4 text-[#666] text-xs">
