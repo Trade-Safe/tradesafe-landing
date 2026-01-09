@@ -34,8 +34,8 @@ export default function ContactPage() {
             <div className="w-[40px] h-[48px] bg-gradient-to-br from-primary to-primary-dark" 
                  style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
           </div>
-          <h1 className="text-5xl font-semibold mb-4 leading-tight">
-            Get in Touch
+          <h1 className="text-3xl font-semibold mb-4 leading-tight">
+            Get in Touch with our Support Team
           </h1>
           <p className="text-lg text-[#888] leading-relaxed">
             Have questions about TradeSafe? We're here to help.
