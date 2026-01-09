@@ -29,23 +29,16 @@ export default function ContactPage() {
       {/* Main Content */}
       <main className="max-w-[800px] mx-auto px-8 py-20">
         {/* Header Section */}
-<div className="text-center mb-16">
-  <div className="inline-flex items-center gap-3 mb-6">
-    <div className="w-[32px] h-[38px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
-         style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
-    <div className="text-2xl font-normal tracking-[-0.5px] text-[#e0e0e0] relative">
-      TradeSafe
-      <div className="absolute bottom-[-4px] left-0 right-0 h-[2px] bg-gradient-to-r from-primary to-primary-dark rounded-[1px]" />
-    </div>
-  </div>
-  <h1 className="text-4xl font-semibold mb-4 leading-tight">
-    Get in Touch with our Support Team
-  </h1>
-  <p className="text-lg text-[#888] leading-relaxed">
-    Have questions about TradeSafe? We're here to help.
-  </p>
-</div>
-          <h1 className="text-3xl font-semibold mb-4 leading-tight">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-3 mb-6">
+            <div className="w-[32px] h-[38px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
+                 style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
+            <div className="text-2xl font-normal tracking-[-0.5px] text-[#e0e0e0] relative">
+              TradeSafe
+              <div className="absolute bottom-[-4px] left-0 right-0 h-[2px] bg-gradient-to-r from-primary to-primary-dark rounded-[1px]" />
+            </div>
+          </div>
+          <h1 className="text-4xl font-semibold mb-4 leading-tight">
             Get in Touch with our Support Team
           </h1>
           <p className="text-lg text-[#888] leading-relaxed">
