@@ -1,7 +1,7 @@
 export default function WhoIsThisFor() {
   return (
-    <section className="py-20 bg-[#0f0f0f] border-t border-[#1a1a1a]">
-      <div className="max-w-[1000px] mx-auto px-8">
+    <section id="whos-it-for" className="py-20 bg-[#0f0f0f] border-t border-[#1a1a1a]">
+      <div className="max-w-[1000px]x-a muto px-8">
         {/* Header avec label + titre - AJOUTÉ */}
         <div className="text-center mb-12">
           <div className="text-primary-light text-xs font-semibold uppercase tracking-widest mb-4">
