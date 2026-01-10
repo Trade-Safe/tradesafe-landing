@@ -75,21 +75,26 @@ export default function Footer({
             </div>
             
             {/* Resources - 1 colonne mobile et desktop */}
-            <div className="text-left">
-              <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{resources}</h4>
-              <ul className="list-none space-y-2">
-                <li>
-                  <a 
-                    href="https://trade-safe-ai.beehiiv.com/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors"
-                  >
-                    {newsletter}
-                  </a>
-                </li>
-              </ul>
-            </div>
+<div className="text-left">
+  <h4 className="text-[#e0e0e0] text-xs font-semibold mb-3">{resources}</h4>
+  <ul className="list-none space-y-2">
+    <li>
+      <a 
+        href="https://trade-safe-ai.beehiiv.com/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors"
+      >
+        {newsletter}
+      </a>
+    </li>
+    <li>
+      <Link href="/faq" className="text-[#888] text-xs no-underline hover:text-[#e0e0e0] transition-colors">
+        FAQ
+      </Link>
+    </li>
+  </ul>
+</div>
             
             {/* Company - 1 colonne mobile et desktop */}
             <div className="text-left">
