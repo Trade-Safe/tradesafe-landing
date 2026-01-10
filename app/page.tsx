@@ -70,9 +70,9 @@ export default function Home() {
         features={featuresWithIcons}
       />
       <HowItWorks {...messages.howItWorks} />
+      <ProductPreview />
       <Technology {...messages.technology} />
       <WhoIsThisFor />
-      <ProductPreview />
       <Pricing {...messages.pricing} />
     </main>
     <LegalDisclaimer />
