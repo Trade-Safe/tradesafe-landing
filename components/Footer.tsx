@@ -107,22 +107,6 @@ export default function Footer({
             </div>
           </div>
 
-          {/* Pre-footer CTA */}
-          <div className="py-16 text-center border-t border-[#1a1a1a]">
-            <h3 className="text-3xl font-semibold text-[#e0e0e0] mb-4">
-              Ready to Build Better Discipline?
-            </h3>
-            <p className="text-[#888] mb-8 max-w-[500px] mx-auto leading-relaxed">
-              Join 155+ traders on the waitlist for early access to TradeSafe.
-            </p>
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="inline-block px-8 py-4 bg-gradient-to-br from-primary to-primary-dark text-white font-semibold rounded-lg hover:opacity-90 transition-opacity shadow-lg shadow-primary/30 cursor-pointer"
-            >
-              Protect My Capital
-            </button>
-          </div>
-          
           {/* Footer bottom */}
           <div className="pt-6 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between items-center gap-4 text-[#666] text-xs">
             <p>&copy; 2025 TradeSafe. {rights}</p>
