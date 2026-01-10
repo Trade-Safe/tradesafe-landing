@@ -72,6 +72,7 @@ export default function Home() {
       <HowItWorks {...messages.howItWorks} />
       <Technology {...messages.technology} />
       <WhoIsThisFor />
+      <ProductPreview />
       <Pricing {...messages.pricing} />
     </main>
     <LegalDisclaimer />
