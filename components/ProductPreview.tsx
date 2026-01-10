@@ -36,7 +36,7 @@ export default function ProductPreview() {
   const active = tabs.find(t => t.id === activeTab)
 
   return (
-    <section className="py-20 bg-[#0f0f0f] border-y border-[#1a1a1a]">
+    <section id="product-preview" className="py-20 bg-[#0f0f0f] border-y border-[#1a1a1a]">
       <div className="max-w-[1200px] mx-auto px-8">
         {/* Header */}
         <div className="text-center mb-12">
