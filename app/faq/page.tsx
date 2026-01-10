@@ -52,7 +52,7 @@ export default function FAQPage() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Which brokers are supported?
               </h3>
               <p className="text-[#888] leading-relaxed mb-2">
@@ -72,7 +72,7 @@ export default function FAQPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Do I need coding skills to use TradeSafe?
               </h3>
               <p className="text-[#888] leading-relaxed">
@@ -90,7 +90,7 @@ export default function FAQPage() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Can TradeSafe access my funds or execute trades?
               </h3>
               <p className="text-[#888] leading-relaxed">
@@ -99,7 +99,7 @@ export default function FAQPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Is my trading data secure?
               </h3>
               <p className="text-[#888] leading-relaxed mb-2">
@@ -128,7 +128,7 @@ export default function FAQPage() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 How long before I see results?
               </h3>
               <p className="text-[#888] leading-relaxed mb-2">
@@ -148,7 +148,7 @@ export default function FAQPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Will TradeSafe make me a profitable trader?
               </h3>
               <p className="text-[#888] leading-relaxed mb-2">
@@ -177,7 +177,7 @@ export default function FAQPage() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Can I cancel anytime?
               </h3>
               <p className="text-[#888] leading-relaxed mb-2">
@@ -193,7 +193,7 @@ export default function FAQPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Do you offer refunds?
               </h3>
               <p className="text-[#888] leading-relaxed">
@@ -202,7 +202,7 @@ export default function FAQPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Is there a free trial?
               </h3>
               <p className="text-[#888] leading-relaxed">
@@ -220,7 +220,7 @@ export default function FAQPage() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Does TradeSafe work on mobile?
               </h3>
               <p className="text-[#888] leading-relaxed">
@@ -229,7 +229,7 @@ export default function FAQPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Can I use TradeSafe for stocks, crypto, or forex?
               </h3>
               <p className="text-[#888] leading-relaxed mb-2">
@@ -244,7 +244,7 @@ export default function FAQPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 What's "Strict Mode"?
               </h3>
               <p className="text-[#888] leading-relaxed">
@@ -262,7 +262,7 @@ export default function FAQPage() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 How do I get help if I have issues?
               </h3>
               <p className="text-[#888] leading-relaxed mb-2">
@@ -279,7 +279,7 @@ export default function FAQPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-light mb-3">
+              <h3 className="text-lg font-normal italic text-primary-light mb-3">
                 Can I request new features?
               </h3>
               <p className="text-[#888] leading-relaxed mb-2">
