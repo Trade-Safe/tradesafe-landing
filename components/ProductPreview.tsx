@@ -16,17 +16,17 @@ const tabs = [
   },
   {
     id: 'journal',
-    label: 'AI Journal',
+    label: 'AI Pre-market',
     image: '/wireframes/journal.png'
-  },
-  {
-    id: 'settings',
-    label: 'Risk Settings',
-    image: '/wireframes/risk-settings-1.png'
   },
   {
     id: 'strict-mode',
     label: 'Strict Mode',
+    image: '/wireframes/risk-settings-1.png'
+  },
+  {
+    id: 'settings',
+    label: 'Risk Settings',
     image: '/wireframes/risk-settings-2.png'
   }
 ]
