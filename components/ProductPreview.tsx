@@ -22,7 +22,12 @@ const tabs = [
   {
     id: 'settings',
     label: 'Risk Settings',
-    image: '/wireframes/risk-settings.png'
+    image: '/wireframes/risk-settings-1.png'
+  },
+  {
+    id: 'strict-mode',
+    label: 'Strict Mode',
+    image: '/wireframes/risk-settings-2.png'
   }
 ]
 
