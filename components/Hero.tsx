@@ -73,7 +73,7 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
       </svg>
     </div>
     <span>
-      <strong className="text-[#e0e0e0]">155+ traders</strong> on waitlist
+      <strong className="text-[#e0e0e0]">350+ traders</strong> on waitlist
     </span>
   </div>
 
