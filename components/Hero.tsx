@@ -60,10 +60,10 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
             </div>
           </div>
 
-          {/* Trust Badges - 3 badges horizontaux */}
-<div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[#888] mt-4">
-  {/* Badge 1: Social Proof */}
-  <div className="flex items-center gap-3">
+          {/* Trust Badges - Layout vertical centré */}
+<div className="flex flex-col items-center gap-4 mt-6">
+  {/* Badge 1: Social Proof (centré seul) */}
+  <div className="flex items-center gap-3 text-sm text-[#888]">
     <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg border border-primary/30">
       <svg className="w-6 h-6 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -73,40 +73,40 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
       </svg>
     </div>
     <span>
-      <strong className="text-[#e0e0e0]">350+ traders</strong> on waitlist
+      <strong className="text-[#e0e0e0]">350+ traders</strong> already on the waitlist
     </span>
   </div>
 
-  {/* Separator */}
-  <div className="hidden md:block w-px h-8 bg-[#2a2a2a]"></div>
-
-  {/* Badge 2: No Credit Card */}
-  <div className="flex items-center gap-3">
-    <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg border border-primary/30">
-      <svg className="w-6 h-6 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
-        <line x1="1" y1="10" x2="23" y2="10"/>
-      </svg>
+  {/* Badges 2 & 3: No Credit Card + Cancel Anytime (horizontal) */}
+  <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[#888]">
+    {/* Badge 2: No Credit Card */}
+    <div className="flex items-center gap-3">
+      <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg border border-primary/30">
+        <svg className="w-6 h-6 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+          <line x1="1" y1="10" x2="23" y2="10"/>
+        </svg>
+      </div>
+      <span className="text-[#888]">
+        No credit card required
+      </span>
     </div>
-    <span className="text-[#888]">
-      No credit card required
-    </span>
-  </div>
 
-  {/* Separator */}
-  <div className="hidden md:block w-px h-8 bg-[#2a2a2a]"></div>
+    {/* Separator (desktop only) */}
+    <div className="hidden sm:block w-px h-8 bg-[#2a2a2a]"></div>
 
-  {/* Badge 3: Cancel Anytime */}
-  <div className="flex items-center gap-3">
-    <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg border border-primary/30">
-      <svg className="w-6 h-6 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M9 11l3 3L22 4"/>
-        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-      </svg>
+    {/* Badge 3: Cancel Anytime */}
+    <div className="flex items-center gap-3">
+      <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg border border-primary/30">
+        <svg className="w-6 h-6 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M9 11l3 3L22 4"/>
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+        </svg>
+      </div>
+      <span className="text-[#888]">
+        Cancel anytime
+      </span>
     </div>
-    <span className="text-[#888]">
-      Cancel anytime
-    </span>
   </div>
 </div>
         </div>
