@@ -8,7 +8,7 @@ export default function WhoIsThisFor() {
             Who's TradeSafe For?
           </div>
           <h2 className="text-4xl font-semibold text-[#e0e0e0] leading-tight">
-            Is TradeSafe Right for You?
+            Is TradeSafe right for you?
           </h2>
         </div>
         
