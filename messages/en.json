@@ -10,17 +10,17 @@
   },
   "nav": {
     "features": "Features",
-    "howItWorks": "How It Works",
-    "productPreview": "Product Preview",
+    "howItWorks": "How it works",
+    "productPreview": "Product preview",
     "pricing": "Pricing",
     "technology": "Technology",
-    "whosItFor": "Who's It For",
+    "whosItFor": "Who's it for",
     "login": "Log In",
     "startTrial": "Join Waitlist"
   },
   "features": {
   "label": "Features",
-  "title": "Built to Protect Your Capital",
+  "title": "Built to protect your capital",
   "subtitle": "Real-time behavioral intervention powered by AI, designed specifically for retail traders who struggle with discipline.",
   "features": [
     {
