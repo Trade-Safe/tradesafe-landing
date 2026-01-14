@@ -15,7 +15,7 @@ export default function LegalDisclaimer() {
             href="/legal" 
             className="inline-block text-xs text-primary-light hover:text-primary transition-colors font-medium"
           >
-            Read Full Disclaimer →
+            Read full disclaimer →
           </Link>
         </div>
       </div>
