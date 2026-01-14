@@ -47,7 +47,7 @@ export default function Header({ nav }: HeaderProps) {
 
           {/* Desktop CTA Buttons + Language Switcher - Cachés sur mobile */}
           <div className="hidden md:flex gap-4 items-center">
-            <LanguageSwitcher />
+            <LanguageSwitcher className="hidden" />
             <Link 
               href="#pricing" 
               className="px-3 py-1.5 bg-transparent text-primary border border-primary/30 rounded-md text-xs font-medium transition-all hover:bg-primary/10 hover:border-primary no-underline"
@@ -65,7 +65,7 @@ export default function Header({ nav }: HeaderProps) {
           {/* Mobile CTA Button + Language Switcher - Visible uniquement sur mobile */}
           <div className="md:hidden flex items-center gap-4">
             <div className="flex-1 flex justify-center -ml-20">
-              <LanguageSwitcher />
+              <LanguageSwitcher className="hidden" />
             </div>
             <button
               onClick={() => setIsModalOpen(true)}
