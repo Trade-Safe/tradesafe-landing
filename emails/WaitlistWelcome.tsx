@@ -228,7 +228,7 @@ export default function WaitlistWelcome({ email }: WaitlistWelcomeProps) {
                     <table width="100%" cellPadding="0" cellSpacing="0">
                       <tr>
                         <td align="center" style={{ paddingBottom: '24px' }}>
-                          <a href="https://tradesafe.beehiiv.com/subscribe" style={{
+                          <a href="https://trade-safe-ai.beehiiv.com/" style={{
                             display: 'inline-block',
                             padding: '14px 32px',
                             backgroundColor: '#667eea',
