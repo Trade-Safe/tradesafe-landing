@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import LanguageSwitcher from './LanguageSwitcher'
+// import LanguageSwitcher from './LanguageSwitcher'  // ← Garde l'import pour plus tard
 import EmailModal from './EmailModal'
 
 interface HeaderProps {
@@ -25,7 +25,7 @@ export default function Header({ nav }: HeaderProps) {
     <>
       <header className="bg-[rgba(15,15,15,0.95)] backdrop-blur-[10px] border-b border-[#1a1a1a] sticky top-0 z-[1000]">
         <nav className="w-full px-6 md:px-12 py-2 flex items-center justify-between">
-          {/* Logo - Visible sur desktop ET mobile */}
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-3 no-underline relative">
             <div className="w-[26px] h-[32px] bg-gradient-to-br from-primary to-primary-dark flex-shrink-0" 
                  style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
@@ -35,7 +35,7 @@ export default function Header({ nav }: HeaderProps) {
             </div>
           </Link>
 
-          {/* Desktop Navigation - Caché sur mobile */}
+          {/* Desktop Navigation */}
           <ul className="hidden md:flex gap-8 list-none m-0 p-0 flex-1 justify-center ml-32">
             <li><Link href="#features" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.features}</Link></li>
             <li><Link href="#how-it-works" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.howItWorks}</Link></li>
@@ -45,9 +45,9 @@ export default function Header({ nav }: HeaderProps) {
             <li><Link href="#technology" className="text-[#888] no-underline text-xs transition-colors hover:text-primary">{nav.technology}</Link></li>
           </ul>
 
-          {/* Desktop CTA Buttons + Language Switcher - Cachés sur mobile */}
+          {/* Desktop CTA Buttons - Language Switcher hidden */}
           <div className="hidden md:flex gap-4 items-center">
-            <LanguageSwitcher className="hidden" />
+            {/* <LanguageSwitcher /> */}
             <Link 
               href="#pricing" 
               className="px-3 py-1.5 bg-transparent text-primary border border-primary/30 rounded-md text-xs font-medium transition-all hover:bg-primary/10 hover:border-primary no-underline"
@@ -62,11 +62,11 @@ export default function Header({ nav }: HeaderProps) {
             </button>
           </div>
 
-          {/* Mobile CTA Button + Language Switcher - Visible uniquement sur mobile */}
+          {/* Mobile CTA Button - Language Switcher hidden */}
           <div className="md:hidden flex items-center gap-4">
-            <div className="flex-1 flex justify-center -ml-20">
-              <LanguageSwitcher className="hidden" />
-            </div>
+            {/* <div className="flex-1 flex justify-center -ml-20">
+              <LanguageSwitcher />
+            </div> */}
             <button
               onClick={() => setIsModalOpen(true)}
               className="px-5 py-2 bg-gradient-to-br from-primary to-primary-dark text-white rounded-md text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/35 cursor-pointer whitespace-nowrap"
