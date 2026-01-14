@@ -13,7 +13,7 @@ export default function WhoIsThisFor() {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Who It's For */}
+          {/* Who it's for */}
           <div className="bg-[#151515] border-2 border-primary/30 rounded-xl p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -44,7 +44,7 @@ export default function WhoIsThisFor() {
             </ul>
           </div>
           
-          {/* Who It's NOT For */}
+          {/* Who it's not for */}
           <div className="bg-[#151515] border-2 border-[#2a2a2a] rounded-xl p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-[#2a2a2a] rounded-lg flex items-center justify-center">
