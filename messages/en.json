@@ -25,27 +25,27 @@
   "features": [
     {
       "icon": "shield",
-      "title": "Set Unbreakable Trading Rules",
+      "title": "Set unbreakable trading rules",
       "description": "Define your own trading rules, setup your risk settings and stick to them: daily loss limits, max trades, time windows, blocked tickers. Enable Strict Mode to enforce the rules you set, even when emotions take over."
     },
     {
       "icon": "zap",
-      "title": "Stop Emotional Trades in Real Time",
+      "title": "Stop emotional trades in real time",
       "description": "Chrome extension monitors your trading activity in real time. Get instant alerts before you place a revenge trade or break your plan. Act before it's too late."
     },
     {
       "icon": "clock",
-      "title": "Identify Where You Lose Control",
+      "title": "Identify where you lose control",
       "description": "AI detects overtrading patterns, revenge sequences, and repeated rule violations. Identify your triggers early—before they compound losses and spiral out of control."
     },
     {
       "icon": "chart",
-      "title": "Track Discipline, Not Just P&L",
+      "title": "Track discipline, not just P&L",
       "description": "Analytics dashboard that tracks rule adherence, discipline score, and behavioral patterns. Focus on what truly matters: your process, not just profits."
     },
     {
       "icon": "book",
-      "title": "Start Each Session with Clarity",
+      "title": "Start each session with clarity",
       "description": "Daily pre-market analysis powered by Claude AI. Review yesterday's performance, set today's risk limits, and commit to your plan before the bell rings. Consistency beats conviction."
     }
     ]
@@ -72,7 +72,7 @@
       "Email support"
     ],
     "roi": {
-      "title": "Expected ROI: Discipline Over Performance",
+      "title": "Expected ROI: Discipline over performance",
       "intro": "TradeSafe is not designed to increase win rates or predict profitable trades.",
       "subtitle": "Its value lies in reducing costly behavioral mistakes:",
       "points": [
@@ -87,21 +87,21 @@
   },
   "howItWorks": {
     "label": "How It Works",
-    "title": "Protection in 3 Simple Steps",
+    "title": "Protection in 3 simple steps",
     "steps": [
       {
         "number": "1",
-        "title": "Set Your Risk Rules",
+        "title": "Set your risk rules",
         "description": "Configure your daily loss limits, max trades per day, time restrictions, and blocked tickers. Enable Strict Mode for unbreakable enforcement."
       },
       {
         "number": "2",
-        "title": "Trade with Protection",
+        "title": "Trade with protection",
         "description": "Our Chrome extension monitors your trading in real-time. Get instant alerts when you approach risk thresholds or exhibit dangerous patterns."
       },
       {
         "number": "3",
-        "title": "Improve with AI Insights",
+        "title": "Improve with AI insights",
         "description": "Review AI-generated pre-market analysis, track your discipline score, and complete guided end-session reviews to build better habits."
       }
     ]
