@@ -54,7 +54,7 @@ export async function POST(request: Request) {
     const { data, error } = await resend.emails.send({
       from: 'TradeSafe <hello@trade-safe.ai>',
       to: [email],
-      subject: 'Welcome to TradeSafe Waitlist 🚀',
+      subject: 'Welcome to TradeSafe 🛡️',  // ← MODIFIÉ ICI
       react: WaitlistWelcome({ email })
     })
 
