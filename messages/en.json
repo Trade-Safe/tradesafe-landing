@@ -2,7 +2,7 @@
   "hero": {
     "badge": "Beta Coming Soon",
     "quote": "Trade Less. Trade Smarter!",
-    "title": "The First AI-Powered Discipline Software<br />Built for Traders",
+    "title": "The first AI-powered discipline software<br />built for traders",
     "subtitle": "TradeSafe detects emotional trading patterns and acts as an intelligent shield system to protect your capital in real-time.",
     "priceMonth": "€19.90/month",
     "priceYear": "or €144.90/year",
@@ -52,7 +52,7 @@
   },
   "pricing": {
     "label": "Early Access",
-    "title": "Join the Waitlist",
+    "title": "Join the waitlist",
     "subtitle": "Lock in our special launch price before it increases.",
     "badge": "🔥 Early Access",
     "description": "Everything you need to protect your capital",
@@ -110,7 +110,7 @@
     "label": "Technology",
     "title": "How AI powers TradeSafe",
     "intro": "TradeSafe uses AI to analyze behavioral patterns — not to predict markets.",
-    "developmentTitle": "Launching Soon (Q1 2026)",
+    "developmentTitle": "Launching soon (Q1 2026)",
     "developmentSubtitle": "Features launching in the next 8-12 weeks:",
     "developmentPoints": [
       "Real-time behavioral alerts and intervention system",
@@ -119,8 +119,8 @@
       "AI-assisted journaling with guided insights",
       "Chrome extension with live trading protection"
     ],
-    "roadmapTitle": "Upcoming Features",
-    "roadmapSubtitle": "TradeSafe Roadmap for 2026:",
+    "roadmapTitle": "Upcoming features",
+    "roadmapSubtitle": "TradeSafe roadmap for 2026:",
     "roadmapPoints": [
       "Personalized ML models for risk pattern prediction",
       "Multi-account aggregation across platforms",
