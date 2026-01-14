@@ -61,7 +61,7 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
             </svg>
           </div>
           <h2 className="text-2xl font-semibold text-[#e0e0e0] mb-2">
-            Join the Waitlist
+            Join the waitlist
           </h2>
           <p className="text-sm text-[#888]">
             Get early access when we launch in Q1 2026
