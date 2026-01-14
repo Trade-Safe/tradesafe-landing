@@ -44,7 +44,7 @@ export default function ProductPreview() {
             Product Preview
           </div>
           <h2 className="text-4xl font-semibold text-[#e0e0e0]">
-            What TradeSafe Looks Like?
+            What TradeSafe looks like?
           </h2>
         </div>
 
