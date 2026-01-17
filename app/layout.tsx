@@ -90,7 +90,7 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   verification: {
-    google: 'your-google-verification-code',
+    google: 'tp5tn_0Y1bKd0cIbp2q18Akh2l225F8G_FV86A92d6Y',
   },
   alternates: {
     canonical: 'https://www.trade-safe.ai',
@@ -116,3 +116,4 @@ export default function RootLayout({
     </html>
   );
 }
+
