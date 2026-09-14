@@ -1,38 +1,9 @@
-﻿import { MetadataRoute } from 'next';
+import { MetadataRoute } from 'next';
+import { SITE_URL } from '@/lib/seo';
+
+// Pages publiques indexables uniquement (ni API, ni redirections comme /fr)
+const PUBLIC_PATHS = ['', '/about', '/faq', '/contact', '/legal'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.trade-safe.ai';
-  
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/faq`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/legal`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-  ];
+  return PUBLIC_PATHS.map((path) => ({ url: `${SITE_URL}${path}` }));
 }

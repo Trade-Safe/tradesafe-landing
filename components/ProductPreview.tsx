@@ -54,6 +54,7 @@ export default function ProductPreview() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
+              aria-pressed={activeTab === tab.id}
               className={`px-6 py-3 rounded-lg font-medium text-sm transition-all ${
                 activeTab === tab.id
                   ? 'bg-gradient-to-br from-primary to-primary-dark text-white shadow-lg'
@@ -70,7 +71,7 @@ export default function ProductPreview() {
           <div className="relative aspect-[16/10] rounded-lg overflow-hidden bg-[#0a0a0a]">
             <Image
               src={active!.image}
-              alt={`${active!.label} preview`}
+              alt={`TradeSafe ${active!.label} screen (wireframe preview)`}
               fill
               className="object-contain"
             />

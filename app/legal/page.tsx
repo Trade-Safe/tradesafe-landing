@@ -1,6 +1,13 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import messages from '@/messages/en.json'
+import { pageMetadata } from '@/lib/seo'
+
+export const metadata = pageMetadata({
+  title: 'Legal & Disclaimer',
+  description: 'TradeSafe legal disclaimer: no financial advice, trading involves substantial risk, and you remain responsible for your trading decisions.',
+  path: '/legal',
+})
 
 export default function LegalPage() {
   return (

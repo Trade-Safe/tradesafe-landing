@@ -1,4 +1,11 @@
 import Link from 'next/link'
+import { pageMetadata } from '@/lib/seo'
+
+export const metadata = pageMetadata({
+  title: 'FAQ',
+  description: 'Answers to common questions about TradeSafe: supported brokers, data security, product scope and the waitlist.',
+  path: '/faq',
+})
 
 export default function FAQPage() {
   return (

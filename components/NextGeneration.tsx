@@ -86,7 +86,7 @@ export default function NextGeneration({ label, title, lead, description, pillar
               </button>
             </div>
 
-            <p className="text-xs text-[#666] mt-8">{note}</p>
+            <p className="text-xs text-[#8a8a8a] mt-8">{note}</p>
           </div>
         </div>
       </section>

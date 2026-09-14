@@ -1,4 +1,11 @@
 import Link from 'next/link'
+import { pageMetadata } from '@/lib/seo'
+
+export const metadata = pageMetadata({
+  title: 'About',
+  description: 'Who is building TradeSafe and why: a team of traders developing an AI Trading Copilot, currently in research and development.',
+  path: '/about',
+})
 
 export default function AboutPage() {
   return (
