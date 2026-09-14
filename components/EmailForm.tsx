@@ -63,6 +63,7 @@ export default function EmailForm({ source }: EmailFormProps) {
         <input
           type="email"
           name="email"
+          aria-label="Email address"
           autoComplete="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}

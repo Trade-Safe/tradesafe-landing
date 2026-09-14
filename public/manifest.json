@@ -1,11 +1,11 @@
-﻿{
-  "name": "TradeSafe - AI Trading Discipline",
+{
+  "name": "TradeSafe",
   "short_name": "TradeSafe",
-  "description": "AI-powered behavioral discipline system for retail traders",
+  "description": "Your AI Trading Copilot. Turn backtested strategies into consistent, profitable trading.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",
-  "theme_color": "#7C3AED",
+  "theme_color": "#0a0a0a",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

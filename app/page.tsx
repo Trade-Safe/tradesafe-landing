@@ -10,7 +10,11 @@ import ProductPreview from '@/components/ProductPreview'
 import Pricing from '@/components/Pricing'
 import LegalDisclaimer from '@/components/LegalDisclaimer'
 import Footer from '@/components/Footer'
+import StructuredData from '@/components/StructuredData'
 import messages from '@/messages/en.json'
+import { pageMetadata, DEFAULT_DESCRIPTION } from '@/lib/seo'
+
+export const metadata = pageMetadata({ description: DEFAULT_DESCRIPTION, path: '/' })
 
 // Icônes pour Features
 const icons = {
@@ -62,6 +66,7 @@ export default function Home() {
 
   return (
   <>
+    <StructuredData />
     <AnnouncementBanner {...messages.announcement} />
     <Header nav={messages.nav} />
     <main>

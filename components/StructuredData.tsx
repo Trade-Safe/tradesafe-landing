@@ -1,78 +1,48 @@
-﻿'use client';
+import { SITE_URL, SITE_NAME, DEFAULT_TITLE, PROJECT_DESCRIPTION } from '@/lib/seo'
+
+// Données structurées schema.org de la page d'accueil, limitées à des faits vérifiables
+// (pas d'avis, de note, de prix, d'adresse ni de profils sociaux non confirmés)
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/android-chrome-512x512.png`,
+        width: 512,
+        height: 512,
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+      name: SITE_NAME,
+      url: SITE_URL,
+      inLanguage: 'en',
+      publisher: { '@id': `${SITE_URL}/#organization` },
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}/#webpage`,
+      url: SITE_URL,
+      name: DEFAULT_TITLE,
+      description: PROJECT_DESCRIPTION,
+      inLanguage: 'en',
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      about: { '@id': `${SITE_URL}/#organization` },
+    },
+  ],
+}
 
 export default function StructuredData() {
-  const softwareSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "TradeSafe",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "Web Browser",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "160"
-    },
-    "description": "AI-powered behavioral discipline system for retail traders providing real-time intervention to prevent emotional trading and protect capital."
-  };
-
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "TradeSafe",
-    "url": "https://www.trade-safe.ai",
-    "logo": "https://www.trade-safe.ai/og-image.png",
-    "sameAs": [
-      "https://twitter.com/tradesafe",
-      "https://www.linkedin.com/company/tradesafe"
-    ]
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is TradeSafe?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "TradeSafe is an AI-powered behavioral discipline system for retail traders that provides real-time intervention to prevent emotional trading behaviors like revenge trading and overtrading."
-        }
-      }
-    ]
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.trade-safe.ai"
-      }
-    ]
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-    </>
-  );
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  )
 }
