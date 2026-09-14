@@ -54,7 +54,7 @@ export default function Hero({ badge, title, subtitle }: HeroProps) {
       </svg>
     </div>
     <span className="text-left">
-      Join traders following the TradeSafe project
+      Get early access
     </span>
   </div>
 
