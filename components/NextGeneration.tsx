@@ -40,7 +40,7 @@ export default function NextGeneration({ label, title, lead, description, pillar
   return (
     <>
       <section id="next-generation" className="scroll-mt-20 px-8 pb-24">
-        <div className="relative max-w-[1000px] mx-auto overflow-hidden bg-[#0f0f0f] border-2 border-primary/40 rounded-2xl px-6 py-12 md:px-12 text-center">
+        <div className="relative max-w-[1000px] mx-auto overflow-hidden bg-[#0f0f0f] border-2 border-primary/40 rounded-2xl px-6 py-10 md:px-12 text-center">
           {/* Halo discret */}
           <div
             aria-hidden="true"
@@ -51,10 +51,10 @@ export default function NextGeneration({ label, title, lead, description, pillar
             <div className="text-primary-light text-xs font-semibold uppercase tracking-widest mb-4">{label}</div>
             <h2 className="text-3xl md:text-4xl font-semibold text-[#e0e0e0] mb-4 leading-tight">{title}</h2>
             <p className="text-lg text-[#e0e0e0] mb-4">{lead}</p>
-            <p className="text-base text-[#888] max-w-[680px] mx-auto leading-relaxed mb-10">{description}</p>
+            <p className="text-base text-[#888] max-w-[680px] mx-auto leading-relaxed mb-8">{description}</p>
 
             {/* Piliers */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-[800px] mx-auto mb-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-[800px] mx-auto mb-8">
               {pillars.map((pillar, index) => (
                 <div key={pillar} className="bg-[#151515] border border-[#2a2a2a] rounded-xl px-4 py-5 flex flex-col items-center gap-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary-light">
@@ -67,7 +67,7 @@ export default function NextGeneration({ label, title, lead, description, pillar
               ))}
             </div>
 
-            <p className="text-sm text-[#888] italic max-w-[640px] mx-auto leading-relaxed mb-10">{approach}</p>
+            <p className="text-sm text-[#888] italic max-w-[640px] mx-auto leading-relaxed mb-8">{approach}</p>
 
             {/* Statut + CTA */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">

@@ -5,35 +5,29 @@ import EmailModal from './EmailModal'
 
 interface HeroProps {
   badge: string
-  quote: string
   title: string
   subtitle: string
 }
 
-export default function Hero({ badge, quote, title, subtitle }: HeroProps) {
+export default function Hero({ badge, title, subtitle }: HeroProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
     <>
-      <section className="max-w-[1200px] mx-auto px-8 pt-8 pb-24 text-center">
+      <section className="max-w-[1200px] mx-auto px-8 pt-6 pb-12 text-center">
         {/* Badge */}
-        <div className="inline-block bg-primary/10 border border-primary/30 text-primary-light px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-8">
+        <div className="inline-block bg-primary/10 border border-primary/30 text-primary-light px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
           {badge}
         </div>
 
-        {/* Quote tagline */}
-        <p className="text-[#888] text-base font-medium mb-6 tracking-wide">
-          {quote}
-        </p>
-
         {/* Title */}
-        <h1 
-          className="text-5xl font-semibold text-[#e0e0e0] mb-6 leading-tight"
+        <h1
+          className="text-5xl font-semibold text-[#e0e0e0] mb-4 leading-tight"
           dangerouslySetInnerHTML={{ __html: title }}
         />
 
         {/* Subtitle */}
-        <p className="text-lg text-[#888] max-w-[650px] mx-auto mb-10 leading-relaxed">
+        <p className="text-lg text-[#888] max-w-[800px] mx-auto mb-8 leading-relaxed">
           {subtitle}
         </p>
 
@@ -47,9 +41,9 @@ export default function Hero({ badge, quote, title, subtitle }: HeroProps) {
             Join the waitlist
           </button>
 
-          {/* Trust Badges - Layout vertical centré */}
-<div className="flex flex-col items-center gap-4 mt-6">
-  {/* Badge 1: Social Proof (centré seul) */}
+          {/* Trust Badges - empilés sur mobile, une seule ligne en desktop */}
+<div className="flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-6 mt-2">
+  {/* Badge 1: Social Proof */}
   <div className="flex items-center gap-3 text-sm text-[#888]">
     <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg border border-primary/30">
       <svg className="w-6 h-6 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -63,6 +57,9 @@ export default function Hero({ badge, quote, title, subtitle }: HeroProps) {
       <strong className="text-[#e0e0e0]">350+ traders</strong> already on the waitlist
     </span>
   </div>
+
+  {/* Separator (desktop only) */}
+  <div className="hidden lg:block w-px h-8 bg-[#2a2a2a]"></div>
 
   {/* Badges 2 & 3: No Credit Card + Cancel Anytime (horizontal) */}
   <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[#888]">
