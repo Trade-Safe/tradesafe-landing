@@ -1,199 +1,342 @@
 # TradeSafe Landing Page
 
-AI-Powered Discipline System for Retail Traders
+Public landing page for **TradeSafe**.
 
-## 🚀 Quick Start
+> **Your AI Trading Copilot**  
+> Turn backtested strategies into consistent, profitable trading.
 
-### Prerequisites
-- Node.js 18+ installed
-- A Vercel account (free)
-- A GitHub account
+Production: https://trade-safe.ai
 
-### 1. Setup Environment Variables
+---
 
-Create a `.env.local` file in the root directory:
+## About TradeSafe
 
-```bash
-cp .env.local.example .env.local
+TradeSafe is evolving from its original behavioral trading discipline concept into a broader trading technology platform.
+
+The next generation of TradeSafe is being designed around:
+
+- AI-assisted trading workflows
+- Market regime analysis
+- Strategy routing
+- Risk governance
+- Safe execution
+- Deterministic, event-driven trading automation
+
+The automated trading engine itself is developed separately from this public landing page.
+
+This repository contains only the **TradeSafe marketing website, waitlist workflow and related public-facing functionality**.
+
+---
+
+## Current Status
+
+TradeSafe is currently in **research and development**.
+
+The landing page is used to:
+
+- present the current product direction;
+- communicate development progress;
+- collect waitlist registrations;
+- provide future early-access updates.
+
+Automated live trading is not currently offered through the landing page.
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js 14
+- **Language:** TypeScript
+- **UI:** React
+- **Styling:** Tailwind CSS
+- **Database:** Supabase / PostgreSQL
+- **Transactional Email:** Resend
+- **Hosting & Deployments:** Vercel
+- **Source Control:** GitHub
+
+---
+
+## Waitlist Workflow
+
+The canonical waitlist flow is:
+
+```text
+Landing page CTA
+        ↓
+Email modal / form
+        ↓
+POST /api/waitlist
+        ↓
+Supabase waitlist table
+        ↓
+Resend welcome email
 ```
 
-The file already contains your Supabase credentials:
-```
-NEXT_PUBLIC_SUPABASE_URL=https://ukqzkiphndcnmnpmoqfy.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_1Szc-72ZCTeOe7v0m4a6_A_d4UHqdMl
+The main CTAs, including:
+
+```text
+Join the waitlist
+Follow the project
 ```
 
-### 2. Install Dependencies
+should use the same canonical registration workflow.
+
+Waitlist submissions should be:
+
+* validated server-side;
+* normalized before persistence;
+* duplicate-safe;
+* stored in Supabase;
+* followed by a welcome email for new registrations.
+
+Repeated submissions from an existing subscriber should not create duplicate records or repeatedly send welcome emails.
+
+---
+
+## Environment Variables
+
+Create a local `.env.local` file when running the project locally, and set the same variables in Vercel (Production and Preview).
+
+```env
+SUPABASE_URL=<your-supabase-project-url>
+SUPABASE_SECRET_KEY=<your-supabase-secret-key>
+RESEND_API_KEY=<your-resend-api-key>
+```
+
+* `SUPABASE_URL`: the Supabase project URL (`https://<project-ref>.supabase.co`).
+* `SUPABASE_SECRET_KEY`: a Supabase secret API key (`sb_secret_...`), used only by the server-side `/api/waitlist` route. If it is missing, the route refuses registrations with a generic service-unavailable response.
+* `RESEND_API_KEY`: the Resend API key used to send the welcome email.
+
+All three are server-only variables: never prefix them with `NEXT_PUBLIC_`.
+
+### Security
+
+Never commit:
+
+* private API keys;
+* service-role credentials;
+* database passwords;
+* authentication tokens;
+* `.env.local`.
+
+Variables prefixed with `NEXT_PUBLIC_` are exposed to the browser and must never contain server-side secrets.
+
+Supabase access must remain protected by the intended database permissions and Row Level Security policies.
+
+---
+
+## Local Development
+
+### Requirements
+
+* Node.js 18+
+* npm
+* access to the required development environment variables
+
+### Install
 
 ```bash
 npm install
 ```
 
-### 3. Run Development Server
+### Run locally
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the result.
+Then open:
 
-## 📦 Deployment to Vercel
-
-### Option A: Deploy via GitHub (Recommended)
-
-1. **Create a GitHub Repository**
-   - Go to https://github.com/new
-   - Repository name: `tradesafe-landing`
-   - Public or Private (your choice)
-   - Click "Create repository"
-
-2. **Upload Your Code**
-   - Download this entire project folder
-   - On GitHub, click "uploading an existing file"
-   - Drag and drop ALL files (including hidden files like .gitignore)
-   - Click "Commit changes"
-
-3. **Connect to Vercel**
-   - Go to https://vercel.com
-   - Click "Add New Project"
-   - Import your GitHub repository
-   - Vercel will auto-detect Next.js
-
-4. **Add Environment Variables in Vercel**
-   - In project settings, go to "Environment Variables"
-   - Add these two variables:
-     ```
-     NEXT_PUBLIC_SUPABASE_URL = https://ukqzkiphndcnmnpmoqfy.supabase.co
-     NEXT_PUBLIC_SUPABASE_ANON_KEY = sb_publishable_1Szc-72ZCTeOe7v0m4a6_A_d4UHqdMl
-     ```
-
-5. **Deploy**
-   - Click "Deploy"
-   - Wait 2-3 minutes
-   - Your site will be live at: `https://tradesafe-xxx.vercel.app`
-
-### Option B: Deploy via Vercel CLI
-
-```bash
-npm install -g vercel
-vercel login
-vercel
+```text
+http://localhost:3000
 ```
-
-## 🌐 Custom Domain Setup
-
-1. **In Vercel Dashboard**
-   - Go to your project
-   - Click "Settings" → "Domains"
-   - Add domain: `trade-safe.ai`
-   - Vercel will give you nameservers
-
-2. **In NameCheap**
-   - Go to your domain management
-   - Select "Custom DNS"
-   - Add Vercel's nameservers:
-     ```
-     ns1.vercel-dns.com
-     ns2.vercel-dns.com
-     ```
-   - Save changes
-
-3. **Wait for DNS Propagation**
-   - Usually takes 1-24 hours
-   - Check status: https://www.whatsmydns.net/
-
-## 📊 Supabase Database
-
-Your waitlist table structure:
-
-```sql
-CREATE TABLE waitlist (
-  id SERIAL PRIMARY KEY,
-  email TEXT NOT NULL,
-  created_at TIMESTAMPTZ DEFAULT NOW(),
-  source TEXT
-);
-```
-
-To view signups:
-1. Go to https://supabase.com/dashboard
-2. Select your project
-3. Go to "Table Editor" → "waitlist"
-
-## 🔧 Tech Stack
-
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: TailwindCSS
-- **Database**: Supabase (PostgreSQL)
-- **Hosting**: Vercel
-- **Email Capture**: Custom API route
-
-## 📁 Project Structure
-
-```
-tradesafe-landing/
-├── app/
-│   ├── api/subscribe/     # API endpoint for email capture
-│   ├── layout.tsx         # Root layout
-│   ├── page.tsx           # Landing page
-│   └── globals.css        # Global styles
-├── components/
-│   ├── Header.tsx
-│   ├── Hero.tsx
-│   ├── Features.tsx
-│   ├── Pricing.tsx
-│   ├── HowItWorks.tsx
-│   ├── Footer.tsx
-│   └── EmailForm.tsx      # Email form with popup
-├── lib/
-│   └── supabase.ts        # Supabase client
-└── public/                # Static assets
-```
-
-## ✅ Testing Checklist
-
-Before going live:
-
-- [ ] Test email submission
-- [ ] Verify emails appear in Supabase
-- [ ] Test duplicate email prevention
-- [ ] Check popup appears correctly
-- [ ] Test on mobile devices
-- [ ] Verify all links work
-- [ ] Check page load speed
-
-## 🚨 Troubleshooting
-
-**Email not submitting:**
-- Check browser console for errors
-- Verify Supabase credentials in Vercel
-- Check Supabase table exists and has correct columns
-
-**DNS not working:**
-- Wait 24 hours for full propagation
-- Clear browser cache
-- Try incognito mode
-
-**Build fails on Vercel:**
-- Check all files uploaded to GitHub
-- Verify package.json is present
-- Check Vercel build logs for specific errors
-
-## 📧 Support
-
-For issues, check:
-- Vercel logs: Project → Deployments → Click deployment → Logs
-- Supabase logs: Dashboard → Logs
-- Browser console: F12 → Console tab
-
-## 🎯 Next Steps
-
-1. Deploy and test
-2. Launch Google Ads campaign
-3. Monitor email signups
-4. Prepare for MVP development
 
 ---
 
-**Built with ❤️ for retail traders**
+## Quality Checks
+
+Before merging changes into `main`, run the applicable checks:
+
+```bash
+npm run build
+```
+
+TypeScript:
+
+```bash
+npx tsc --noEmit
+```
+
+Lint:
+
+```bash
+npm run lint
+```
+
+Also verify manually:
+
+* desktop rendering;
+* mobile rendering;
+* English content;
+* French content;
+* waitlist CTA behavior;
+* successful Supabase registration;
+* duplicate registration handling;
+* welcome email delivery;
+* internal and external links.
+
+---
+
+## Deployment
+
+Production deployments are handled through **Vercel**.
+
+Recommended workflow:
+
+```text
+feature/fix branch
+        ↓
+Pull Request
+        ↓
+Vercel Preview
+        ↓
+Review + automated checks
+        ↓
+Merge into main
+        ↓
+Vercel Production deployment
+        ↓
+trade-safe.ai
+```
+
+Do not push unreviewed production changes directly to `main`.
+
+---
+
+## Repository Scope
+
+This repository is intentionally limited to the public TradeSafe website and related services.
+
+It should not contain:
+
+* proprietary trading strategy specifications;
+* automated strategy-engine implementation;
+* broker execution logic;
+* RiskGovernor implementation;
+* research datasets;
+* private backtest results;
+* broker credentials.
+
+---
+
+## Related Project
+
+The new deterministic trading engine is developed separately in the private repository:
+
+```text
+tch-trading-system
+```
+
+That project covers the internal architecture for areas such as:
+
+```text
+Market Data
+→ Feature Engine
+→ Market Regime
+→ Strategy Routing
+→ Strategy Logic
+→ Risk Governance
+→ Execution
+```
+
+The two repositories must remain operationally separate:
+
+```text
+tradesafe-landing
+→ public product / marketing / waitlist
+
+tch-trading-system
+→ private trading-system research and engineering
+```
+
+Internal TCH strategy specifications and proprietary research must not be copied into this public repository.
+
+---
+
+## Project Structure
+
+High-level structure:
+
+```text
+tradesafe-landing/
+├── app/
+│   ├── api/
+│   │   ├── waitlist/      # canonical registration endpoint
+│   │   └── subscribe/     # legacy alias of /api/waitlist
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── NextGeneration.tsx
+│   ├── EmailModal.tsx
+│   ├── EmailForm.tsx
+│   └── ...
+│
+├── emails/
+│   └── WaitlistWelcome.tsx
+│
+├── messages/
+│   ├── en.json
+│   └── fr.json
+│
+└── public/
+```
+
+This structure should be updated if the implementation materially changes.
+
+---
+
+## Product Messaging
+
+Current primary positioning:
+
+```text
+Your AI Trading Copilot
+```
+
+Current supporting message:
+
+```text
+Turn backtested strategies into consistent, profitable trading.
+```
+
+The landing page also introduces the next generation of TradeSafe as a system under active research and development.
+
+Public messaging must remain consistent with the actual development status of the product.
+
+---
+
+## Maintenance
+
+When the product positioning or architecture changes, keep the following aligned:
+
+* landing-page copy;
+* English and French translations;
+* browser metadata;
+* SEO title and description;
+* Open Graph metadata;
+* welcome email;
+* waitlist workflow;
+* this README.
+
+Avoid leaving historical launch dates, pricing, feature promises or obsolete positioning in the repository.
+
+---
+
+## License / Ownership
+
+TradeSafe is a proprietary project maintained by **Trade-Safe**.
+
+All rights reserved.

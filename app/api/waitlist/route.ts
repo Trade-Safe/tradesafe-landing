@@ -29,11 +29,12 @@ export async function POST(request: Request) {
   const source =
     typeof payload.source === 'string' && SOURCES.includes(payload.source) ? payload.source : DEFAULT_SOURCE
 
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  // Identifiants serveur uniquement (jamais de NEXT_PUBLIC_*) : sans eux, l'inscription est refusée
+  const supabaseUrl = process.env.SUPABASE_URL
+  const supabaseKey = process.env.SUPABASE_SECRET_KEY
   if (!supabaseUrl || !supabaseKey) {
-    console.error('[waitlist] Supabase environment variables are missing')
-    return reply('error', 500)
+    console.error('[waitlist] SUPABASE_URL or SUPABASE_SECRET_KEY is missing')
+    return reply('error', 503)
   }
 
   // 2. Enregistrement Supabase (opération principale).
