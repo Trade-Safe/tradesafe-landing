@@ -1,8 +1,6 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
-import EmailModal from './EmailModal'
 
 interface FooterProps {
   description: string
@@ -39,8 +37,6 @@ export default function Footer({
   privacy, 
   terms 
 }: FooterProps) {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
   return (
     <>
       <footer className="bg-[#0a0a0a] border-t border-[#1a1a1a] py-12 px-8">
@@ -117,9 +113,6 @@ export default function Footer({
           </div>
         </div>
       </footer>
-
-      {/* Email Modal */}
-      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   )
 }

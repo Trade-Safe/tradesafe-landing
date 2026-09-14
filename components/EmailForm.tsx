@@ -2,7 +2,22 @@
 
 import { useState } from 'react'
 
-export default function EmailForm() {
+// Origine du CTA, enregistrée dans la colonne `source` de la table waitlist
+export type WaitlistSource = 'header' | 'hero' | 'next_generation_follow_project' | 'early_access_section'
+
+interface EmailFormProps {
+  source: WaitlistSource
+}
+
+const MESSAGES = {
+  registered: "You're on the TradeSafe waitlist. Check your inbox for a welcome email.",
+  registeredWithoutEmail: "You're on the TradeSafe waitlist.",
+  alreadyRegistered: "You're already on the TradeSafe waitlist.",
+  invalidEmail: 'Please enter a valid email address.',
+  error: 'Something went wrong. Please try again in a moment.',
+}
+
+export default function EmailForm({ source }: EmailFormProps) {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [message, setMessage] = useState('')
@@ -16,22 +31,29 @@ export default function EmailForm() {
       const response = await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email })
+        body: JSON.stringify({ email, source })
       })
 
-      const data = await response.json()
+      const data = await response.json().catch(() => ({}))
 
-      if (response.ok) {
+      if (data.status === 'registered') {
         setStatus('success')
-        setMessage('✓ Success! Check your inbox for a welcome email.')
+        setMessage(data.emailSent ? MESSAGES.registered : MESSAGES.registeredWithoutEmail)
         setEmail('')
+      } else if (data.status === 'already_registered') {
+        setStatus('success')
+        setMessage(MESSAGES.alreadyRegistered)
+        setEmail('')
+      } else if (data.status === 'invalid_email') {
+        setStatus('error')
+        setMessage(MESSAGES.invalidEmail)
       } else {
         setStatus('error')
-        setMessage(data.error || 'Something went wrong. Please try again.')
+        setMessage(MESSAGES.error)
       }
     } catch (error) {
       setStatus('error')
-      setMessage('Network error. Please try again.')
+      setMessage(MESSAGES.error)
     }
   }
 
@@ -40,6 +62,8 @@ export default function EmailForm() {
       <div className="flex flex-col sm:flex-row gap-4 w-full">
         <input
           type="email"
+          name="email"
+          autoComplete="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
@@ -55,9 +79,9 @@ export default function EmailForm() {
           {status === 'loading' ? 'Joining...' : 'Join Waitlist'}
         </button>
       </div>
-      
+
       {message && (
-        <p className={`text-sm font-medium ${status === 'success' ? 'text-green-500' : 'text-red-500'}`}>
+        <p role="status" className={`text-sm font-medium text-center ${status === 'success' ? 'text-green-500' : 'text-red-500'}`}>
           {message}
         </p>
       )}

@@ -97,7 +97,7 @@ export default function Hero({ badge, title, subtitle }: HeroProps) {
       </section>
 
       {/* Email Modal */}
-      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} source="hero" />
     </>
   )
 }
