@@ -14,7 +14,7 @@
     "label": "Nouvelle génération",
     "title": "TradeSafe évolue.",
     "lead": "Notre équipe construit actuellement la nouvelle génération de TradeSafe.",
-    "description": "Un Trading Companion déterministe et un moteur de trading event-driven, conçus autour de la détection du régime de marché, du routage des stratégies, de la gouvernance du risque et d'une exécution sécurisée.",
+    "description": "Un copilote de trading IA adossé à un moteur de trading déterministe et event-driven, conçus autour de la détection du régime de marché, du routage des stratégies, de la gouvernance du risque et d'une exécution sécurisée.",
     "pillars": ["Régime de marché", "Routage des stratégies", "Gouvernance du risque", "Exécution sécurisée"],
     "approach": "Conçu en vue d'une automatisation du trading sûre et déterministe, avec la validation, le contrôle du risque et la sécurité d'exécution intégrés dès la conception.",
     "status": "Recherche & développement en cours.",
