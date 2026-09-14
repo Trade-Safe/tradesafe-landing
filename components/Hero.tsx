@@ -53,8 +53,8 @@ export default function Hero({ badge, title, subtitle }: HeroProps) {
         <path d="M16 3.13a4 4 0 0 1 0 7.75" />
       </svg>
     </div>
-    <span>
-      <strong className="text-[#e0e0e0]">350+ traders</strong> already on the waitlist
+    <span className="text-left">
+      Join traders following the TradeSafe project
     </span>
   </div>
 
@@ -97,7 +97,7 @@ export default function Hero({ badge, title, subtitle }: HeroProps) {
       </section>
 
       {/* Email Modal */}
-      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} source="hero" />
     </>
   )
 }

@@ -78,7 +78,7 @@ export default function Header({ nav }: HeaderProps) {
       </header>
 
       {/* Email Modal */}
-      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} source="header" />
     </>
   )
 }

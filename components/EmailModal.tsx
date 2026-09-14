@@ -1,26 +1,27 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import EmailForm from './EmailForm'
+import EmailForm, { type WaitlistSource } from './EmailForm'
 
 interface EmailModalProps {
   isOpen: boolean
   onClose: () => void
+  source: WaitlistSource
 }
 
-export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
+export default function EmailModal({ isOpen, onClose, source }: EmailModalProps) {
   // Fermer avec ESC
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose()
     }
-    
+
     if (isOpen) {
       document.addEventListener('keydown', handleEscape)
       // Bloquer scroll body quand modal ouvert
       document.body.style.overflow = 'hidden'
     }
-    
+
     return () => {
       document.removeEventListener('keydown', handleEscape)
       document.body.style.overflow = 'unset'
@@ -30,15 +31,15 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
   if (!isOpen) return null
 
   return (
-    <div 
+    <div
       className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
       onClick={onClose}
     >
       {/* Backdrop */}
       <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
-      
+
       {/* Modal */}
-      <div 
+      <div
         className="relative bg-[#0f0f0f] border-2 border-primary/30 rounded-2xl max-w-[500px] w-full p-8 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
@@ -61,19 +62,19 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
             </svg>
           </div>
           <h2 className="text-2xl font-semibold text-[#e0e0e0] mb-2">
-            Join the waitlist
+            Join the TradeSafe waitlist
           </h2>
           <p className="text-sm text-[#888]">
-            Follow the project and get early-access updates as TradeSafe evolves.
+            Get product updates, development milestones and early-access news.
           </p>
         </div>
 
         {/* Email Form */}
-        <EmailForm />
+        <EmailForm source={source} />
 
         {/* Footer note */}
         <p className="text-xs text-[#666] text-center mt-6">
-          By joining, you'll receive updates about TradeSafe's development. Unsubscribe anytime.
+          By joining, you&apos;ll receive updates about TradeSafe&apos;s development. Unsubscribe anytime.
         </p>
       </div>
     </div>

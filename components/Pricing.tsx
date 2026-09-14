@@ -53,7 +53,7 @@ export default function Pricing({ label, title, subtitle, badge, description, fe
   </ul>
   
   <div className="mt-8">
-    <EmailForm />
+    <EmailForm source="early_access_section" />
   </div>
 </div>
 

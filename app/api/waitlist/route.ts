@@ -2,76 +2,96 @@ import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 import WaitlistWelcome from '@/emails/WaitlistWelcome'
 
+// Origines de CTA acceptées dans la colonne `source` (toute autre valeur → DEFAULT_SOURCE)
+const SOURCES = ['header', 'hero', 'next_generation_follow_project', 'early_access_section']
+const DEFAULT_SOURCE = 'landing_page'
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+type WaitlistStatus = 'registered' | 'already_registered' | 'invalid_email' | 'error'
+
+function reply(status: WaitlistStatus, httpStatus: number, extra: Record<string, unknown> = {}) {
+  return NextResponse.json({ status, ...extra }, { status: httpStatus })
+}
+
 export async function POST(request: Request) {
+  let payload: { email?: unknown; source?: unknown }
   try {
-    // Vérifier que la clé API est bien présente
-    if (!process.env.RESEND_API_KEY) {
-      console.error('RESEND_API_KEY is missing!')
-      return NextResponse.json(
-        { error: 'Email service not configured' },
-        { status: 500 }
-      )
-    }
+    payload = await request.json()
+  } catch {
+    return reply('invalid_email', 400)
+  }
 
-    const { email } = await request.json()
+  // 1. Normalisation + validation côté serveur
+  const email = typeof payload.email === 'string' ? payload.email.trim().toLowerCase() : ''
+  if (!email || email.length > 254 || !EMAIL_PATTERN.test(email)) {
+    return reply('invalid_email', 400)
+  }
+  const source =
+    typeof payload.source === 'string' && SOURCES.includes(payload.source) ? payload.source : DEFAULT_SOURCE
 
-    // Validation email
-    if (!email || !email.includes('@')) {
-      return NextResponse.json(
-        { error: 'Invalid email address' },
-        { status: 400 }
-      )
-    }
+  // Identifiants serveur uniquement (jamais de NEXT_PUBLIC_*) : sans eux, l'inscription est refusée
+  const supabaseUrl = process.env.SUPABASE_URL
+  const supabaseKey = process.env.SUPABASE_SECRET_KEY
+  if (!supabaseUrl || !supabaseKey) {
+    console.error('[waitlist] SUPABASE_URL or SUPABASE_SECRET_KEY is missing')
+    return reply('error', 503)
+  }
 
-    // 1. Sauvegarder dans Supabase
-    const supabaseResponse = await fetch(
-      `${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/waitlist`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'apikey': process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-          'Authorization': `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`,
-          'Prefer': 'return=minimal'
-        },
-        body: JSON.stringify({
-          email,
-          created_at: new Date().toISOString()
-        })
-      }
-    )
+  // 2. Enregistrement Supabase (opération principale).
+  // Les doublons sont détectés par la contrainte d'unicité sur `email` : PostgREST renvoie 409 (23505).
+  let insert: Response
+  try {
+    insert = await fetch(`${supabaseUrl}/rest/v1/waitlist`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        apikey: supabaseKey,
+        Authorization: `Bearer ${supabaseKey}`,
+        Prefer: 'return=minimal',
+      },
+      body: JSON.stringify({ email, source }),
+      cache: 'no-store',
+    })
+  } catch (error) {
+    console.error('[waitlist] Supabase unreachable:', error)
+    return reply('error', 503)
+  }
 
-    if (!supabaseResponse.ok) {
-      const errorText = await supabaseResponse.text()
-      console.error('Supabase error:', errorText)
-      throw new Error('Failed to save to database')
-    }
+  if (insert.status === 409) {
+    return reply('already_registered', 200)
+  }
+  if (!insert.ok) {
+    console.error('[waitlist] Supabase insert failed:', insert.status, await insert.text())
+    return reply('error', 500)
+  }
 
-    // 2. Instancier Resend SEULEMENT ICI (lazy loading)
+  // 3. E-mail de bienvenue, uniquement pour une nouvelle inscription.
+  // Un échec d'envoi n'annule pas l'inscription déjà enregistrée.
+  const emailSent = await sendWelcomeEmail(email)
+  return reply('registered', 200, { emailSent })
+}
+
+async function sendWelcomeEmail(email: string): Promise<boolean> {
+  if (!process.env.RESEND_API_KEY) {
+    console.error('[waitlist] RESEND_API_KEY is missing, welcome email not sent')
+    return false
+  }
+
+  try {
     const resend = new Resend(process.env.RESEND_API_KEY)
-
-    // 3. Envoyer email via Resend
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'TradeSafe <hello@trade-safe.ai>',
       to: [email],
-      subject: 'Welcome to TradeSafe 🛡️',  // ← MODIFIÉ ICI
-      react: WaitlistWelcome({ email })
+      subject: 'Welcome to TradeSafe',
+      react: WaitlistWelcome(),
     })
-
     if (error) {
-      console.error('Resend error:', error)
-      return NextResponse.json({ error }, { status: 500 })
+      console.error('[waitlist] Resend error:', error)
+      return false
     }
-
-    return NextResponse.json(
-      { message: 'Successfully joined waitlist!', data },
-      { status: 200 }
-    )
+    return true
   } catch (error) {
-    console.error('API error:', error)
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    )
+    console.error('[waitlist] Resend request failed:', error)
+    return false
   }
 }

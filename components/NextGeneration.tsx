@@ -92,7 +92,7 @@ export default function NextGeneration({ label, title, lead, description, pillar
       </section>
 
       {/* Email Modal */}
-      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} source="next_generation_follow_project" />
     </>
   )
 }

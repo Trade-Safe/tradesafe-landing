@@ -1,4 +1,3 @@
-````markdown
 # TradeSafe Landing Page
 
 Public landing page for **TradeSafe**.
@@ -71,7 +70,7 @@ POST /api/waitlist
 Supabase waitlist table
         ↓
 Resend welcome email
-````
+```
 
 The main CTAs, including:
 
@@ -96,17 +95,19 @@ Repeated submissions from an existing subscriber should not create duplicate rec
 
 ## Environment Variables
 
-Create a local `.env.local` file when running the project locally.
-
-Required variables may include:
+Create a local `.env.local` file when running the project locally, and set the same variables in Vercel (Production and Preview).
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=<your-supabase-project-url>
-NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-supabase-publishable-key>
+SUPABASE_URL=<your-supabase-project-url>
+SUPABASE_SECRET_KEY=<your-supabase-secret-key>
 RESEND_API_KEY=<your-resend-api-key>
 ```
 
-Additional environment variables may be required depending on the final production configuration.
+* `SUPABASE_URL`: the Supabase project URL (`https://<project-ref>.supabase.co`).
+* `SUPABASE_SECRET_KEY`: a Supabase secret API key (`sb_secret_...`), used only by the server-side `/api/waitlist` route. If it is missing, the route refuses registrations with a generic service-unavailable response.
+* `RESEND_API_KEY`: the Resend API key used to send the welcome email.
+
+All three are server-only variables: never prefix them with `NEXT_PUBLIC_`.
 
 ### Security
 
@@ -270,7 +271,8 @@ High-level structure:
 tradesafe-landing/
 ├── app/
 │   ├── api/
-│   │   └── waitlist/
+│   │   ├── waitlist/      # canonical registration endpoint
+│   │   └── subscribe/     # legacy alias of /api/waitlist
 │   ├── layout.tsx
 │   └── page.tsx
 │
@@ -284,9 +286,6 @@ tradesafe-landing/
 │
 ├── emails/
 │   └── WaitlistWelcome.tsx
-│
-├── lib/
-│   └── supabase.ts
 │
 ├── messages/
 │   ├── en.json
@@ -341,5 +340,3 @@ Avoid leaving historical launch dates, pricing, feature promises or obsolete pos
 TradeSafe is a proprietary project maintained by **Trade-Safe**.
 
 All rights reserved.
-
-````
