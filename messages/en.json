@@ -14,7 +14,7 @@
     "label": "Next generation",
     "title": "TradeSafe is evolving.",
     "lead": "Our team is building the next generation of TradeSafe.",
-    "description": "A deterministic Trading Companion and event-driven trading engine, designed around market regime, strategy routing, risk governance and safe execution.",
+    "description": "An AI Trading Copilot backed by a deterministic, event-driven trading engine, designed around market regime, strategy routing, risk governance and safe execution.",
     "pillars": ["Market regime", "Strategy routing", "Risk governance", "Safe execution"],
     "approach": "Built toward safe, deterministic trading automation — with validation, risk control and execution safety designed into the system from the start.",
     "status": "Research & development in progress.",
