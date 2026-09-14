@@ -59,7 +59,7 @@ export default function WhoIsThisFor() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-[#666] text-sm">
                 <span className="text-[#666] font-bold text-lg flex-shrink-0">✗</span>
-                Signal seekers or fully automated trading
+                Signal seekers looking for trades to copy
               </li>
               <li className="flex items-start gap-3 text-[#666] text-sm">
                 <span className="text-[#666] font-bold text-lg flex-shrink-0">✗</span>
@@ -67,7 +67,7 @@ export default function WhoIsThisFor() {
               </li>
               <li className="flex items-start gap-3 text-[#666] text-sm">
                 <span className="text-[#666] font-bold text-lg flex-shrink-0">✗</span>
-                Traders looking for market predictions or signals
+                Traders looking for price predictions
               </li>
               <li className="flex items-start gap-3 text-[#666] text-sm">
                 <span className="text-[#666] font-bold text-lg flex-shrink-0">✗</span>

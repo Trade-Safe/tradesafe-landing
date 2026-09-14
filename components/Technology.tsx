@@ -10,7 +10,7 @@ interface TechnologyProps {
   roadmapTitle: string
   roadmapSubtitle: string
   roadmapPoints: string[]
-  disclaimer: string
+  vision: string
 }
 
 export default function Technology({ 
@@ -22,8 +22,8 @@ export default function Technology({
   developmentPoints, 
   roadmapTitle, 
   roadmapSubtitle,
-  roadmapPoints, 
-  disclaimer 
+  roadmapPoints,
+  vision
 }: TechnologyProps) {
   return (
     <section id="technology" className="py-20 px-8">
@@ -78,7 +78,7 @@ export default function Technology({
           </div>
         </div>
         
-        <p className="text-center text-sm text-[#666] italic">{disclaimer}</p>
+        <p className="text-center text-base text-[#888] max-w-[720px] mx-auto leading-relaxed">{vision}</p>
       </div>
     </section>
   )

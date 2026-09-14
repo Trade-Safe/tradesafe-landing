@@ -8,12 +8,9 @@ interface HeroProps {
   quote: string
   title: string
   subtitle: string
-  priceMonth: string
-  priceYear: string
-  discount: string
 }
 
-export default function Hero({ badge, quote, title, subtitle, priceMonth, priceYear, discount }: HeroProps) {
+export default function Hero({ badge, quote, title, subtitle }: HeroProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
@@ -47,18 +44,8 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
             onClick={() => setIsModalOpen(true)}
             className="inline-block px-8 py-4 bg-gradient-to-br from-primary to-primary-dark text-white font-semibold rounded-lg hover:opacity-90 transition-opacity text-base shadow-lg shadow-primary/30 cursor-pointer"
           >
-            Start Free Trial
+            Join the waitlist
           </button>
-
-          {/* Price Box */}
-          <div className="bg-[#151515] border border-[#2a2a2a] px-8 py-4 rounded-lg">
-            <div className="text-2xl font-bold text-[#e0e0e0] mb-1">
-              {priceMonth}
-            </div>
-            <div className="text-sm text-[#666]">
-              {priceYear} <span className="text-green-500 font-semibold">{discount}</span>
-            </div>
-          </div>
 
           {/* Trust Badges - Layout vertical centré */}
 <div className="flex flex-col items-center gap-4 mt-6">
@@ -104,7 +91,7 @@ export default function Hero({ badge, quote, title, subtitle, priceMonth, priceY
         </svg>
       </div>
       <span className="text-[#888]">
-        Cancel anytime
+        Unsubscribe anytime
       </span>
     </div>
   </div>

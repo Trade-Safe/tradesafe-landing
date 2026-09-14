@@ -7,12 +7,6 @@ export default function StructuredData() {
     "name": "TradeSafe",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web Browser",
-    "offers": {
-      "@type": "Offer",
-      "price": "19.90",
-      "priceCurrency": "EUR",
-      "priceValidUntil": "2025-12-31"
-    },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
@@ -43,14 +37,6 @@ export default function StructuredData() {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "TradeSafe is an AI-powered behavioral discipline system for retail traders that provides real-time intervention to prevent emotional trading behaviors like revenge trading and overtrading."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does TradeSafe cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "TradeSafe costs â‚¬19.90 per month or â‚¬149.90 per year (37% discount on annual plan)."
         }
       }
     ]

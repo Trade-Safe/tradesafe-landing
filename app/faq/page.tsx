@@ -59,7 +59,7 @@ export default function FAQPage() {
                 Currently we support <strong className="text-[#e0e0e0]">Tradovate</strong> for US futures trading via CSV import.
               </p>
               <p className="text-[#888] leading-relaxed mb-2">
-                <strong className="text-[#e0e0e0]">Coming in 2026:</strong>
+                <strong className="text-[#e0e0e0]">On the roadmap:</strong>
               </p>
               <ul className="list-disc list-inside text-[#888] leading-relaxed ml-4 space-y-1">
                 <li>Interactive Brokers (API integration)</li>
@@ -152,7 +152,7 @@ export default function FAQPage() {
                 Will TradeSafe make me a profitable trader?
               </h3>
               <p className="text-[#888] leading-relaxed mb-2">
-                No. TradeSafe <strong className="text-[#e0e0e0]">does not predict markets, generate signals, or guarantee profits</strong>.
+                No. TradeSafe <strong className="text-[#e0e0e0]">does not predict markets or guarantee profits</strong>.
               </p>
               <p className="text-[#888] leading-relaxed mb-2">
                 <strong className="text-[#e0e0e0]">What we do:</strong>
@@ -206,7 +206,7 @@ export default function FAQPage() {
                 Is there a free trial?
               </h3>
               <p className="text-[#888] leading-relaxed">
-                Not yet. We're launching in <strong className="text-[#e0e0e0]">beta (Q1 2026)</strong> with special early-access pricing. Waitlist members get priority access when we open trials. <Link href="/#pricing" className="text-primary-light hover:text-primary underline">Join the waitlist</Link> to be notified.
+                Not yet. TradeSafe is currently in <strong className="text-[#e0e0e0]">research & development</strong> and no pricing has been announced. Waitlist members get priority access when we open trials. <Link href="/#pricing" className="text-primary-light hover:text-primary underline">Join the waitlist</Link> to be notified.
               </p>
             </div>
           </div>
@@ -224,7 +224,7 @@ export default function FAQPage() {
                 Does TradeSafe work on mobile?
               </h3>
               <p className="text-[#888] leading-relaxed">
-                Our <strong className="text-[#e0e0e0]">dashboard is mobile-responsive</strong> and works on all devices. The <strong className="text-[#e0e0e0]">Chrome extension</strong> (for real-time monitoring) is desktop-only for now. Mobile extension support is planned for late 2026.
+                Our <strong className="text-[#e0e0e0]">dashboard is mobile-responsive</strong> and works on all devices. The <strong className="text-[#e0e0e0]">Chrome extension</strong> (for real-time monitoring) is desktop-only for now. Mobile extension support is on the roadmap.
               </p>
             </div>
 
@@ -236,7 +236,7 @@ export default function FAQPage() {
                 Currently, TradeSafe is optimized for <strong className="text-[#e0e0e0]">futures trading</strong> (ES, NQ, etc.).
               </p>
               <p className="text-[#888] leading-relaxed mb-2">
-                <strong className="text-[#e0e0e0]">Crypto futures</strong> support (BloFin) is coming Q2 2026. <strong className="text-[#e0e0e0]">Stocks and forex</strong> are on the roadmap for 2027.
+                <strong className="text-[#e0e0e0]">Crypto futures</strong> (BloFin), <strong className="text-[#e0e0e0]">stocks and forex</strong> are on the roadmap.
               </p>
               <p className="text-[#888] leading-relaxed">
                 You can still manually log any trades via CSV regardless of asset class.
@@ -270,7 +270,7 @@ export default function FAQPage() {
               </p>
               <ul className="list-disc list-inside text-[#888] leading-relaxed ml-4 space-y-1">
                 <li><strong className="text-[#e0e0e0]">Email support:</strong> hello@trade-safe.ai (24-48h response)</li>
-                <li><strong className="text-[#e0e0e0]">Live chat:</strong> Coming Q1 2026</li>
+                <li><strong className="text-[#e0e0e0]">Live chat:</strong> Planned</li>
                 <li><strong className="text-[#e0e0e0]">Documentation:</strong> Comprehensive guides in our Help Center</li>
               </ul>
               <p className="text-[#888] leading-relaxed mt-2">
