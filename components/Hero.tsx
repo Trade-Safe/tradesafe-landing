@@ -27,7 +27,7 @@ export default function Hero({ badge, title, subtitle }: HeroProps) {
         />
 
         {/* Subtitle */}
-        <p className="text-lg text-[#888] max-w-[800px] mx-auto mb-8 leading-relaxed">
+        <p className="text-xl text-[#d4d4d4] max-w-[800px] mx-auto mb-8 leading-normal">
           {subtitle}
         </p>
 
