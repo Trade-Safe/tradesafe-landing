@@ -47,8 +47,8 @@ export default function AboutPage() {
           </p>
 
           <p>
-            TradeSafe is currently in private beta. We are personally testing 
-            every feature on our own trading before releasing publicly.
+            TradeSafe is currently in research & development. Nothing is released
+            publicly before it has been thoroughly tested and validated.
           </p>
 
           <p className="font-medium text-[#e0e0e0]">

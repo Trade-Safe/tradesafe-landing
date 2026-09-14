@@ -1,5 +1,7 @@
+import AnnouncementBanner from '@/components/AnnouncementBanner'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import NextGeneration from '@/components/NextGeneration'
 import Features from '@/components/Features'
 import HowItWorks from '@/components/HowItWorks'
 import Technology from '@/components/Technology'
@@ -60,9 +62,11 @@ export default function Home() {
 
   return (
   <>
+    <AnnouncementBanner {...messages.announcement} />
     <Header nav={messages.nav} />
     <main>
       <Hero {...messages.hero} />
+      <NextGeneration {...messages.nextGeneration} />
       <Features 
         label={messages.features.label}
         title={messages.features.title}

@@ -1,21 +1,35 @@
 {
+  "announcement": {
+    "badge": "R&D",
+    "title": "TradeSafe évolue.",
+    "text": "Notre équipe construit actuellement la nouvelle génération de TradeSafe.",
+    "cta": "En savoir plus"
+  },
   "hero": {
-    "badge": "Coming soon",
+    "badge": "En développement",
     "quote": "Ne cherche pas à maîtriser l'analyse technique, cherche à te maîtriser toi-même !",
     "title": "Le premier système de discipline comportementale IA conçu pour les traders particuliers",
-    "subtitle": "TradeSafe utilise l'intelligence artificielle pour détecter les comportements à risque et agit comme un bouclier intelligent pour protéger ton capital en temps réel.",
-    "priceMonth": "19,90€/mois",
-    "priceYear": "ou 149,90€/an",
-    "discount": "(économise 40%)"
+    "subtitle": "TradeSafe utilise l'intelligence artificielle pour détecter les comportements à risque et agit comme un bouclier intelligent pour protéger ton capital en temps réel."
+  },
+  "nextGeneration": {
+    "label": "Nouvelle génération",
+    "title": "TradeSafe évolue.",
+    "lead": "Notre équipe construit actuellement la nouvelle génération de TradeSafe.",
+    "description": "Un Trading Companion déterministe et un moteur de trading event-driven, conçus autour de la détection du régime de marché, du routage des stratégies, de la gouvernance du risque et d'une exécution sécurisée.",
+    "pillars": ["Régime de marché", "Routage des stratégies", "Gouvernance du risque", "Exécution sécurisée"],
+    "approach": "Conçu en vue d'une automatisation du trading sûre et déterministe, avec la validation, le contrôle du risque et la sécurité d'exécution intégrés dès la conception.",
+    "status": "Recherche & développement en cours.",
+    "cta": "Suivre le projet",
+    "note": "Pas encore disponible — aucun service de trading automatisé n'est proposé à ce stade."
   },
   "nav": {
     "features": "Fonctionnalités",
     "howItWorks": "Comment ça marche",
-    "pricing": "Tarifs",
+    "pricing": "Accès anticipé",
     "technology": "Technologie",
     "legal": "Légal",
     "login": "Connexion",
-    "startTrial": "Essai Gratuit"
+    "startTrial": "Rejoindre la waitlist"
   },
   "features": {
     "label": "Fonctionnalités",
@@ -60,8 +74,6 @@
     "subtitle": "",
     "badge": "🔥 Early Access",
     "description": "Tout ce dont tu as besoin pour protéger ton capital",
-    "priceYear": "149,90€/an",
-    "discount": "(économise 40% sur le tarif de base)",
     "features": [
       "Surveillance comportementale en temps réel",
       "Système bouclier IA avec alertes personnalisées",
@@ -75,8 +87,8 @@
       "Support par email"
     ],
     "roi": {
-      "title": "ROI Attendu : Discipline Avant Performance",
-      "intro": "TradeSafe n'est pas conçu pour augmenter ton taux de réussite ou prédire les trades profitables.",
+      "title": "Discipline avant performance",
+      "intro": "Le volet discipline de TradeSafe n'est pas conçu pour augmenter ton taux de réussite ou prédire les trades profitables.",
       "subtitle": "Sa valeur réside dans la réduction des erreurs comportementales coûteuses :",
       "points": [
         "Moins de trades impulsifs de revenge trading",
@@ -113,8 +125,8 @@
   "label": "Technologie",
   "title": "Comment l'IA alimente TradeSafe",
   "intro": "TradeSafe utilise l'IA pour analyser les patterns comportementaux — pas pour prédire les marchés.",
-  "developmentTitle": "En Développement Actif (Q1 2026)",
-  "developmentSubtitle": "Fonctionnalités en cours de déploiement (2-3 mois) :",
+  "developmentTitle": "En développement",
+  "developmentSubtitle": "Le volet discipline, au cœur de TradeSafe :",
   "developmentPoints": [
     "Système d'alertes comportementales et d'intervention en temps réel",
     "Détection avancée de patterns (overtrading, revenge trading)",
@@ -122,15 +134,15 @@
     "Journaling assisté par IA avec insights guidés",
     "Extension Chrome avec protection de trading en direct"
   ],
-  "roadmapTitle": "Roadmap Prévue (2026)",
-  "roadmapSubtitle": "Vision pour l'année complète :",
+  "roadmapTitle": "À venir",
+  "roadmapSubtitle": "Plus loin sur la roadmap :",
   "roadmapPoints": [
     "Modèles ML personnalisés pour la prédiction de patterns de risque",
     "Agrégation multi-comptes sur toutes les plateformes",
     "Application mobile (iOS/Android) avec notifications",
     "Fonctionnalités communautaires et système d'accountability"
   ],
-  "disclaimer": "TradeSafe ne prédit pas les prix, ne génère pas de signaux et n'automatise pas les trades."
+  "vision": "TradeSafe est né d'une idée simple : un meilleur trading commence par une meilleure discipline. La nouvelle génération élargit cette vision à l'analyse de marché déterministe, à la logique de stratégie, à la gouvernance du risque et, à terme, à l'automatisation sécurisée de l'exécution."
 },
   "legal": {
   "label": "Conformité Légale",
@@ -148,7 +160,7 @@
     "company": "Entreprise",
     "features": "Fonctionnalités",
     "howItWorks": "Comment ça marche",
-    "pricing": "Tarifs",
+    "pricing": "Accès anticipé",
     "about": "À Propos",
     "contact": "Contact",
     "rights": "Tous droits réservés.",

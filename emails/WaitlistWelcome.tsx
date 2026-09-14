@@ -158,10 +158,10 @@ export default function WaitlistWelcome({ email }: WaitlistWelcomeProps) {
                               fontWeight: '600', 
                               marginBottom: '4px' 
                             }}>
-                              Q1 2026 (8-12 weeks)
+                              In development
                             </div>
                             <div style={{ fontSize: '15px', color: '#4a4a4a' }}>
-                              Private beta launch with core features
+                              Our team is building the next generation of TradeSafe
                             </div>
                           </div>
 
@@ -177,10 +177,10 @@ export default function WaitlistWelcome({ email }: WaitlistWelcomeProps) {
                               fontWeight: '600', 
                               marginBottom: '4px' 
                             }}>
-                              Before launch
+                              Along the way
                             </div>
                             <div style={{ fontSize: '15px', color: '#4a4a4a' }}>
-                              We'll email you exclusive updates and early access details
+                              We'll email you project updates and early-access details
                             </div>
                           </div>
 

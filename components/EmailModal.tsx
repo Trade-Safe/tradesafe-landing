@@ -64,7 +64,7 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
             Join the waitlist
           </h2>
           <p className="text-sm text-[#888]">
-            Get early access when we launch in Q1 2026
+            Follow the project and get early-access updates as TradeSafe evolves.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
 
         {/* Footer note */}
         <p className="text-xs text-[#666] text-center mt-6">
-          By joining, you'll receive updates about TradeSafe's launch. Unsubscribe anytime.
+          By joining, you'll receive updates about TradeSafe's development. Unsubscribe anytime.
         </p>
       </div>
     </div>

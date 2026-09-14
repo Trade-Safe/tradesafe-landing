@@ -79,7 +79,7 @@ export default function ContactPage() {
           <div className="bg-[#151515] border border-[#2a2a2a] rounded-xl p-6 relative overflow-hidden">
             {/* Coming Soon Badge */}
             <div className="absolute top-4 right-4 bg-primary/10 border border-primary/30 text-primary-light px-3 py-1 rounded-full text-xs font-semibold">
-              Q1 2026
+              Planned
             </div>
             
             <div className="flex items-start gap-4 opacity-60">
@@ -94,7 +94,7 @@ export default function ContactPage() {
                   Real-time chat support for urgent questions and technical issues.
                 </p>
                 <span className="text-sm text-[#666] font-medium">
-                  Coming Soon - Q1 2026
+                  Coming next
                 </span>
               </div>
             </div>

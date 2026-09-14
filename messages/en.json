@@ -1,18 +1,32 @@
 {
+  "announcement": {
+    "badge": "R&D",
+    "title": "TradeSafe is evolving.",
+    "text": "Our team is building the next generation of TradeSafe.",
+    "cta": "Learn more"
+  },
   "hero": {
-    "badge": "Beta Coming Soon",
+    "badge": "In development",
     "quote": "Trade Less. Trade Smarter!",
     "title": "The First AI-Powered Discipline Software<br />Built for Traders",
-    "subtitle": "TradeSafe detects emotional trading patterns and acts as an intelligent shield system to protect your capital in real-time.",
-    "priceMonth": "€19.90/month",
-    "priceYear": "or €144.90/year",
-    "discount": "(save 37%)"
+    "subtitle": "TradeSafe detects emotional trading patterns and acts as an intelligent shield system to protect your capital in real-time."
+  },
+  "nextGeneration": {
+    "label": "Next generation",
+    "title": "TradeSafe is evolving.",
+    "lead": "Our team is building the next generation of TradeSafe.",
+    "description": "A deterministic Trading Companion and event-driven trading engine, designed around market regime, strategy routing, risk governance and safe execution.",
+    "pillars": ["Market regime", "Strategy routing", "Risk governance", "Safe execution"],
+    "approach": "Built toward safe, deterministic trading automation — with validation, risk control and execution safety designed into the system from the start.",
+    "status": "Research & development in progress.",
+    "cta": "Follow the project",
+    "note": "Not available yet — no automated trading service is offered at this stage."
   },
   "nav": {
     "features": "Features",
     "howItWorks": "How it works",
     "productPreview": "Product",
-    "pricing": "Pricing",
+    "pricing": "Early access",
     "technology": "Technology",
     "whosItFor": "Who's it for",
     "login": "Log In",
@@ -53,12 +67,9 @@
   "pricing": {
     "label": "Early Access",
     "title": "Join the waitlist",
-    "subtitle": "Lock in our special launch price before it increases.",
+    "subtitle": "Follow the project and be the first to hear about early access as TradeSafe evolves.",
     "badge": "🔥 Early Access",
     "description": "Everything you need to protect your capital",
-    "monthlyPrice": "€19.90/month",
-    "yearlyPrice": "€149.90/year",
-    "discount": "Save 37%",
     "features": [
       "Real-time behavioral monitoring",
       "AI-powered shield system with custom alerts",
@@ -72,8 +83,8 @@
       "Email support"
     ],
     "roi": {
-      "title": "Expected ROI: Discipline over performance",
-      "intro": "TradeSafe is not designed to increase win rates or predict profitable trades.",
+      "title": "Discipline over performance",
+      "intro": "TradeSafe's discipline layer is not designed to increase win rates or predict profitable trades.",
       "subtitle": "Its value lies in reducing costly behavioral mistakes:",
       "points": [
         "Fewer impulsive revenge trades",
@@ -110,8 +121,8 @@
     "label": "Technology",
     "title": "How AI powers TradeSafe",
     "intro": "TradeSafe uses AI to analyze behavioral patterns — not to predict markets.",
-    "developmentTitle": "Launching soon (Q1 2026)",
-    "developmentSubtitle": "Features launching in the next 8-12 weeks:",
+    "developmentTitle": "In development",
+    "developmentSubtitle": "The discipline layer at the core of TradeSafe:",
     "developmentPoints": [
       "Real-time behavioral alerts and intervention system",
       "Advanced pattern detection (overtrading, revenge trading)",
@@ -119,15 +130,15 @@
       "AI-assisted journaling with guided insights",
       "Chrome extension with live trading protection"
     ],
-    "roadmapTitle": "Upcoming features",
-    "roadmapSubtitle": "TradeSafe roadmap for 2026:",
+    "roadmapTitle": "Coming next",
+    "roadmapSubtitle": "Further along the roadmap:",
     "roadmapPoints": [
       "Personalized ML models for risk pattern prediction",
       "Multi-account aggregation across platforms",
       "Mobile app (iOS/Android) with notifications",
       "Community features and trader accountability system"
     ],
-    "disclaimer": "TradeSafe does not forecast prices, generate signals, or automate trades."
+    "vision": "TradeSafe started with a simple idea: better trading starts with better discipline. The next generation expands that vision into deterministic market analysis, strategy logic, risk governance and, ultimately, safe execution automation."
   },
   "legal": {
     "label": "Legal & Compliance",
@@ -146,7 +157,7 @@
   "company": "Company",
   "features": "Features",
   "howItWorks": "How It Works",
-  "pricing": "Pricing",
+  "pricing": "Early access",
   "technology": "Technology",
   "newsletter": "TradeSafe Insights",
   "about": "About",
